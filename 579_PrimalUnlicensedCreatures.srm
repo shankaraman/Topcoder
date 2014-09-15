@@ -1,0 +1,27 @@
+#include<iostream>
+#include<string>
+#include<algorithm>
+#include<vector>
+using namespace std;
+class PrimalUnlicensedCreatures
+{
+    public:
+        int maxWins(int initialLevel,vector <int> grezPower)
+        {
+            sort(grezPower.begin(),grezPower.end());
+            int count = 0;
+            while ( count < grezPower.size())
+            {
+                if (initialLevel > grezPower[count])
+                {
+                    initialLevel+=grezPower[count]/2;
+                }
+                else
+                {
+                    break;
+                }
+                count++;
+            }
+            return count;
+        }
+};

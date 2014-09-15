@@ -1,0 +1,27 @@
+#include<iostream>
+#include<algorithm>
+#include<vector>
+using namespace std;
+class FoxAndVacation
+{
+	public:
+		int maxCities(int total,vector <int> d)
+		{
+			sort(d.begin(),d.end());
+			int iter=d.size(),count=0;
+			if (total < d[0])
+			{
+				return 0;
+			}
+			while (iter>0)
+			{
+				total-=d[count];
+				if(total >= 0)
+				{
+					count++;
+				}
+				iter--;
+			}
+			return count;
+		}
+};

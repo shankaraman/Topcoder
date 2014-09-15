@@ -1,0 +1,26 @@
+#include<iostream>
+#include<string>
+#include<vector>
+#include<sstream>
+using namespace std;
+class DivisorDigits
+{
+    public:
+        int howMany(int number)
+        {
+            int count=0,modulo=0,divisor=number;
+            while (number>0)
+            {
+                modulo = number % 10;
+                if (modulo != 0)
+                {
+                    if (divisor%modulo == 0)
+                    {
+                        count++;
+                    }
+                }
+                number/=10;
+            }               
+            return count;           
+        }
+};

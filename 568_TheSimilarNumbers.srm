@@ -1,0 +1,16 @@
+#include<iostream>
+using namespace std;
+class TheSimilarNumbers
+{
+    public:
+        int find(int lower,int upper)
+        {
+            int count=0;
+            while (lower <= upper)
+            {
+                count++;
+                lower = (lower*10)+1;
+            }
+            return count;
+        }
+};

@@ -1,0 +1,27 @@
+#include<iostream>
+#include<string.h>
+#include<sstream>
+using namespace std;
+
+class Time
+{
+    public:
+            int seconds,min,hours,min_left,sec_left;
+            string sec,minit,hour,final;
+            string whatTime(int seconds)
+            {
+                hours = seconds / 3600;
+                min = seconds / 60;
+                min_left = min % 60;
+                sec_left = seconds % 60;
+                stringstream convert;
+                convert << hours;
+                convert>>hour;convert.clear();
+                convert << min_left;
+                convert>>minit;convert.clear();
+                convert << sec_left;
+                convert>>sec;convert.clear();
+                final = hour+":"+minit+":"+sec;
+                return final;
+            }
+};

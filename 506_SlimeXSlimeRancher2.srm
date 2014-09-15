@@ -1,0 +1,21 @@
+#include<iostream>
+#include<vector>
+#include<algorithm>
+using namespace std;
+class SlimeXSlimeRancher2
+{
+    public:
+        int train(vector <int> attributes)
+        {
+            sort(attributes.begin(),attributes.end());
+            int max = attributes[attributes.size()-1];
+            int take=0,sum=0;
+            for(int i=0;i<attributes.size();i++)
+            {
+                take = max-attributes[i];
+                sum+=take;
+            }
+            return sum;
+        }
+    };
+                

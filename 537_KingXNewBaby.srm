@@ -1,0 +1,54 @@
+#include<iostream>
+#include<vector>
+using namespace std;
+class KingXNewBaby
+{
+	public:
+		vector <char> vowels;
+		string isValid(string name)
+		{
+			vowels.push_back('a');
+			vowels.push_back('e');
+			vowels.push_back('i');
+			vowels.push_back('o');
+			vowels.push_back('u');
+			int j=0,i=0,count=0,deep=0,e2=0,g2=0;
+			if(name.size() == 8)
+			{
+				while (i<vowels.size())
+				{
+					j=0;count=0;
+					while (j<name.size())
+					{
+						if(vowels[i] == name[j])
+						{
+							count++;
+							deep++;
+						}
+						j++;
+					}
+					if(count > 2)
+					{
+					 g2++;
+					}
+					else if(count == 2)
+					{
+						e2++;
+					}
+				i++;
+				}
+			}
+			else
+			{
+			 return "NO";
+			}
+			if(e2 and deep == 2)
+			{
+				return "YES";
+			}
+			else
+			{
+				return "NO";
+			}
+		}
+	};

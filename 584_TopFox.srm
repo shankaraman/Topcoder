@@ -1,0 +1,24 @@
+#include<iostream>
+#include<string>
+#include<set>
+using namespace std;
+class TopFox
+{
+	public:
+		int possibleHandles(string familyName, string givenName)
+		{
+			string con="",down="";
+			set <string> s;
+			for(int i=0;i<familyName.size();i++)
+			{
+				con+=familyName[i];
+				down = "";
+				for(int j=0;j<givenName.size();j++)
+				{
+					down+=givenName[j];
+					s.insert(con+down);
+				}
+			}
+			return s.size();
+		}
+};

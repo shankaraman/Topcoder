@@ -1,0 +1,33 @@
+#include<iostream>
+#include<stdlib.h>
+#include<string>
+#include<stdio.h>
+#include<vector>
+#include<sstream>
+using namespace std;
+class WorkingRabbits
+{
+    public:
+    double getEfficiency(vector <string> profit)
+    {
+        int first;
+        double combination=0.0,result=0.0,second=0.0;
+        string s;
+        for (int i=0;i<profit.size();i++)
+        {
+            combination+=i;
+        }
+        for (int i=0;i<profit.size();i++)
+        {
+            for(int j=i+1;j<profit.size();j++)
+            {
+                s = (profit[i][j]);
+                istringstream (s) >> first;
+                second = first;
+                result+=second;
+            }
+        }
+        return (result/combination);
+    }
+};
+

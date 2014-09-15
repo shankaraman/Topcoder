@@ -1,0 +1,1687 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>SRM 496 - TopCoder Wiki</title>
+                
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="-1">
+    <script src="SRM%20496%20-%20TopCoder%20Wiki_files/17680.js" id="hs-analytics"></script><script language="javascript">
+        var contextPath = '/wiki';
+        var i18n = [];
+    </script>
+
+                            <link rel="stylesheet" href="SRM%20496%20-%20TopCoder%20Wiki_files/main-action.css" type="text/css">
+            
+    
+
+        
+            <script type="text/javascript" src="SRM%20496%20-%20TopCoder%20Wiki_files/effects.js"></script>
+    
+
+            <script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script><script src="SRM%20496%20-%20TopCoder%20Wiki_files/ga.js" type="text/javascript"></script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-6340959-1");
+pageTracker._trackPageview();
+</script>
+
+<script type="text/javascript" language="javascript">
+var hs_portalid=17680; 
+var hs_salog_version = "2.00";
+var hs_ppa = "topcoder.app101.hubspot.com";
+document.write(unescape("%3Cscript src='" + document.location.protocol + "//" + hs_ppa + "/salog.js.aspx' type='text/javascript'%3E%3C/script%3E"));
+</script><script src="SRM%20496%20-%20TopCoder%20Wiki_files/salog.html" type="text/javascript"></script>
+
+    <link type="image/x-icon" rel="shortcut icon" href="http://apps.topcoder.com/i/favicon.ico">
+    <link type="text/css" rel="stylesheet" href="SRM%20496%20-%20TopCoder%20Wiki_files/tcStyles.css">
+    <link type="text/css" rel="stylesheet" href="SRM%20496%20-%20TopCoder%20Wiki_files/coders.css">
+    <link type="text/css" rel="stylesheet" href="SRM%20496%20-%20TopCoder%20Wiki_files/wiki.css">
+</head>
+
+                    <body onload="">
+    
+
+
+
+
+
+
+
+
+<script type="text/javascript" src="SRM%20496%20-%20TopCoder%20Wiki_files/popup.js"></script>
+
+<div id="shortcutBar">
+    <div class="icon"><a href="http://community.topcoder.com/tc"><img src="SRM%20496%20-%20TopCoder%20Wiki_files/scHome.png" alt="" onmouseover="postPopUpText('globalPopupText','Home'); popUp(this,'globalPopup');" onmouseout="popHide()"></a></div>
+    <div class="icon"><a href="javascript:arena();"><img src="SRM%20496%20-%20TopCoder%20Wiki_files/scAlgo.png" alt="" onmouseover="postPopUpText('globalPopupText','Algorithm Competitions'); popUp(this,'globalPopup');" onmouseout="popHide()"></a></div>
+    <div class="icon"><a href="http://community.topcoder.com/tc?module=ActiveContests&amp;pt=23"><img src="SRM%20496%20-%20TopCoder%20Wiki_files/scConceptualization.png" alt="" onmouseover="postPopUpText('globalPopupText','Software Conceptualization Competitions'); popUp(this,'globalPopup');" onmouseout="popHide()"></a></div>
+    <div class="icon"><a href="http://community.topcoder.com/tc?module=ActiveContests&amp;pt=6"><img src="SRM%20496%20-%20TopCoder%20Wiki_files/scSpecification.png" alt="" onmouseover="postPopUpText('globalPopupText','Software Specification Competitions'); popUp(this,'globalPopup');" onmouseout="popHide()"></a></div>
+    <div class="icon"><a href="http://community.topcoder.com/tc?module=ActiveContests&amp;pt=7"><img src="SRM%20496%20-%20TopCoder%20Wiki_files/scArchitecture.png" alt="" onmouseover="postPopUpText('globalPopupText','Software Architecture Competitions'); popUp(this,'globalPopup');" onmouseout="popHide()"></a></div>
+    <div class="icon"><a href="http://community.topcoder.com/tc?module=ViewActiveContests&amp;ph=112"><img src="SRM%20496%20-%20TopCoder%20Wiki_files/scDesign.png" alt="" onmouseover="postPopUpText('globalPopupText','Component Design Competitions'); popUp(this,'globalPopup');" onmouseout="popHide()"></a></div>
+    <div class="icon"><a href="http://community.topcoder.com/tc?module=ViewActiveContests&amp;ph=113"><img src="SRM%20496%20-%20TopCoder%20Wiki_files/scDevelopment.png" alt="" onmouseover="postPopUpText('globalPopupText','Component Development Competitions'); popUp(this,'globalPopup');" onmouseout="popHide()"></a></div>
+
+    <div class="icon"><a href="http://community.topcoder.com/tc?module=ActiveContests&amp;pt=14"><img src="SRM%20496%20-%20TopCoder%20Wiki_files/scAssembly.png" alt="" onmouseover="postPopUpText('globalPopupText','Software Assembly Competitions'); popUp(this,'globalPopup');" onmouseout="popHide()"></a></div>
+    <div class="icon"><a href="http://community.topcoder.com/tc?module=ActiveContests&amp;pt=13"><img src="SRM%20496%20-%20TopCoder%20Wiki_files/scTesting.png" alt="" onmouseover="postPopUpText('globalPopupText','Testing Competitions'); popUp(this,'globalPopup');" onmouseout="popHide()"></a></div>
+    <div class="icon"><a href="http://www.topcoder.com/tc?module=ActiveContests&amp;pt=9"><img src="SRM%20496%20-%20TopCoder%20Wiki_files/scBugHunt.png" alt="" onmouseover="postPopUpText('globalPopupText','Bug Hunt Competitions'); popUp(this,'globalPopup');" onmouseout="popHide()"></a></div>
+    <div class="icon"><a href="http://community.topcoder.com/tc?module=ActiveContests&amp;pt=35"><img src="SRM%20496%20-%20TopCoder%20Wiki_files/scContentCreation.gif" alt="" onmouseover="postPopUpText('globalPopupText','Content Creation Competitions'); popUp(this,'globalPopup');" onmouseout="popHide()"></a></div>
+    <div class="icon"><a href="http://community.topcoder.com/tc?module=ActiveContests&amp;pt=36"><img src="SRM%20496%20-%20TopCoder%20Wiki_files/scReporting.gif" alt="" onmouseover="postPopUpText('globalPopupText','Reporting Competitions'); popUp(this,'globalPopup');" onmouseout="popHide()"></a></div>
+    <div class="icon"><a href="javascript:arena();"><img src="SRM%20496%20-%20TopCoder%20Wiki_files/scTCHS.png" alt="" onmouseover="postPopUpText('globalPopupText','High School Competitions'); popUp(this,'globalPopup');" onmouseout="popHide()"></a></div>
+    <div class="icon"><a href="http://community.topcoder.com/longcontest/?module=ViewActiveContests"><img src="SRM%20496%20-%20TopCoder%20Wiki_files/scMarathon.png" alt="" onmouseover="postPopUpText('globalPopupText','Marathon Matches'); popUp(this,'globalPopup');" onmouseout="popHide()"></a></div>
+    <div class="icon"><a href="http://studio.topcoder.com/?module=ViewActiveContests"><img src="SRM%20496%20-%20TopCoder%20Wiki_files/scStudio.png" alt="" onmouseover="postPopUpText('globalPopupText','TopCoder Studio Competitions'); popUp(this,'globalPopup');" onmouseout="popHide()"></a></div>
+</div>
+
+<div id="globalPopup" class="popUp"><div id="globalPopupText"></div></div>
+
+
+<div style="position: absolute; right:0px; top:31px;"><a href="http://www.topcoder.com/reg/"><img src="SRM%20496%20-%20TopCoder%20Wiki_files/register_now.gif" alt="Register Now" style="display:block;"></a></div>
+
+
+<div style="margin: 0px 290px 0px 280px;" align="center">
+   <div id="outerLogo">
+      <div id="innerLogo">
+      <a href="http://www.topcoder.com/"><img src="SRM%20496%20-%20TopCoder%20Wiki_files/topcoder.gif" alt="TopCoder" style="display: block;"></a>
+      </div>
+   </div>
+</div>
+
+<div class="memberCountBox">
+Member Count: 475,306 - 
+
+
+April 9, 2013
+
+&nbsp;<a class="gMetal" href="javascript:tcTime()">[Get Time]</a>
+</div>
+
+<div class="topBar">
+    <div style="float: right; margin: 5px 0px 0px 0px;">
+        
+                <a class="gMetal" href="http://community.topcoder.com/tc?&amp;module=Login">Login</a>
+            
+        
+    </div>
+</div>
+
+
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+    <tr valign="top">
+        <td width="180">
+            
+
+
+
+
+
+
+
+
+
+
+<script language="JavaScript" type="text/javascript" src="SRM%20496%20-%20TopCoder%20Wiki_files/arena.js"></script>
+
+
+<script language="JavaScript" type="text/javascript">
+<!--
+function toggleMenu(menuTitle,menuID){
+   var menu = document.getElementById(menuID);
+   if(menu.style.display == 'block') menu.className = 'CLOSED';
+   else if(menu.className == 'OPEN' && menu.style.display != 'none') menu.className = 'CLOSED';
+   else {
+      menu.className = 'OPEN';
+   }
+   if(menuTitle.blur)menuTitle.blur();
+   if(menuTitle.className == 'exp') menuTitle.className = 'exp_ed';
+   else menuTitle.className = 'exp';
+   return;
+}
+function flipMenu(myMenuName){
+   var menuName = document.getElementById(myMenuName);
+   menuName.className = 'exp_ed';
+}
+
+// -->
+</script>
+
+<div style="padding: 0px;"><img src="SRM%20496%20-%20TopCoder%20Wiki_files/leftnav_top.gif" alt=""></div>
+<div id="navbar">
+    
+<ul>
+<li class="exp"><a href="javascript:void(0)" onclick="Javascript:toggleMenu(this.parentNode,'m_competitions')">Competitions</a>
+<ul id="m_competitions">
+<li class="exp"><a href="javascript:void(0)" onclick="Javascript:toggleMenu(this.parentNode,'m_competitions_overview')">Overview</a>
+<ul id="m_competitions_overview">
+<li><a href="http://apps.topcoder.com/wiki/x/MQD9Ag">Reliability</a></li>
+<li><a href="http://apps.topcoder.com/wiki/x/lYE_/">Ratings</a></li>
+<li><a href="http://apps.topcoder.com/wiki/x/EoK1B/">Badges</a></li>
+<li><a href="http://apps.topcoder.com/wiki/x/aoE_/">How to Get Paid</a></li>
+<li><a href="http://apps.topcoder.com/wiki/x/2gRmAw">Administrative Overview </a></li>
+</ul></li>
+<li class="exp"><a href="javascript:void(0)" onclick="Javascript:toggleMenu(this.parentNode,'m_copilot_opportunities')">Copilot Opportunities</a>
+<ul id="m_copilot_opportunities">
+<li><a href="http://apps.topcoder.com/wiki/display/tc/Copilot+Overview">Overview</a></li>
+<li class="exp"><a href="javascript:void(0)" onclick="Javascript:toggleMenu(this.parentNode,'m_copilot_support')">Track Information</a>
+<ul id="m_copilot_support">
+<li><a href="http://apps.topcoder.com/wiki/display/tc/How+to+Compete+in+Copilot+Opportunities">How to Compete</a></li>
+<li><a href="http://apps.topcoder.com/wiki/display/tc/How+to+Compete+in+Copilot+Opportunities">Documentation</a></li>
+<li><a href="http://apps.topcoder.com/wiki/display/tc/How+to+Compete+in+Copilot+Opportunities">Tutorial</a></li>
+</ul></li>
+<li><a href="http://www.topcoder.com/tc?module=ActiveContests&amp;pt=29">Active Contests</a></li>
+<li><a href="http://www.topcoder.com/tc?module=CompList&amp;ph=140">Past Contests</a></li>
+<li><a href="http://www.topcoder.com/tc?module=ViewCopilotPool&amp;size=20&amp;view=0&amp;sort=12">Copilot Pool</a></li>
+</ul></li>
+<li class="exp"><a href="javascript:void(0)" onclick="Javascript:toggleMenu(this.parentNode,'competition_design')">Design</a>
+<ul id="competition_design">
+<li><a href="http://studio.topcoder.com/">Studio</a></li>
+<li class="exp"><a href="javascript:void(0)" onclick="Javascript:toggleMenu(this.parentNode,'m_conceptualization_competitions')">Conceptualization</a>
+<ul id="m_conceptualization_competitions">
+<li><a href="http://apps.topcoder.com/wiki/display/tc/TopCoder+Conceptualization+Contests">Overview</a></li>
+<li class="exp"><a href="javascript:void(0)" onclick="Javascript:toggleMenu(this.parentNode,'m_conceptualization_support')">Track Information</a>
+<ul id="m_conceptualization_support">
+<li><a href="http://apps.topcoder.com/wiki/display/tc/How+to+Compete+in+Conceptualization+Competitions">How to Compete</a></li>
+<li><a href="http://apps.topcoder.com/wiki/display/tc/Conceptualization+Documentation">Documentation</a></li>
+<li><a href="http://apps.topcoder.com/wiki/display/tc/Conceptualization+Submission+Instructions">Tutorial</a></li>
+</ul></li>
+<li><a href="http://www.topcoder.com/tc?module=ActiveContests&amp;pt=23">Active Contests</a></li>
+<li><a href="http://www.topcoder.com/tc?module=ContestStatus&amp;pt=23">Contest Status</a></li>
+<li><a href="http://www.topcoder.com/tc?module=CompList&amp;ph=134">Past Contests</a></li>
+<li><a href="http://www.topcoder.com/tc?module=ViewReviewAuctions&amp;pt=23">Review Opportunities</a></li>
+<li><a href="http://www.topcoder.com/tc?module=ReviewBoard&amp;pt=23">Meet the Review Board</a></li>
+</ul></li>
+<li class="exp"><a href="javascript:void(0)" onclick="Javascript:toggleMenu(this.parentNode,'m_specification_competitions')">Specification</a>
+<ul id="m_specification_competitions">
+<li><a href="http://apps.topcoder.com/wiki/display/tc/TopCoder+Specification+Contests">Overview</a></li>
+<li class="exp"><a href="javascript:void(0)" onclick="Javascript:toggleMenu(this.parentNode,'m_specification_support')">Track Information</a>
+<ul id="m_specification_support">
+<li><a href="http://apps.topcoder.com/wiki/display/tc/How+to+Compete+in+Specification+Competitions">How to Compete</a></li>
+</ul></li>
+<li><a href="http://www.topcoder.com/tc?module=ActiveContests&amp;pt=6">Active Contests</a></li>
+<li><a href="http://www.topcoder.com/tc?module=ContestStatus&amp;pt=6">Contest Status</a></li>
+<li><a href="http://www.topcoder.com/tc?module=CompList&amp;ph=117">Past Contests</a></li>
+<li><a href="http://www.topcoder.com/tc?module=ViewReviewAuctions&amp;pt=6">Review Opportunities</a></li>
+<li><a href="http://www.topcoder.com/tc?module=ReviewBoard&amp;pt=6">Meet the Review Board</a></li>
+</ul></li>
+<li class="exp"><a href="javascript:void(0)" onclick="Javascript:toggleMenu(this.parentNode,'m_architecture_competitions')">Architecture</a>
+<ul id="m_architecture_competitions">
+<li><a href="http://apps.topcoder.com/wiki/display/tc/Architecture+Overview">Overview</a></li>
+<li class="exp"><a href="javascript:void(0)" onclick="Javascript:toggleMenu(this.parentNode,'m_architecture_support')">Track Information</a>
+<ul id="m_architecture_support">
+<li><a href="http://apps.topcoder.com/wiki/display/tc/Module+Architecture+Tutorial">Module Architecture Tutorial</a></li>
+</ul></li>
+<li><a href="http://www.topcoder.com/tc?module=ActiveContests&amp;pt=7">Active Contests</a></li>
+<li><a href="http://www.topcoder.com/tc?module=ContestStatus&amp;pt=7">Contest Status</a></li>
+<li><a href="http://www.topcoder.com/tc?module=CompList&amp;ph=118">Past Contests</a></li>
+<li><a href="http://www.topcoder.com/tc?module=ViewReviewAuctions&amp;pt=7">Review Opportunities</a></li>
+<li><a href="http://www.topcoder.com/tc?module=ReviewBoard&amp;pt=7">Meet the Review Board</a></li>
+</ul></li>
+<li class="exp"><a href="javascript:void(0)" onclick="Javascript:toggleMenu(this.parentNode,'m_des_competitions')">Component Design</a>
+<ul id="m_des_competitions">
+<li><a href="http://apps.topcoder.com/wiki/display/tc/Component+Design+Overview">Overview</a></li>
+<li class="exp"><a href="javascript:void(0)" onclick="Javascript:toggleMenu(this.parentNode,'m_des_support')">Track Information</a>
+<ul id="m_des_support">
+<li><a href="http://apps.topcoder.com/wiki/display/tc/How+to+Compete+in+Component+Design+Competitions">How to Compete</a></li>
+<li><a href="http://apps.topcoder.com/wiki/display/tc/Component+Design+Documentation">Documentation</a></li>
+<li><a href="http://www.topcoder.com/tc?module=ColorChange&amp;ph=112">Recent Color Changes</a></li>
+<li><a href="http://apps.topcoder.com/wiki/display/tc/Component+Design+Data+Feeds">Data Feeds</a></li>
+</ul></li>
+<li><a href="http://www.topcoder.com/tc?module=ViewActiveContests&amp;ph=112">Active Contests</a></li>
+<li><a href="http://www.topcoder.com/tc?module=ContestStatus&amp;pt=1">Contest Status</a></li>
+<li><a href="http://www.topcoder.com/tc?module=CompList&amp;ph=112">Past Contests</a></li>
+<li><a href="http://www.topcoder.com/tc?module=ViewReviewAuctions&amp;pt=1">Review Opportunities</a></li>
+<li><a href="http://www.topcoder.com/tc?module=ReviewBoard&amp;pt=1">Meet the Review Board</a></li>
+</ul></li>
+</ul></li>
+<li class="exp"><a href="javascript:void(0)" onclick="Javascript:toggleMenu(this.parentNode,'competition_dev')">Development</a>
+<ul id="competition_dev">
+<li class="exp"><a href="javascript:void(0)" onclick="Javascript:toggleMenu(this.parentNode,'m_dev_competitions')">Component Development</a>
+<ul id="m_dev_competitions">
+<li><a href="http://apps.topcoder.com/wiki/display/tc/How+to+Compete+in+Component+Development+Competitions">Overview</a></li>
+<li class="exp"><a href="javascript:void(0)" onclick="Javascript:toggleMenu(this.parentNode,'m_dev_support')">Track Information</a>
+<ul id="m_dev_support">
+<li><a href="http://apps.topcoder.com/wiki/display/tc/How+to+Compete+in+Component+Development+Competitions">How to Compete</a></li>
+<li><a href="http://apps.topcoder.com/wiki/display/tc/Component+Development+Documentation">Documentation</a></li>
+<li><a href="http://www.topcoder.com/tc?module=ColorChange&amp;ph=113">Recent Color Changes</a></li>
+<li><a href="http://apps.topcoder.com/wiki/display/tc/Component+Development+Data+Feeds">Data Feeds</a></li>
+</ul></li>
+<li><a href="http://www.topcoder.com/tc?module=ViewActiveContests&amp;ph=113">Active Contests</a></li>
+<li><a href="http://www.topcoder.com/tc?module=ContestStatus&amp;pt=2">Contest Status</a></li>
+<li><a href="http://www.topcoder.com/tc?module=CompList&amp;ph=113">Past Contests</a></li>
+<li><a href="http://www.topcoder.com/tc?module=ViewReviewAuctions&amp;pt=2">Review Opportunities</a></li>
+<li><a href="http://www.topcoder.com/tc?module=ReviewBoard&amp;pt=2">Meet the Review Board</a></li>
+</ul></li>
+<li class="exp"><a href="javascript:void(0)" onclick="Javascript:toggleMenu(this.parentNode,'m_assembly_competitions')">Assembly</a>
+<ul id="m_assembly_competitions">
+<li><a href="http://apps.topcoder.com/wiki/display/tc/Assembly">Overview</a></li>
+<li class="exp"><a href="javascript:void(0)" onclick="Javascript:toggleMenu(this.parentNode,'m_assembly_support')">Track Information</a>
+<ul id="m_assembly_support">
+<li><a href="http://apps.topcoder.com/wiki/display/tc/How+to+Compete+in+Assembly+Competitions">How to Compete</a></li>
+<li><a href="http://apps.topcoder.com/wiki/display/tc/Assembly+Competition+Tutorial">Tutorial</a></li>
+<li><a href="http://apps.topcoder.com/wiki/display/tc/Assembly+Competition+Documentation">Documentation</a></li>
+</ul></li>
+<li><a href="http://www.topcoder.com/tc?module=ActiveContests&amp;pt=14">Active Contests</a></li>
+<li><a href="http://www.topcoder.com/tc?module=ContestStatus&amp;pt=14">Contest Status</a></li>
+<li><a href="http://www.topcoder.com/tc?module=CompList&amp;ph=125">Past Contests</a></li>
+<li><a href="http://www.topcoder.com/tc?module=ViewReviewAuctions&amp;pt=14">Review Opportunities</a></li>
+<li><a href="http://www.topcoder.com/tc?module=ReviewBoard&amp;pt=14">Meet the Review Board</a></li>
+</ul></li>
+<li class="exp"><a href="javascript:void(0)" onclick="Javascript:toggleMenu(this.parentNode,'m_test_suites_competitions')">Test Suites</a>
+<ul id="m_test_suites_competitions">
+<li><a href="http://apps.topcoder.com/wiki/display/tc/Test+Scenarios+and+Scripts">Overview</a></li>
+<li class="exp"><a href="javascript:void(0)" onclick="Javascript:toggleMenu(this.parentNode,'m_test_suites_support')">Track Information</a>
+<ul id="m_test_suites_support">
+<li><a href="http://apps.topcoder.com/wiki/display/tc/How+to+Compete+in+Testing+Competitions">How to Compete</a></li>
+<li><a href="http://apps.topcoder.com/wiki/display/tc/Testing+Competition+Tutorial">Tutorial</a></li>
+<li><a href="http://apps.topcoder.com/wiki/display/tc/Testing+Competition+Documentation">Documentation</a></li>
+</ul></li>
+<li><a href="http://www.topcoder.com/tc?module=ActiveContests&amp;pt=13">Active Contests</a></li>
+<li><a href="http://www.topcoder.com/tc?module=ContestStatus&amp;pt=13">Contest Status</a></li>
+<li><a href="http://www.topcoder.com/tc?module=CompList&amp;pt=13">Past Contests</a></li>
+<li><a href="http://www.topcoder.com/tc?module=ViewReviewAuctions&amp;pt=13">Review Opportunities</a></li>
+<li><a href="http://www.topcoder.com/tc?module=ReviewBoard&amp;pt=13">Meet the Review Board</a></li>
+</ul></li>
+<li class="exp"><a href="javascript:void(0)" onclick="Javascript:toggleMenu(this.parentNode,'m_reporting_competitions')">Reporting</a>
+<ul id="m_reporting_competitions">
+<li><a href="http://apps.topcoder.com/wiki/display/tc/Reporting">Overview</a></li>
+<li class="exp"><a href="javascript:void(0)" onclick="Javascript:toggleMenu(this.parentNode,'m_reporting_support')">Track Information</a>
+<ul id="m_reporting_support">
+<li><a href="http://apps.topcoder.com/wiki/display/tc/How+to+Compete+in+Reporting+Competitions">How to Compete</a></li>
+<li><a href="http://apps.topcoder.com/wiki/display/tc/Reporting+Competition+Tutorial">Tutorial</a></li>
+<li><a href="http://apps.topcoder.com/wiki/display/tc/Reporting+Competition+Documentation">Documentation</a></li>
+</ul></li>
+<li><a href="http://www.topcoder.com/tc?module=ActiveContests&amp;pt=36">Active Contests</a></li>
+<li><a href="http://www.topcoder.com/tc?module=ContestStatus&amp;pt=36">Contest Status</a></li>
+<li><a href="http://www.topcoder.com/tc?module=CompList&amp;pt=36">Past Contests</a></li>
+<li><a href="http://www.topcoder.com/tc?module=ViewReviewAuctions&amp;pt=36">Review Opportunities</a></li>
+<li><a href="http://www.topcoder.com/tc?module=ReviewBoard&amp;pt=36">Meet the Review Board</a></li>
+</ul></li>
+</ul></li>
+<li class="exp"><a href="javascript:void(0)" onclick="Javascript:toggleMenu(this.parentNode,'competition_ui_dev')">UI Development</a>
+<ul id="competition_ui_dev">
+<li class="exp"><a href="javascript:void(0)" onclick="Javascript:toggleMenu(this.parentNode,'m_ui_prototype_competitions')">UI Prototype</a>
+<ul id="m_ui_prototype_competitions">
+<li><a href="http://apps.topcoder.com/wiki/display/tc/UI+Prototype+Competitions">Overview</a></li>
+<li class="exp"><a href="javascript:void(0)" onclick="Javascript:toggleMenu(this.parentNode,'m_ui_prototype_support')">Track Information</a>
+<ul id="m_ui_prototype_support">
+<li><a href="http://apps.topcoder.com/wiki/display/tc/UI+Prototype+Competitions">UI Prototype Tutorial</a></li>
+</ul></li>
+<li><a href="http://www.topcoder.com/tc?module=ActiveContests&amp;pt=19">Active Contests</a></li>
+<li><a href="http://www.topcoder.com/tc?module=ContestStatus&amp;pt=19">Contest Status</a></li>
+<li><a href="http://www.topcoder.com/tc?module=CompList&amp;pt=19">Past Contests</a></li>
+<li><a href="http://www.topcoder.com/tc?module=ViewReviewAuctions&amp;pt=19">Review Opportunities</a></li>
+<li><a href="http://www.topcoder.com/tc?module=ReviewBoard&amp;pt=19">Meet the Review Board</a></li>
+</ul></li>
+<li class="exp"><a href="javascript:void(0)" onclick="Javascript:toggleMenu(this.parentNode,'m_ria_build_competitions')">RIA Build</a>
+<ul id="m_ria_build_competitions">
+<li><a href="http://apps.topcoder.com/wiki/display/tc/RIA+Build+Competitions">Overview</a></li>
+<li class="exp"><a href="javascript:void(0)" onclick="Javascript:toggleMenu(this.parentNode,'m_ria_build_support')">Track Information</a>
+<ul id="m_ria_build_support">
+<li><a href="http://apps.topcoder.com/wiki/display/tc/RIA+Build+Competitions">RIA Build Tutorial</a></li>
+</ul></li>
+<li><a href="http://www.topcoder.com/tc?module=ActiveContests&amp;pt=24">Active Contests</a></li>
+<li><a href="http://www.topcoder.com/tc?module=ContestStatus&amp;pt=24">Contest Status</a></li>
+<li><a href="http://www.topcoder.com/tc?module=CompList&amp;pt=24">Past Contests</a></li>
+<li><a href="http://www.topcoder.com/tc?module=ViewReviewAuctions&amp;pt=24">Review Opportunities</a></li>
+<li><a href="http://www.topcoder.com/tc?module=ReviewBoard&amp;pt=24">Meet the Review Board</a></li>
+</ul></li>
+<li class="exp"><a href="javascript:void(0)" onclick="Javascript:toggleMenu(this.parentNode,'m_content_creation_competitions')">Content Creation</a>
+<ul id="m_content_creation_competitions">
+<li><a href="http://apps.topcoder.com/wiki/display/tc/Content+Contests+Overview">Overview</a></li>
+<li class="exp"><a href="javascript:void(0)" onclick="Javascript:toggleMenu(this.parentNode,'m_content_creation_support')">Track Information</a>
+<ul id="m_content_creation_support">
+<li><a href="http://apps.topcoder.com/wiki/display/tc/How+to+Compete+in+Content+Creation+Competitions">How to Compete</a></li>
+</ul></li>
+<li><a href="http://www.topcoder.com/tc?module=ActiveContests&amp;pt=35">Active Contests</a></li>
+<li><a href="http://www.topcoder.com/tc?module=ContestStatus&amp;pt=35">Contest Status</a></li>
+<li><a href="http://www.topcoder.com/tc?module=CompList&amp;pt=35">Past Contests</a></li>
+<li><a href="http://www.topcoder.com/tc?module=ViewReviewAuctions&amp;pt=35">Review Opportunities</a></li>
+<li><a href="http://www.topcoder.com/tc?module=ReviewBoard&amp;pt=35">Meet the Review Board</a></li>
+</ul></li>
+</ul></li>
+<li class="exp"><a href="javascript:void(0)" onclick="Javascript:toggleMenu(this.parentNode,'competition_qa')">QA and Maintenance</a>
+<ul id="competition_qa">
+<li class="exp"><a href="javascript:void(0)" onclick="Javascript:toggleMenu(this.parentNode,'m_test_scenarios_competitions')">Test Scenarios</a>
+<ul id="m_test_scenarios_competitions">
+<li><a href="http://apps.topcoder.com/wiki/display/tc/Test+Scenarios+and+Scripts">Overview</a></li>
+<li class="exp"><a href="javascript:void(0)" onclick="Javascript:toggleMenu(this.parentNode,'m_test_scenarios_support')">Track Information</a>
+<ul id="m_test_scenarios_support">
+<li><a href="http://apps.topcoder.com/wiki/display/tc/How+to+Compete+in+Testing+Competitions">How to Compete</a></li>
+<li><a href="http://apps.topcoder.com/wiki/display/tc/Testing+Competition+Tutorial">Tutorial</a></li>
+<li><a href="http://apps.topcoder.com/wiki/display/tc/Testing+Competition+Documentation">Documentation</a></li>
+</ul></li>
+<li><a href="http://www.topcoder.com/tc?module=ActiveContests&amp;pt=26">Active Contests</a></li>
+<li><a href="http://www.topcoder.com/tc?module=ContestStatus&amp;pt=26">Contest Status</a></li>
+<li><a href="http://www.topcoder.com/tc?module=CompList&amp;pt=26">Past Contests</a></li>
+<li><a href="http://www.topcoder.com/tc?module=ViewReviewAuctions&amp;pt=26">Review Opportunities</a></li>
+<li><a href="http://www.topcoder.com/tc?module=ReviewBoard&amp;pt=26">Meet the Review Board</a></li>
+</ul></li>
+<li class="exp"><a href="javascript:void(0)" onclick="Javascript:toggleMenu(this.parentNode,'m_bugraces_competitions')">Bug Race</a>
+<ul id="m_bugraces_competitions">
+<li><a href="http://apps.topcoder.com/wiki/display/tc/Bug+Race+Competition+Overview">Overview</a></li>
+<li class="exp"><a href="javascript:void(0)" onclick="Javascript:toggleMenu(this.parentNode,'m_bugraces_support')">Track Information</a>
+<ul id="m_bugraces_support">
+<li><a href="http://apps.topcoder.com/wiki/display/tc/How+to+Compete+in+Bug+Race+Competitions">How to Compete</a></li>
+</ul></li>
+<li><a href="http://www.topcoder.com/tc?module=ViewActiveBugRaces">Active Contests</a></li>
+<li><a href="http://apps.topcoder.com/wiki/x/FQG2AQ">Review Opportunities</a></li>
+</ul></li>
+<li class="exp"><a href="javascript:void(0)" onclick="Javascript:toggleMenu(this.parentNode,'m_bughunt_competitions')">Bug Hunt</a>
+<ul id="m_bughunt_competitions">
+<li><a href="http://apps.topcoder.com/wiki/x/W5ogAg">Overview</a></li>
+<li class="exp"><a href="javascript:void(0)" onclick="Javascript:toggleMenu(this.parentNode,'m_bughunt_support')">Track Information</a>
+<ul id="m_bughunt_support">
+<li><a href="http://apps.topcoder.com/wiki/x/cpogAg">How to Compete</a></li>
+</ul></li>
+<li><a href="http://www.topcoder.com/tc?module=ActiveContests&amp;pt=9">Active Contests</a></li>
+<li><a href="http://www.topcoder.com/tc?module=ContestStatus&amp;pt=9">Contest Status</a></li>
+<li><a href="http://www.topcoder.com/tc?module=CompList&amp;pt=9">Past Contests</a></li>
+<li><a href="http://www.topcoder.com/tc?module=ViewReviewAuctions&amp;pt=9">Review Opportunities</a></li>
+<li><a href="http://www.topcoder.com/tc?module=ReviewBoard&amp;pt=9">Meet the Review Board</a></li>
+</ul></li>
+</ul></li>
+<li class="exp"><a href="javascript:void(0)" onclick="Javascript:toggleMenu(this.parentNode,'competition_algo')">Algorithm</a>
+<ul id="competition_algo">
+<li class="exp"><a href="javascript:void(0)" onclick="Javascript:toggleMenu(this.parentNode,'m_algo_competitions')">Single Round Matches (SRM)</a>
+<ul id="m_algo_competitions">
+<li><a href="http://apps.topcoder.com/wiki/display/tc/Algorithm+Overview">Overview</a></li>
+<li class="exp"><a href="javascript:void(0)" onclick="Javascript:toggleMenu(this.parentNode,'m_algo_support')">Track Information</a>
+<ul id="m_algo_support">
+<li><a href="http://apps.topcoder.com/wiki/display/tc/How+to+Compete+in+SRM+Algorithm+Competitions">How to Compete</a></li>
+<li><a href="http://apps.topcoder.com/wiki/display/tc/SRM+Algorithm+Competition+FAQs">FAQs</a></li>
+<li><a href="http://apps.topcoder.com/wiki/display/tc/Algorithm+Competition+Rating+System">Rating System</a></li>
+<li><a href="http://apps.topcoder.com/wiki/display/tc/Write+Problems+for+TopCoder">Write Problems</a></li>
+</ul></li>
+<li class="exp"><a href="javascript:void(0)" onclick="Javascript:toggleMenu(this.parentNode,'m_algo_stats')">Statistics</a>
+<ul id="m_algo_stats">
+<li><a href="http://www.topcoder.com/tc?module=MatchList">Match Archive</a></li>
+<li><a href="http://www.topcoder.com/stat?c=round_overview">Match Overviews</a></li>
+<li><a href="http://www.topcoder.com/tc?module=SrmDivisionWins">Match Winners</a></li>
+<li><a href="http://www.topcoder.com/stat?c=last_match">Match Results</a></li>
+<li><a href="http://apps.topcoder.com/wiki/display/tc/Algorithm+Problem+Set+Analysis">Match Editorials</a></li>
+<li><a href="http://www.topcoder.com/tc?module=ProblemArchive">Problem Archive</a></li>
+<li><a href="http://www.topcoder.com/tc?module=ColorChange&amp;ratid=1">Recent Color Changes</a></li>
+<li><a href="http://apps.topcoder.com/wiki/display/tc/Algorithm+Data+Feeds">Data Feeds</a></li>
+</ul></li>
+<li><a href="javascript:arena();">Launch Arena</a></li>
+</ul></li>
+<li class="exp"><a href="javascript:void(0)" onclick="Javascript:toggleMenu(this.parentNode,'m_long_contests')">Marathon Match</a>
+<ul id="m_long_contests">
+<li><a href="http://apps.topcoder.com/wiki/display/tc/Marathon+Match+Overview">Overview</a></li>
+<li class="exp"><a href="javascript:void(0)" onclick="Javascript:toggleMenu(this.parentNode,'m_long_support')">Track Information</a>
+<ul id="m_long_support">
+<li><a href="http://apps.topcoder.com/wiki/display/tc/How+to+Compete+in+Marathon+Match+Events">How to Compete</a></li>
+<li><a href="http://www.topcoder.com/longcontest/?module=Static&amp;d1=support&amp;d2=ratings">Rating System</a></li>
+</ul></li>
+<li class="exp"><a href="javascript:void(0)" onclick="Javascript:toggleMenu(this.parentNode,'m_long_stats')">Statistics</a>
+<ul id="m_long_stats">
+<li><a href="http://www.topcoder.com/longcontest/stats/?module=MatchList">Match Archive</a></li>
+<li><a href="http://www.topcoder.com/longcontest/stats/?module=ViewOverview">Match Overview</a></li>
+<li><a href="http://www.topcoder.com/longcontest/stats/?module=MatchWinners">Match Winners</a></li>
+<li><a href="http://www.topcoder.com/longcontest/?module=Static&amp;d1=match_editorials&amp;d2=archive">Match Editorials</a></li>
+<li><a href="http://www.topcoder.com/longcontest/?module=Static&amp;d1=support&amp;d2=dataFeed">Data Feeds</a></li>
+</ul></li>
+<li><a href="http://www.topcoder.com/longcontest/?module=ViewActiveContests">Active Contests</a></li>
+<li><a href="http://www.topcoder.com/longcontest/?module=ViewPractice">Practice</a></li>
+<li><a href="http://www.topcoder.com/longcontest/?module=ViewQueue">Queue Status</a></li>
+</ul></li>
+</ul></li>
+<li class="exp"><a href="javascript:void(0)" onclick="Javascript:toggleMenu(this.parentNode,'m_hs_competitions')">High School</a>
+<ul id="m_hs_competitions">
+<li><a href="http://www.topcoder.com/tc?module=Static&amp;d1=hs&amp;d2=home">Overview</a></li>
+<li class="exp"><a href="javascript:void(0)" onclick="Javascript:toggleMenu(this.parentNode,'m_hs_stats')">Statistics</a>
+<ul id="m_hs_stats">
+<li><a href="http://www.topcoder.com/tc?module=HSRoundOverview">Match Overview</a></li>
+<li><a href="http://www.topcoder.com/tc?module=HSRoundStatsTeam">Match Results (Team)</a></li>
+<li><a href="http://www.topcoder.com/tc?module=HSRoundStatsInd">Match Results (Indiv.)</a></li>
+<li><a href="http://www.topcoder.com/tc?module=Static&amp;d1=hs&amp;d2=match_editorials&amp;d3=archive">Match Editorials</a></li>
+<li><a href="http://www.topcoder.com/tc?module=ColorChange&amp;ratid=2">Recent Color Changes</a></li>
+<li><a href="http://www.topcoder.com/tc?module=Static&amp;d1=hs&amp;d2=support&amp;d3=dataFeed">Data Feeds</a></li>
+</ul></li>
+<li><a href="http://www.topcoder.com/tc?module=Static&amp;d1=hs&amp;d2=spotlightSessions">Spotlight Sessions</a></li>
+<li><a href="javascript:arena();">Launch Arena</a></li>
+</ul></li>
+<li><a href="http://www.topcoder.com/dr">The Digital Run</a></li>
+<li><a href="http://software.topcoder.com/review">Submit &amp; Review</a></li>
+</ul></li>
+<li class="exp"><a href="javascript:void(0)" onclick="Javascript:toggleMenu(this.parentNode,'m_topcoder_networks')">TopCoder Networks</a>
+<ul id="m_topcoder_networks">
+<li><a href="http://community.topcoder.com/alcatel/">Alcatel Lucent</a></li>
+<li><a href="http://community.topcoder.com/amdapp/">AMD OpenCL</a></li>
+<li><a href="http://community.topcoder.com/darpacs/">DARPA CS-STEM</a></li>
+<li><a href="http://community.topcoder.com/lifetech-network/">Life Technologies</a></li>
+<li><a href="http://community.topcoder.com/ntl/">NASA Tournament Lab</a></li>
+<li><a href="http://community.topcoder.com/x/">PayPalX</a></li>
+</ul></li>
+<li class="exp"><a href="javascript:void(0)" onclick="Javascript:toggleMenu(this.parentNode,'m_events')">Events</a>
+<ul id="m_events">
+<li><a href="http://www.topcoder.com/tc?module=Static&amp;d1=calendar&amp;d2=thisMonth">Event Calendar</a></li>
+<li class="exp"><a href="javascript:void(0)" onclick="Javascript:toggleMenu(this.parentNode,'m_tournaments')">Tournaments</a>
+<ul id="m_tournaments">
+<li><a href="http://www.topcoder.com/tc?module=Static&amp;d1=tournaments&amp;d2=home">TopCoder</a></li>
+<li><a href="http://www.topcoder.com/pl/">Powered by TopCoder</a></li>
+<li><a href="http://www.topcoder.com/tc?module=CRPFStatic&amp;d1=crpf&amp;d2=crpf_overview">Charity</a></li>
+</ul></li>
+</ul></li>
+<li class="exp"><a href="javascript:void(0)" onclick="Javascript:toggleMenu(this.parentNode,'m_stats')">Statistics</a>
+<ul id="m_stats">
+<li class="exp"><a href="javascript:void(0)" onclick="Javascript:toggleMenu(this.parentNode,'m_competitor_stats')">The Tops</a>
+<ul id="m_competitor_stats">
+<li class="exp"><a href="javascript:void(0)" onclick="Javascript:toggleMenu(this.parentNode,'m_top_rated_competitors')">Top Ranked</a>
+<ul id="m_top_rated_competitors">
+<li><a href="http://www.topcoder.com/tc?module=AlgoRank">Algorithm</a></li>
+<li><a href="http://www.topcoder.com/tc?module=HSRank">High School</a></li>
+<li><a href="http://www.topcoder.com/longcontest/stats/?module=CoderRank">Marathon Match</a></li>
+<li><a href="http://www.topcoder.com/stat?c=top_conceptors">Conceptualization</a></li>
+<li><a href="http://www.topcoder.com/stat?c=top_specificators">Specification</a></li>
+<li><a href="http://www.topcoder.com/stat?c=top_architects">Architecture</a></li>
+<li><a href="http://www.topcoder.com/stat?c=top_designers">Design</a></li>
+<li><a href="http://www.topcoder.com/stat?c=top_developers">Development</a></li>
+<li><a href="http://www.topcoder.com/stat?c=top_assemblers">Assembly</a></li>
+<li><a href="http://www.topcoder.com/stat?c=top_testers">Test Suites</a></li>
+</ul></li>
+<li class="exp"><a href="javascript:void(0)" onclick="Javascript:toggleMenu(this.parentNode,'m_recordbook')">Record Book</a>
+<ul id="m_recordbook">
+<li><a href="http://www.topcoder.com/tc?module=Static&amp;d1=statistics&amp;d2=recordbook_home">Algorithm</a></li>
+<li><a href="http://www.topcoder.com/tc?module=Static&amp;d1=compstats&amp;d2=comp_recordbook_home">Component</a></li>
+<li><a href="http://www.topcoder.com/longcontest/?module=Static&amp;d1=stats&amp;d2=recordbook_home">Marathon Match</a></li>
+</ul></li>
+<li class="exp"><a href="javascript:void(0)" onclick="Javascript:toggleMenu(this.parentNode,'m_com')">Coder of the Month</a>
+<ul id="m_com">
+<li><a href="http://www.topcoder.com/tc?module=COMHistory&amp;achtid=5">Algorithm</a></li>
+<li><a href="http://www.topcoder.com/tc?module=COMHistory&amp;achtid=6">Design</a></li>
+<li><a href="http://www.topcoder.com/tc?module=COMHistory&amp;achtid=7">Development</a></li>
+</ul></li>
+</ul></li>
+</ul></li>
+<li class="exp"><a href="javascript:void(0)" onclick="Javascript:toggleMenu(this.parentNode,'m_edu_content')">Tutorials</a>
+<ul id="m_edu_content">
+<li><a href="http://www.topcoder.com/tc?module=Static&amp;d1=education&amp;d2=overview">Overview</a></li>
+<li><a href="http://www.topcoder.com/tc?module=Static&amp;d1=tutorials&amp;d2=alg_index">Algorithm Tutorials</a></li>
+<li><a href="http://www.topcoder.com/tc?module=Static&amp;d1=tutorials&amp;d2=comp_index">Component Tutorials</a></li>
+<li><a href="http://www.topcoder.com/tc?module=Static&amp;d1=tutorials&amp;d2=mm_index">Marathon Tutorials</a></li>
+<li><a href="http://apps.topcoder.com/wiki/dashboard.action">Wiki</a></li>
+</ul></li>
+<li><a href="http://forums.topcoder.com/">Forums</a></li>
+<li><a href="http://www.topcoder.com/tc?&amp;module=SurveyList">Surveys</a></li>
+<li><a href="http://www.topcoder.com/tc?module=MyHome">My TopCoder</a></li>
+<li><a href="http://www.topcoder.com/help">Help Center</a></li>
+<li class="exp"><a href="javascript:void(0)" onclick="Javascript:toggleMenu(this.parentNode,'m_about_tc')">About TopCoder</a>
+<ul id="m_about_tc">
+<li><a href="http://www.topcoder.com/aboutus/">Overview</a></li>
+<li><a href="http://www.topcoder.com/aboutus/">Why Join TopCoder?</a></li>
+<li><a href="http://www.topcoder.com/aboutus/careers/">Working at TopCoder</a></li>
+<li><a href="http://www.topcoder.com/aboutus/management/">Leadership</a></li>
+<li><a href="http://www.topcoder.com/aboutus/news/">Press Room</a></li>
+</ul></li></ul>
+
+    <div style="float: left; padding: 10px 0px 0px 17px;">
+        
+        <a href="http://www.topcoder.com/tc?module=LinkTracking&amp;link=http://apps.topcoder.com/wiki/x/L4TD&amp;refer=leftnav"><img src="SRM%20496%20-%20TopCoder%20Wiki_files/umlTool.png" alt="UML Tool"></a>
+
+        
+        
+        
+        
+    </div>
+    
+
+<div id="navbarSearch">
+<b>Member Search:</b>
+<form action="http://www.topcoder.com/tc" method="get" name="simpleSearchForm" class="noSpace" id="simpleSearchForm">
+   <input class="noSpace" name="module" value="SimpleSearch" type="hidden">
+   <input class="noSpace" name="ha" value="Handle:" size="12" maxlength="15" onfocus="javascript: if (document.simpleSearchForm.ha.value=='Handle:') document.simpleSearchForm.ha.value = '';" onblur="javascript:if (document.simpleSearchForm.ha.value == '')document.simpleSearchForm.ha.value = 'Handle:';" type="text">
+   <a class="gMetal" href="javascript:void%20document.simpleSearchForm.submit();">Go</a><br>
+   <a class="gMetal" href="http://www.topcoder.com/tc?module=ViewAdvanced">Advanced Search</a>
+</form>
+</div>
+</div>
+<div style="float: left; clear:left; padding: 0px 0px 23px 0px;"><img src="SRM%20496%20-%20TopCoder%20Wiki_files/leftnav_bottom.gif" alt=""></div>
+
+
+    <div style="float: left; clear:left; width: 170px; margin: 0px;" align="center">
+        <img src="SRM%20496%20-%20TopCoder%20Wiki_files/brackets.png" alt="" style="margin-bottom: 23px;">
+    </div>
+
+
+        </td>
+        <td class="bodyColumn" width="100%" align="left">
+
+
+    <script type="text/javascript">
+        function hideMessage(messageId)
+        {
+            var message = document.getElementById(messageId)
+            message.style.display = "none";
+            setCookie(messageId, true);
+        }
+    </script>
+
+        
+
+    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+
+                <tbody><tr class="topBar">
+            <td align="left">
+                <span class="topBarDiv">             
+    <script language="JavaScript">
+        function showBreadcrumbsEllipsis()
+        {
+            document.getElementById('breadcrumbsEllipsis').style.display = 'none';
+            document.getElementById('breadcrumbsExpansion').style.display = 'inline';
+        }
+    </script>
+                                                    <a href="http://apps.topcoder.com/wiki/dashboard.action">Dashboard</a>
+                                     &gt;                         <a href="http://apps.topcoder.com/wiki/display/tc">TopCoder Competitions</a>
+                                                    <span id="breadcrumbs">
+                    &gt;
+                    <span id="breadcrumbsEllipsis">
+                        <a href="#" onclick="showBreadcrumbsEllipsis();return false;" title="
+                    TopCoder Handle             &gt;         Other Competitions             &gt;         Algorithm Overview    ">...</a>
+                    </span>
+                    <span id="breadcrumbsExpansion" style="display:none;">
+                                <a href="http://apps.topcoder.com/wiki/display/tc/TopCoder+Handle">TopCoder Handle</a>
+                 &gt;                     <a href="http://apps.topcoder.com/wiki/display/tc/Other+Competitions">Other Competitions</a>
+                 &gt;                     <a href="http://apps.topcoder.com/wiki/display/tc/Algorithm+Overview">Algorithm Overview</a>
+        </span>
+                </span>
+                                                                        
+                                                     &gt;               
+          <a href="http://apps.topcoder.com/wiki/display/tc/Algorithm+Problem+Set+Analysis">Algorithm Problem Set Analysis</a>
+                                     &gt;                         <a href="http://apps.topcoder.com/wiki/display/tc/SRM+496">SRM 496</a>
+                
+     </span>
+            </td>
+
+            <td style="white-space:nowrap" valign="middle" align="right">
+                    <form id="quickSearch" method="POST" action="/wiki/dosearchsite.action" name="searchForm">
+        <input name="quickSearch" value="true" type="hidden">
+        
+        <input name="searchQuery.spaceKey" value="conf_global" type="hidden">
+        <input accesskey="s" name="searchQuery.queryString" size="25" type="text">
+        <input value="Search" type="submit">
+    </form>
+            </td>
+        </tr>
+        
+                <tr>
+            <td style="padding: 5px 0px;" colspan="2">
+            <table style="padding: 0px; margin: 0px; width: 100%;" border="0" cellpadding="0" cellspacing="0">
+                <tbody><tr>
+                                                                        
+                                                                        <td nowrap="nowrap" valign="bottom" width="1%" align="left">
+                        <span class="logoSpaceLink">            <a href="http://apps.topcoder.com/wiki/display/tc">TopCoder Competitions</a>    </span>
+                    </td>
+                    <td valign="top" width="98%" align="right">
+                                                    
+    <span class="smalltext" id="userNavBar">
+            </span>
+                            
+                                <a href="http://apps.topcoder.com/wiki/display/tc/SRM+496?decorator=printable" rel="nofollow"><img src="SRM%20496%20-%20TopCoder%20Wiki_files/print_16.gif" alt="View a printable version of the current page." title="View a printable version of the current page." border="0" height="16" hspace="1" vspace="1" width="16" align="absmiddle"></a>
+
+                                                        
+                                                                                &nbsp;
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" height="22" align="left">
+                        <span class="pagetitle" style="line-height: 1; margin: 0px; text-decoration: none">
+                                        SRM 496
+                            </span>
+                    </td>
+                </tr>
+            </tbody></table>
+            </td>
+        </tr>
+            </tbody></table>
+
+        <!--
+    Root decorator: all decisions about how a page is to be decorated via the
+                    inline decoration begins here.
+-->
+
+
+
+<!--
+    Switch based upon the context. However, for now, just delegate to a decorator
+    identified directly by the context.
+-->
+
+
+    
+    
+
+
+    
+    
+        
+    
+    
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+
+    <tbody><tr>
+        <td>
+            <div class="greynavbar">
+                <span style="float:right; padding: 6px 10px 4px 0px">
+						
+        
+        
+        
+                    <a href="http://apps.topcoder.com/wiki/spaces/browsespace.action?key=tc"><img src="SRM%20496%20-%20TopCoder%20Wiki_files/browse_space.gif" title="Browse Space" border="0" height="16" width="16" align="absmiddle">&nbsp;<span>Browse Space</span></a>
+		    				</span>
+
+				<ul id="foldertab" style="margin-bottom: 0px; padding-top: 10px;">
+											<li><a id="viewPageLink" href="http://apps.topcoder.com/wiki/display/tc/SRM+496" class="current" accesskey="v"><u>V</u>iew</a></li>
+											<li><a id="viewAttachmentsLink" href="http://apps.topcoder.com/wiki/pages/viewpageattachments.action?pageId=55705636" accesskey="a"><u>A</u>ttachments (0)</a></li>
+											<li><a id="viewPageInfoLink" href="http://apps.topcoder.com/wiki/pages/viewinfo.action?pageId=55705636" accesskey="i"><u>I</u>nfo</a></li>
+									</ul>
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td class="pagebody" valign="top">
+
+                        <table style="clear: both" border="0" cellpadding="0" cellspacing="0" width="100%">
+                <tbody><tr>
+                    <td class="pagecontent" valign="top" width="100%">
+
+                    
+                    
+                    
+                                                    
+                            <table style="margin-bottom: 5px" cellspacing="0" width="100%">
+                                <tbody><tr>
+                                    <td valign="top" align="left">
+                                        <span class="smalltext">
+                                                        Added by             mystic_tc
+, last edited by             sl2
+ on Feb 03, 2011
+                      &nbsp;(<a href="http://apps.topcoder.com/wiki/pages/diffpages.action?pageId=55705636&amp;originalId=55705652">view change</a>)
+                      <span id="show" class="inline-control-link fontSizeTiny"><a href="#" onclick="showComment(); return false;">show comment</a></span>
+        <span id="hide" class="inline-control-link fontSizeTiny" style="display:none;"><a href="#" onclick="hideComment(); return false;">hide comment</a></span>
+          <div id="versionComment" class="noteMacro" style="display:none; padding: 5px;">
+      <b>Comment:</b>
+      Minor fixes to reduce the width of the page<br>
+      <span class="smalltext"><a href="http://apps.topcoder.com/wiki/pages/viewpreviousversions.action?pageId=55705636">View page history</a></span>
+  </div>
+
+    <script>
+      var show = document.getElementById('show');
+      var hide = document.getElementById('hide');
+      var versionComment = document.getElementById('versionComment');
+
+      function showComment(){
+        show.style.display = 'none';
+        hide.style.display = 'inline';
+        versionComment.style.display = 'block';
+      }
+
+      function hideComment(){
+        show.style.display = 'inline';
+        hide.style.display = 'none';
+        versionComment.style.display = 'none';
+      }
+
+    </script>
+    
+                                            
+ 
+<style type="text/css">
+div.auto_complete {
+    width: 350px;
+    background: #fff;
+}
+
+div.auto_complete ul {
+    border: 1px solid #888;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    list-style-type: none;
+}
+
+div.auto_complete ul li {
+    margin: 0;
+    padding: 3px;
+}
+
+div.auto_complete ul li.selected {
+    background-color: #ffb;
+}
+
+div.auto_complete ul strong.highlight {
+    color: #800;
+    margin: 0;
+    padding: 0;
+}
+</style>
+
+
+<!-- Delay the loading of the external javascript file needed for labels (as it takes too long to load and visibly holds loading of the page body) -->
+<!-- To do this without javascript errors over undefined functions, we need to declare stubs here (that are overrided later by the proper implementations) -->
+<script language="JavaScript" type="text/javascript">
+    function doAddLabel(hideTextfieldAfterAddParam)
+    {
+        // stub
+    }
+
+    function onAddLabel()
+    {
+        // stub
+    }
+
+    function showLabelsInput()
+    {
+        // stub
+    }
+</script>
+
+<!-- This is a hack to work around an apparent SiteMesh bug - http://jira.opensymphony.com/browse/SIM-198 -->
+
+
+<span class="error"><span class="errorMessage" id="errorSpan"></span></span>
+<form name="addLabelForm" method="" action="" onsubmit="doAddLabel(false); return false;" style="margin: 0px; padding: 0px">
+    <div style="float: left">Labels:&nbsp;</div>
+    <div id="labelsInfo" style="float: left; width: 90%">
+        <span id="labelsList">
+                    (None)
+                </span>
+            </div>
+    <br clear="all"><!-- Do not remove this line-break. You will make Safari cry. -->
+    <div id="labelInputSpan" style="display: none; clear: both;">
+        <div style="border: 1px solid #cccccc; padding: 8px; align: center; background-color: #f0f0f0">
+
+        <div id="labelOperationErrorContainer" style="display: none"><span class="error"><span class="errorMessage" id="labelOperationErrorMessage"></span></span></div>
+
+        <table width="100%">
+            <tbody><tr>
+                <td>
+                    <div class="formtitle" style="padding-bottom: 3px; font-size: 13px;">Add Labels</div>
+                </td>
+                <td align="right"><div id="waitImageAndStatus" style="display: none; height: 16px;"><img alt="Wait Image" src="SRM%20496%20-%20TopCoder%20Wiki_files/wait.gif" border="0" align="absmiddle">&nbsp;<span id="labelOperationStatus" class="smalltext" style="vertical-align: middle"></span></div></td>
+            </tr>
+            <tr><td width="50%">
+                    Enter labels to add to this page:<br>
+        <input autocomplete="off" id="labelName" name="labelsString" class="monospaceInput" size="40" type="text">
+        <input onclick="doAddLabel(false); return false;" value="Add" type="submit"><input onclick="doAddLabel(true); return false;" value="Done" type="button">
+        <div style="display: none;" class="auto_complete" id="labelsAutocompleteList"></div>
+        <div class="smalltext">
+            <em>Tip:</em> Looking for a label? Just start typing.
+        </div>
+        </td>
+            <td valign="top" width="50%">
+                <div id="suggestedLabelsSpan"></div>
+            </td>
+        </tr></tbody></table>
+        </div>
+    </div>
+</form>
+    <script type="text/javascript">
+        // if there is javascript support, enable the [Edit] link that enables AJAX label adding/removing functionality
+        if (document.getElementById('editLabelsLink'))
+        {
+            document.getElementById('editLabelsLink').style.display = 'inline';
+        }
+    </script>
+                                        </span>
+                                    </td>
+                                    <td valign="top" align="right">
+                                                                            </td>
+                                </tr>
+                            </tbody></table>
+
+                                                        
+                            <div class="wiki-content">
+                               <!-- wiki content -->
+            
+<div class="linkBox">
+    <a href="http://apps.topcoder.com/tc?module=Static&amp;d1=match_editorials&amp;d2=archive">Archive</a><br>
+    <a href="http://apps.topcoder.com/stat?c=round_overview&amp;er=5&amp;rd=14425">Match Overview</a><br>
+    <a href="http://forums.topcoder.com/?module=ThreadList&amp;forumID=542476">Discuss this match</a>
+</div>
+<span class="bodySubtitle">Single Round Match 496</span><br>
+Tuesday, February 1st, 2011
+<br><br>
+
+<h2>Match summary</h2> 
+
+<p>The first SRM of February drew 1640 coders, and was somewhat easier 
+than the previous three matches - in particular, 19 people solved the 
+Div 1 Hard problem. (For comparison, in the three January 2011 matches, 
+only 1, 2 and 5 coders successfully solved the Div 1 Hard.)</p>
+
+<p>The problems in both divisions were nicely balanced, and none were 
+too implementation-heavy or required lots of optimization. Usually, the 
+hardest part was getting the right idea in the first place.</p>
+
+<p>In Division 1, fourteen contestants solved all three problems. The winner was <a href="http://www.topcoder.com/tc?module=MemberProfile&amp;tab=alg&amp;cr=19849563" class="coderTextRed">ACRush</a>, who solved all the problems in 32.5 minutes and, on top of that, scored 4 successful challenges. He was followed by <a href="http://www.topcoder.com/tc?module=MemberProfile&amp;tab=alg&amp;cr=22777893" class="coderTextRed">pieguy</a> (who solved everything in 36 minutes), and <a href="http://www.topcoder.com/tc?module=MemberProfile&amp;tab=alg&amp;cr=22221928" class="coderTextRed">UdH-WiNGeR</a> (who took 37.5 minutes). At this rate, each of them should be able to complete two SRMs in a single time slot...</p>
+
+<p>Division 2 was won by three coders from China, including two 
+newcomers to TopCoder. These three coders were the only ones to solve 
+all three problems, and they consequently won the top three places by a 
+significant margin. In first place was <a href="http://www.topcoder.com/tc?module=MemberProfile&amp;tab=alg&amp;cr=22919344" class="coderTextYellow">cypress_wx</a> (who, again, used less than half the SRM time to solve all three problems!), followed closely by <a href="http://www.topcoder.com/tc?module=MemberProfile&amp;tab=alg&amp;cr=22857402" class="coderTextYellow">Sevenkplus</a>. <a href="http://www.topcoder.com/tc?module=MemberProfile&amp;tab=alg&amp;cr=22906372" class="coderTextBlue">1010</a> rounded off the top three.</p>
+
+<h1> 
+The Problems 
+</h1>
+<p></p> 
+
+<font size="+2"> 
+<b><a href="http://apps.topcoder.com/stat?c=problem_statement&amp;pm=11293&amp;rd=14425" name="11293">AnagramFree</a></b> 
+</font> 
+<a href="http://apps.topcoder.com/tc?module=ProblemRatingQuestions&amp;pid=11293"><img src="SRM%20496%20-%20TopCoder%20Wiki_files/rate_it.gif" alt="rate it" border="0" hspace="10"></a> 
+<a href="http://forums.topcoder.com/?module=ThreadList&amp;forumID=542476" class="statText"><img src="SRM%20496%20-%20TopCoder%20Wiki_files/btn_discuss_it.gif" alt="discuss it" border="0"></a>
+<br> 
+Used as: Division Two - Level One: <blockquote><table cellspacing="2"> 
+  <tbody><tr> 
+    <td class="bodyText" style="background: #eee;"> 
+      <b>Value</b> 
+    </td> 
+    <td class="bodyText" style="background: #eee;"> 
+      250 
+    </td> 
+  </tr> 
+  <tr> 
+    <td class="bodyText" style="background: #eee;"> 
+      <b>Submission Rate</b> 
+    </td> 
+    <td class="bodyText" style="background: #eee;"> 
+      772 / 949 (81.35%) 
+    </td> 
+  </tr> 
+  <tr> 
+    <td class="bodyText" style="background: #eee;"> 
+      <b>Success Rate</b> 
+    </td> 
+    <td class="bodyText" style="background: #eee;"> 
+      692 / 772 (89.64%) 
+    </td> 
+  </tr> 
+  <tr> 
+    <td class="bodyText" style="background: #eee;"> 
+      <b>High Score</b> 
+    </td> 
+    <td class="bodyText" style="background: #eee;"> 
+      <b>scarllet</b> for 249.61 points (1 mins 7 secs) 
+    </td> 
+  </tr> 
+  <tr> 
+    <td class="bodyText" style="background: #eee;"> 
+      <b>Average Score</b> 
+    </td> 
+    <td class="bodyText" style="background: #eee;"> 
+      191.58 (for 692 correct submissions) 
+    </td> 
+  </tr> 
+</tbody></table></blockquote> 
+<p>We are given a set of strings <b>S</b>, and need to find the size of the largest subset <i>A</i> of <b>S</b> such that no two strings in <i>A</i> are anagrams of each other.</p>
+
+<p>First, let's figure out when two strings <i>a</i> and <i>b</i> are anagrams of each other. This happens precisely when the letters used to build <i>a</i> and <i>b</i>
+ are the same. So, for each string in S, we just need to store the set 
+of letters needed to build it, and count how many distinct such sets 
+there are.</p>
+
+<p>A simple way to do this is to sort the contents of each string <i>a</i> in <b>S</b>,
+ since two strings which are anagrams would then be sorted to the same 
+string. For example, the strings "abgska" and "kaagsb" would both be 
+transformed to "aabgks", and so would any other anagram of "abgska".</p>
+
+<p>All that is left is to find how many distinct sorted strings there 
+are. This can be done by, for example, putting all the sorted strings 
+into a set data structure (which is available in most programming 
+languages), and returning the size of the set.</p>
+
+<p>Here is an example of a short C++ implementation:</p>
+
+<pre>   set&lt;string&gt; A;                      // Declare a set A, which will contain the sorted strings
+   for(int i = 0; i &lt; S.size(); i++)
+   {
+      sort(S[i].begin(), S[i].end());  // Convert each string into its sorted form...
+      A.insert(S[i]);                  // ... and put it into A
+   }
+   return A.size();                    // Return the number of elements of A
+</pre>
+
+<p>Let's end with a little extension. Given a set of strings <b>S</b>, can you design an algorithm that calculates the minimum size of a subset of <b>S</b> that is <i>not</i> anagram-free (or returns -1 if such a set does not exist)?</p>
+
+<p><u>Alternative solutions and additional comments.</u></p> 
+
+<p>&lt;PLACE YOUR COMMENTS HERE&gt;</p> 
+
+<font size="+2"> 
+<b><a href="http://apps.topcoder.com/stat?c=problem_statement&amp;pm=11306&amp;rd=14425" name="11306">ColoredStrokes</a></b> 
+</font> 
+<a href="http://apps.topcoder.com/tc?module=ProblemRatingQuestions&amp;pid=11306"><img src="SRM%20496%20-%20TopCoder%20Wiki_files/rate_it.gif" alt="rate it" border="0" hspace="10"></a> 
+<a href="http://forums.topcoder.com/?module=ThreadList&amp;forumID=542476" class="statText"><img src="SRM%20496%20-%20TopCoder%20Wiki_files/btn_discuss_it.gif" alt="discuss it" border="0"></a>
+<br> 
+Used as: Division Two - Level Two: <blockquote><table cellspacing="2"> 
+  <tbody><tr> 
+    <td class="bodyText" style="background: #eee;"> 
+      <b>Value</b> 
+    </td> 
+    <td class="bodyText" style="background: #eee;"> 
+      500 
+    </td> 
+  </tr> 
+  <tr> 
+    <td class="bodyText" style="background: #eee;"> 
+      <b>Submission Rate</b> 
+    </td> 
+    <td class="bodyText" style="background: #eee;"> 
+      564 / 949 (59.43%) 
+    </td> 
+  </tr> 
+  <tr> 
+    <td class="bodyText" style="background: #eee;"> 
+      <b>Success Rate</b> 
+    </td> 
+    <td class="bodyText" style="background: #eee;"> 
+      390 / 564 (69.15%) 
+    </td> 
+  </tr> 
+  <tr> 
+    <td class="bodyText" style="background: #eee;"> 
+      <b>High Score</b> 
+    </td> 
+    <td class="bodyText" style="background: #eee;"> 
+      <b>Marchenko.Igor</b> for 492.24 points (3 mins 34 secs) 
+    </td> 
+  </tr> 
+  <tr> 
+    <td class="bodyText" style="background: #eee;"> 
+      <b>Average Score</b> 
+    </td> 
+    <td class="bodyText" style="background: #eee;"> 
+      336.60 (for 390 correct submissions) 
+    </td> 
+  </tr> 
+</tbody></table></blockquote> 
+
+Used as: Division One - Level One: <blockquote><table cellspacing="2"> 
+  <tbody><tr> 
+    <td class="bodyText" style="background: #eee;"> 
+      <b>Value</b> 
+    </td> 
+    <td class="bodyText" style="background: #eee;"> 
+      250 
+    </td> 
+  </tr> 
+  <tr> 
+    <td class="bodyText" style="background: #eee;"> 
+      <b>Submission Rate</b> 
+    </td> 
+    <td class="bodyText" style="background: #eee;"> 
+      683 / 691 (98.84%) 
+    </td> 
+  </tr> 
+  <tr> 
+    <td class="bodyText" style="background: #eee;"> 
+      <b>Success Rate</b> 
+    </td> 
+    <td class="bodyText" style="background: #eee;"> 
+      603 / 683 (88.29%) 
+    </td> 
+  </tr> 
+  <tr> 
+    <td class="bodyText" style="background: #eee;"> 
+      <b>High Score</b> 
+    </td> 
+    <td class="bodyText" style="background: #eee;"> 
+      <b>tourist</b> for 247.38 points (2 mins 56 secs) 
+    </td> 
+  </tr> 
+  <tr> 
+    <td class="bodyText" style="background: #eee;"> 
+      <b>Average Score</b> 
+    </td> 
+    <td class="bodyText" style="background: #eee;"> 
+      210.95 (for 603 correct submissions) 
+    </td> 
+  </tr> 
+</tbody></table></blockquote> 
+<p>In this problem, we need to find the minimum number of horizontal red
+ strokes and vertical blue strokes needed to obtain a given picture.</p>
+
+<p>Let's think about the red strokes first. Any square marked 'R' or 'G'
+ is part of a red stroke, and all other squares are not. So let's 
+consider a new bitmap in which the 'R' and 'G' cells are replaced by 'R'
+ cells, and all other cells are replaced by '.' cells. Then the problem 
+reduces to the following: given a bitmap consisting of '.' and 'R' only,
+ what is the minimum number of horizontal strokes needed to paint all 
+the 'R' cells and none of the '.' cells?</p>
+
+<p>It is clear that we can consider each row independently, since each 
+horizontal stroke only affects one row. So let's suppose we have a row 
+of the form</p>
+<pre>   ...R...R.RR.RRRR</pre> 
+<p>What is the fewest number of horizontal strokes needed to achieve 
+this coloring? Clearly, it is the number of maximally connected regions 
+consisting only of 'R' cells, since we can paint each such region with a
+ single stroke. In the example, there are four such regions, consisting 
+of 1, 1, 2 and 4 cells respectively. We can thus determine the answer by
+ traversing the row from left to right, keeping track of whether we are 
+currently in a '.' region or an 'R' region, and incrementing a counter 
+each time we enter a new 'R' region.</p>
+
+<p>Counting the blue strokes is no harder. We can do almost exactly the 
+same thing, except that the bitmap now needs to be divided into vertical
+ stripes and we need to look at blue cells instead of red ones. Then, we
+ can sum the contributions from both colors, and return the result as 
+our answer.</p>
+
+<p>Here is some code that illustrates this procedure:</p>
+
+<pre>   int ans = 0;
+   for(int i = 0; i &lt; picture.size(); i++)
+   {
+      int inStroke = 0;                                  // inStroke is 0 if we aren't in the middle of a stroke, and 1 otherwise
+      for(int j = 0; j &lt; picture[i].size(); j++)
+      if(picture[i][j] == '.' || picture[i][j] == 'B')   // If the cell is not red...
+         inStroke = 0;                                   // ... we are not in the middle of a stroke
+      else if(inStroke == 0)                             // Otherwise, if the cell is red and we weren't in a stroke before...
+         inStroke = 1, ans++;                            // ... we've just entered a stroke, and must increment ans
+   }
+	
+   for(int j = 0; j &lt; picture[0].size())                 // Do exactly the same thing for vertical stripes
+   {
+      int inStroke = 0;
+      for(int i = 0; i &lt; picture.size(); i++)
+      if(picture[i][j] == '.' || picture[i][j] == 'R')
+         inStroke = 0;
+      else if(inStroke == 0)
+         inStroke = 1, ans++;
+   }
+   return ans;
+</pre>
+
+<p>Finally, a quick question for the reader. Notice that the problem 
+statement contains the phrase "Manao never draws two horizontal or two 
+vertical strokes that overlap". How would you solve the problem if this 
+restriction was removed? </p>
+
+<p><u>Alternative solutions and additional comments.</u></p> 
+
+<p>&lt;PLACE YOUR COMMENTS HERE&gt;</p>
+
+<font size="+2"> 
+<b><a href="http://apps.topcoder.com/stat?c=problem_statement&amp;pm=11296&amp;rd=14425" name="11296">PalindromfulString</a></b> 
+</font> 
+<a href="http://apps.topcoder.com/tc?module=ProblemRatingQuestions&amp;pid=11296"><img src="SRM%20496%20-%20TopCoder%20Wiki_files/rate_it.gif" alt="rate it" border="0" hspace="10"></a> 
+<a href="http://forums.topcoder.com/?module=ThreadList&amp;forumID=542476" class="statText"><img src="SRM%20496%20-%20TopCoder%20Wiki_files/btn_discuss_it.gif" alt="discuss it" border="0"></a>
+<br> 
+Used as: Division Two - Level Three: <blockquote><table cellspacing="2"> 
+  <tbody><tr> 
+    <td class="bodyText" style="background: #eee;"> 
+      <b>Value</b> 
+    </td> 
+    <td class="bodyText" style="background: #eee;"> 
+      1000 
+    </td> 
+  </tr> 
+  <tr> 
+    <td class="bodyText" style="background: #eee;"> 
+      <b>Submission Rate</b> 
+    </td> 
+    <td class="bodyText" style="background: #eee;"> 
+      14 / 949 (1.48%) 
+    </td> 
+  </tr> 
+  <tr> 
+    <td class="bodyText" style="background: #eee;"> 
+      <b>Success Rate</b> 
+    </td> 
+    <td class="bodyText" style="background: #eee;"> 
+      3 / 14 (21.43%) 
+    </td> 
+  </tr> 
+  <tr> 
+    <td class="bodyText" style="background: #eee;"> 
+      <b>High Score</b> 
+    </td> 
+    <td class="bodyText" style="background: #eee;"> 
+      <b>cypress_wx</b> for 640.13 points (18 mins 13 secs) 
+    </td> 
+  </tr> 
+  <tr> 
+    <td class="bodyText" style="background: #eee;"> 
+      <b>Average Score</b> 
+    </td> 
+    <td class="bodyText" style="background: #eee;"> 
+      563.81 (for 3 correct submissions) 
+    </td> 
+  </tr> 
+</tbody></table></blockquote> 
+<p>We need to count the number of strings of length <b>N</b> (where <b>N</b> is at most 11) which have at least <b>K</b> substrings of length <b>M</b> that are palindromes.</p>
+
+<p>A first approach might be to try and enumerate all possible strings. But this takes too long - there can be up to 26<sup>11</sup> = 3 × 10<sup>15</sup> such strings.</p>
+
+<p>However, notice that for the purposes of this problem, strings like 
+ABBAB, BAABA and CAACA are equivalent. If one of them contains exactly <i>p</i> palindromes of length <b>M</b>,
+ the others do too. This is because the condition that a string is a 
+palindrome is a condition that certain pairs of characters of the string
+ are equal to each other. We do not care what these characters are! 
+Therefore the condition that a string contains exactly <i>p</i> palindromes of length <b>M</b>
+ is also a condition that certain pairs of characters of the string are 
+equal or not equal to each other. The actual characters used are not 
+important.</p>
+
+<p>So let's try and enumerate all possible 'letter patterns' of length <b>N</b>, which seems much more reasonable - there can't be that many. We can find the letter pattern of a string as follows: let <i>c</i><sub>0</sub>, <i>c</i><sub>1</sub>, <i>c</i><sub>2</sub>,
+ ... be the distinct characters in the string, ordered by the first time
+ they are encountered when we read the string from left to right. Then 
+replace all <i>c</i><sub>0</sub>'s by 'a's, all <i>c</i><sub>1</sub>'s 
+by 'b's, and so on. So, for example, if we had the string "AJNFHALJJFJ",
+ the characters we encounter would be A, J, N, F, H, and L. We replace 
+these by a, b, c, d, e and f respectively, to get the letter pattern 
+"abcdeafbbdb". Notice that every string of length <b>N</b> can be converted to a letter pattern, and that this conversion is unique.</p>
+
+<p>A recursive algorithm can then be used to generate all possible 
+letter patterns and store them. For example, we can call the function 
+below with parameters <b>N</b>, "" (the empty string) and 'a':</p>
+
+<pre>   // In this code, we assume that the variables 'M', 'K' and 'ans' are defined globally.
+
+   void construct(int rem, string soFar, char nextChar)  // Suppose you've constructed a pattern 'soFar', and used characters 
+   {                                                     //   'a' to nextChar-1, and you have 'rem' more characters to add.
+      if(rem == 0) 
+      {                                                  // If 'rem' = 0, we've built a letter pattern! 
+         int tot = 0;                                    // We now need to check whether it is palindromful.
+         for(int t = 0; t &lt; soFar.size()-M+1; t++)
+         {
+            int first = t;
+            int last = t+M-1;
+
+            int bad = 0;                                 // This tells us whether a particular substring is a palindrome.
+            while(last &gt;= t)
+            {
+               if(soFar[first] != soFar[last])
+               {
+                  bad = 1;
+                  break;
+               }
+               first++, last--;
+            }
+            if(bad == 0) tot++;
+         }
+				
+         if(tot &gt;= K)                                    // If tot &gt;= K, the pattern is palindromful.
+            ans += calcAns(nextChar);                    // calcAns() will determine the number of patterns that map to this 
+         return;                                         //   letter pattern (see below).
+      }
+
+      construct(rem-1, soFar+nextChar, nextChar+1);      // Try adding character 'nextChar' to the end of the pattern
+      for(char c = 'a'; c &lt; nextChar; c++)               // Try adding each character used so far to the end of the pattern
+	 construct(rem-1,soFar+c,nextChar);
+      return;
+   }
+</pre>
+
+<p>It turns out that, in the worst case (<b>N</b> = 11) there are only 
+678570 letter patterns, so our assumption that there aren't too many 
+letter patterns is a good one. (We can check this locally quite easily 
+by adding a counter to the above code. An alternative way of obtaining 
+this number is hinted at in the last paragraph, below.)</p>
+
+<p>Now, given a letter pattern, we can easily check whether the words it represents contain at least <b>K</b> substrings of length <b>M</b>
+ that are palindromes, since this is true for those words if and only if
+ it is true for the letter pattern itself. So, given a valid letter 
+pattern, we just need to figure out how many strings it corresponds to. 
+How can we do this?</p>
+
+<p>Let's look at an example. Consider the letter pattern "abcdeafbbdb". 
+The 'a' could represent any of 26 characters. Once the character it 
+represents has been determined, the 'b' could represent any of the 
+remaining 25 characters, and so on. So, in this case, there are 26 × 25 ×
+ 24 × 23 × 22 × 21 words that map to this letter pattern. In general, if
+ a letter pattern contains <i>k</i> different characters, it represents 26 × 25 × ... × (26-<i>k</i>+1) words. This calculation is illustrated in the code snippet below: </p>
+
+<pre>   long long calcAns(char nextChar)
+   {
+      long long summand = 1;
+      long long base = 26;
+      for(int p = 0; p &lt; nextChar-'a'; p++)
+         summand *= base, base--;	
+      return summand;
+   }
+</pre>
+
+<p>Finally, we just need to add the contributions from all possible letter patterns, and return the answer.</p>
+
+<p>If you would like to brush up on your dynamic programming skills, here's a related exercise that you can try. Let <i>B</i><sub><i>n</i></sub> be the number of letter patterns of length <i>n</i>, and suppose you've already calculated <i>B</i><sub>0</sub>, ..., <i>B</i><sub>n-1</sub>. Can you find a recurrence relation that can be used to calculate <i>B</i><sub>n</sub>? (If you're stuck, look up 'Bell numbers' on Google.)</p>
+
+<p><u>Alternative solutions and additional comments.</u></p> 
+
+<p>&lt;PLACE YOUR COMMENTS HERE&gt;</p>
+
+<font size="+2"> 
+<b><a href="http://apps.topcoder.com/stat?c=problem_statement&amp;pm=11318&amp;rd=14425" name="11318">OneDimensionalBalls</a></b> 
+</font> 
+<a href="http://apps.topcoder.com/tc?module=ProblemRatingQuestions&amp;pid=11318"><img src="SRM%20496%20-%20TopCoder%20Wiki_files/rate_it.gif" alt="rate it" border="0" hspace="10"></a> 
+<a href="http://forums.topcoder.com/?module=ThreadList&amp;forumID=542476" class="statText"><img src="SRM%20496%20-%20TopCoder%20Wiki_files/btn_discuss_it.gif" alt="discuss it" border="0"></a>
+<br> 
+Used as: Division One - Level Two: <blockquote><table cellspacing="2"> 
+  <tbody><tr> 
+    <td class="bodyText" style="background: #eee;"> 
+      <b>Value</b> 
+    </td> 
+    <td class="bodyText" style="background: #eee;"> 
+      500 
+    </td> 
+  </tr> 
+  <tr> 
+    <td class="bodyText" style="background: #eee;"> 
+      <b>Submission Rate</b> 
+    </td> 
+    <td class="bodyText" style="background: #eee;"> 
+      327 / 691 (47.32%) 
+    </td> 
+  </tr> 
+  <tr> 
+    <td class="bodyText" style="background: #eee;"> 
+      <b>Success Rate</b> 
+    </td> 
+    <td class="bodyText" style="background: #eee;"> 
+      186 / 327 (56.88%) 
+    </td> 
+  </tr> 
+  <tr> 
+    <td class="bodyText" style="background: #eee;"> 
+      <b>High Score</b> 
+    </td> 
+    <td class="bodyText" style="background: #eee;"> 
+      <b>ACRush</b> for 428.90 points (11 mins 59 secs) 
+    </td> 
+  </tr> 
+  <tr> 
+    <td class="bodyText" style="background: #eee;"> 
+      <b>Average Score</b> 
+    </td> 
+    <td class="bodyText" style="background: #eee;"> 
+      254.26 (for 186 correct submissions) 
+    </td> 
+  </tr> 
+</tbody></table></blockquote> 
+<p>
+We are given two pictures of balls, and need to match balls in the first
+ picture to those in the second. One very useful piece of information is
+ that all the balls move at the same speed for the same amount of time. 
+So, between the two pictures, each ball moves the same distance <i>D</i>, either left or right.</p>
+
+<p>How do we find the possible values for <i>D</i>? We know that every 
+ball in the first picture can be found somewhere in the second picture, 
+so let's try matching the leftmost ball in the first picture (call this 
+ball <i>b</i>) to each of the balls in the second picture in turn. 
+Taking the absolute value of the difference between their positions 
+gives a possible value of <i>D</i>.</p>
+
+<p>(There is one small thing to be careful about here. Since the 
+velocities are all positive, and a positive amount of time elapses 
+between the taking of the two pictures, we should not consider cases in 
+which <i>D</i> = 0.)</p>
+
+<p>So now let's assume we've found the ball in the second picture that is matched to <i>b</i> (which, conveniently, also fixes <i>D</i>). We can get rid of <i>b</i>
+ and its partner, and then construct a bipartite graph, joining two 
+balls in different pictures by an edge if and only if they are separated
+ by a distance <i>D</i>. We then need to count the number of maximum matchings in this graph, and then we're done. Unfortunately, this is a <a href="http://en.wikipedia.org/wiki/Sharp-P-complete">#P-complete</a> problem, and if we can solve it in polynomial time, we would have proved that <a href="http://en.wikipedia.org/wiki/P_versus_NP_problem">P = NP</a>. That would make this problem quite a bit trickier than the usual Division 1 Medium.</p>
+
+<p>But notice that the graph we obtain in this way is actually rather 
+special, since each node in the graph has at most two neighbors! (The 
+two possible edges ending at a node <i>a</i> correspond to matching <i>a</i> with a ball in the other picture that is located a distance <i>D</i> to the left, or a distance <i>D</i> to the right, of <i>a</i>.) In fact, this just means that the graph consists of a set of disjoint <i>paths</i>, whose nodes alternate between the two pictures.</p>
+
+<p>(Actually, in general, a graph whose nodes have degree at most 2 
+would consist of paths and cycles. However, it's impossible for cycles 
+to occur in our graph. Can you see why?)</p>
+
+<p>For each path, we then need to figure out the number of matchings 
+that include all balls from the first picture. Depending on where the 
+paths start and end, there are four cases:</p>
+
+<p>(a) The path starts and ends with balls in the first picture. In this
+ case, it is impossible to find a matching containing all the balls in 
+the first picture, since we don't have enough balls from the second 
+picture to use.</p>
+
+<p>(b) The path starts with a ball in the first picture, and ends with a
+ ball in the second picture. Then there is exactly one possible 
+matching.</p>
+
+<p>(c) The path starts with a ball in the second picture, and ends with a
+ ball in the first picture. This is similar to case (b), and there is 
+exactly one possible matching.</p>
+
+<p>(d) The path starts with a ball in the second picture, and ends with a ball in the second picture. So there are (say) <i>k</i> balls in the first picture, and <i>k</i> + 1 balls in the second. This allows <i>k</i>
+ + 1 possible matchings. (In each matching, all balls in the first 
+picture are connected to their left neighbour up to a certain point, and
+ thereafter all remaining balls are connected to their right neighbour.)</p>
+
+<p>Finally, since each component is independent of the others, we can 
+get the total number of matchings by multiplying the answers found for 
+each component. We can repeat this for each matching of <i>b</i> to a ball in the second photograph, and then sum the results to get our final answer.</p>
+
+<p>Here is some code that illustrates these ideas. (For convenience, let
+ fP denote the firstPicture array, and sP denote the secondPicture 
+array.)</p>
+
+<pre>   sort(fP.begin(), fP.end());
+
+   long long ans = 0;
+
+   for(int j = 0; j &lt; sP.size(); j++)
+   if(fP[0] != sP[j])
+   {
+      long long D = abs(sP[j]-fP[0]);                     // Match fP[0] with sP[j]
+		
+      set&lt;long long&gt; S(sP.begin(),sP.end());              // S is a set storing the balls from sP we haven't used yet
+      S.erase(sP[j]);                                     // Remove the ball at sP[j]; it's already been matched		
+
+      vector&lt;long long&gt; F(fP.begin()+1, fP.end());        // Remove the ball at fP[0]; it's already been matched
+		
+      long long a = 1;                                    // This stores the partial answer for this choice of fP[0]'s partner
+
+      while(F.size() &gt; 0)
+      {
+         long long curr = F[0];                           // Find the component of the leftmost remaining ball ('curr') from
+         F.erase(F.begin());                              //   the first picture
+			
+         int up = 1;                                      // 'up' = number of balls from fP that are used in this component
+         int down = 0;                                    // 'down' = number of balls from sP that are used in this component
+         if(S.find(curr-D) != S.end())                    // Check if there is a ball in S that is D to the left of 'curr'
+            S.erase(curr-D), down++;
+
+         while(S.find(curr+D) != S.end())                 // Try and find a ball in S that is D to the right of 'curr'
+         {
+            S.erase(curr+D), curr += D*2, down++;       
+            int ok = 0;
+            for(int p = 0; p &lt; F.size(); p++)             // Look for the new 'curr' in F (which should be 2*D 
+            if(F[p] == curr)                              //   to the right of the old one)
+            {
+               ok = 1;
+               F.erase(F.begin() + p);
+               up++;
+               break;
+            }
+            if(ok == 0) break;                            // If there is no such new 'curr', the component ends here
+         }
+	
+         if(up+1 == down)                                 // This is case (d) above
+            a *= down;
+         else if(up == down+1)                            // This is case (a) above
+         {
+            a = 0;
+            break;
+         }
+      }
+      ans += a;                                           // Otherwise we are in case (b) or (c)
+   }
+   return ans;
+</pre>
+
+<p><u>Alternative solutions and additional comments.</u></p> 
+
+<p>&lt;PLACE YOUR COMMENTS HERE&gt;</p>
+
+<font size="+2"> 
+<b><a href="http://apps.topcoder.com/stat?c=problem_statement&amp;pm=11147&amp;rd=14425" name="11147">YetAnotherHamiltonianPath</a></b> 
+</font> 
+<a href="http://apps.topcoder.com/tc?module=ProblemRatingQuestions&amp;pid=11147"><img src="SRM%20496%20-%20TopCoder%20Wiki_files/rate_it.gif" alt="rate it" border="0" hspace="10"></a> 
+<a href="http://forums.topcoder.com/?module=ThreadList&amp;forumID=542476" class="statText"><img src="SRM%20496%20-%20TopCoder%20Wiki_files/btn_discuss_it.gif" alt="discuss it" border="0"></a>
+<br> 
+Used as: Division One - Level Three: <blockquote><table cellspacing="2"> 
+  <tbody><tr> 
+    <td class="bodyText" style="background: #eee;"> 
+      <b>Value</b> 
+    </td> 
+    <td class="bodyText" style="background: #eee;"> 
+      950 
+    </td> 
+  </tr> 
+  <tr> 
+    <td class="bodyText" style="background: #eee;"> 
+      <b>Submission Rate</b> 
+    </td> 
+    <td class="bodyText" style="background: #eee;"> 
+      97 / 691 (14.04%) 
+    </td> 
+  </tr> 
+  <tr> 
+    <td class="bodyText" style="background: #eee;"> 
+      <b>Success Rate</b> 
+    </td> 
+    <td class="bodyText" style="background: #eee;"> 
+      19 / 97 (19.59%) 
+    </td> 
+  </tr> 
+  <tr> 
+    <td class="bodyText" style="background: #eee;"> 
+      <b>High Score</b> 
+    </td> 
+    <td class="bodyText" style="background: #eee;"> 
+      <b>pieguy</b> for 791.76 points (13 mins 15 secs) 
+    </td> 
+  </tr> 
+  <tr> 
+    <td class="bodyText" style="background: #eee;"> 
+      <b>Average Score</b> 
+    </td> 
+    <td class="bodyText" style="background: #eee;"> 
+      540.49 (for 19 correct submissions) 
+    </td> 
+  </tr> 
+</tbody></table></blockquote> 
+
+<p>In this problem, we are given a weighted graph and need to find the 
+cheapest Hamiltonian path in it. The start and end nodes of the desired 
+path are given. In general, this problem is <a href="http://en.wikipedia.org/wiki/NP-hard">NP-hard</a>, so there is probably something about the graph and its weights that allows us to compute the answer quickly.</p>
+
+<p>Let's try and make the problem simpler. A Hamiltonian path in this 
+problem corresponds to a permutation of the nodes, starting at node 0 
+and ending at node 1. The cost of the path is the sum of <i>L</i><sub><i>i</i></sub><sup>2</sup> + <i>L</i><sub><i>i</i>+1</sub><sup>2</sup> - LCP(<i>L</i><sub><i>i</i></sub>, <i>L</i><sub><i>i+1</i></sub>)<sup>2</sup> for all consecutive pairs (<i>i</i>, <i>i</i>+1) in this list, where <i>L</i><sub><i>i</i></sub> is the length of the label of node <i>i</i> and LCP(<i>i</i>, <i>j</i>) is the length of the longest common prefix of <i>i</i> and <i>j</i>.
+ We can see that, regardless of the ordering of the nodes, the first two
+ terms in each summand count each label twice except for the first and 
+last labels. So we can define a base cost as follows:</p>
+
+<pre>  baseCost = L<sub>0</sub><sup>2</sup> + L<sub>1</sub><sup>2</sup> + 2(L<sub>2</sub><sup>2</sup> + L<sub>3</sub><sup>2</sup> + ...)</pre>
+ 
+<p>and then the problem reduces to finding the permutation that maximizes the sum of the LCP(<i>L</i><sub><i>i</i></sub>, <i>L</i><sub><i>i+1</i></sub>)<sup>2</sup> for all consecutive pairs (<i>i</i>, <i>i</i>+1).</p>
+
+<p>It seems easier to come up with a correct solution for the next part 
+of the problem than to find a proof that it works! In this editorial I 
+will describe a very elegant <a href="http://www.topcoder.com/stat?c=problem_solution&amp;rm=307133&amp;rd=14425&amp;pm=11147&amp;cr=22221928">solution</a> by <a href="http://www.topcoder.com/tc?module=MemberProfile&amp;tab=alg&amp;cr=22221928" class="coderTextRed">UdH-WiNGeR</a>, and its proof; later on I will outline other solutions that also work.
+
+</p><p>We start by modifying the problem slightly. Instead of finding 
+the most expensive Hamiltonian path from node 0 to node 1, let's find 
+the most expensive Hamiltonian cycle such that node 0 and node 1 are 
+adjacent in the cycle. Given the cost of this cycle, we can then 
+subtract LCP(<i>L</i><sub>0</sub>, <i>L</i><sub>1</sub>)<sup>2</sup> to get the cost of the most expensive Hamiltonian path from node 0 to node 1.</p>
+
+<p>In fact, let's consider the more general problem of finding the most 
+expensive Hamiltonian cycle in the graph (without any restriction on 
+nodes 0 and 1). We'll then show that this cycle can be converted into 
+one with nodes 0 and 1 adjacent, without changing its cost.</p>
+
+<p>We'll try and use the special structure of the weights to construct a
+ solution. First, observe that if we fix a non-negative integer <i>N</i>, then we can merge all nodes whose labels have a common prefix of length at least <i>N</i> into a single set. For example, if <i>N</i>
+ = 2 and the labels are "aaba", abaa", "abac" and "ab", we can form two 
+sets {"aaba"} and {"abaa", "abac", "ab"}. Now note that any edge between
+ nodes in the same set costs at least <i>N</i><sup>2</sup>, and any edge between nodes in different sets costs at most (<i>N</i>-1)<sup>2</sup>. So we'd like to use more 'within-set' edges than 'between-set' edges.</p>
+
+<p>Suppose that, for a given <i>N</i>, we have <i>T</i><sub><i>N</i></sub> &gt; 1 sets. Using the above observation, we can see that, in any maximum-cost Hamiltonian cycle, we require exactly <i>T</i><sub><i>N</i></sub>
+ edges to join nodes in different sets together, and the rest of the 
+edges to join different nodes in the same set. (We need at least <i>T</i><sub><i>N</i></sub> 'between-set' edges in order to visit all the sets. We should not exceed <i>T</i><sub><i>N</i></sub> because the cost of using a 'between-sets' edge is strictly smaller than the cost of a 'within-set' edge.)</p>
+
+<p>Hence, ideally, we'd like to construct a cyclic ordering of the labels such that, for any <i>N</i>, all labels with a common prefix of length at least <i>N</i> occur consecutively in the cycle. This will guarantee that, for each <i>N</i>, exactly <i>T<sub>N</sub></i> 'between-set' edges are used.</p>
+
+<p>One way to do this is to sort the labels lexicographically. For such an ordering, it is easy to check that, given any prefix <i>P</i>,
+ all labels with that prefix form a consecutive block of elements in the
+ cycle. The cost of this cycle is therefore the cost of the maximum 
+Hamiltonian cycle.</p>
+
+<p>But wait! In this cycle, nodes 0 and 1 may not be adjacent. Can we fix this?</p>
+
+<p>Fortunately, we can. To see this, think about the prefix tree (or <a href="http://en.wikipedia.org/wiki/Trie">trie</a>)
+ constructed using the labels of the nodes. The trie can be constructed 
+so that the labels of its leaves, taken from left to right, correspond 
+to our lexicographical ordering. This is because all strings with common
+ prefixes occur consecutively in our list. (A technical note: in order 
+to ensure that every label corresponds to a leaf node, we should add a 
+special delimiter character to the end of each label, and this delimiter
+ should be different for each label. This is to ensure that no label is a
+ prefix of another label, since in that case the former label would 
+correspond to an internal node of the trie. Note that this doesn't 
+change the LCPs, and if the delimiter characters are chosen to be 
+smaller than the letters used in the labels ('a'-'z'), the 
+lexicographical ordering won't be affected either, so this small 
+modification doesn't change our overall algorithm.)</p>
+
+<p>The Hamiltonian cycle is then represented by the labels of the 
+leaves, read in order from left to right. Now notice that, in the trie, 
+we can permute the direct children of each node arbitrarily, and this 
+does not change the cost of the cycle along the leaves. Using a sequence
+ of such permutations, we can make the start and end leaves neighbors. 
+This gives a Hamiltonian cycle in which nodes 0 and 1 are adjacent, and 
+leaves the cost of the cycle unchanged.</p>
+
+<p>And that's it! In summary, we sort all the labels, calculate the cost of the Hamiltonian cycle thus formed, and subtract LCP(<i>L</i><sub>0</sub>, <i>L</i><sub>1</sub>)<sup>2</sup>.
+ Finally, subtract this cost from the base cost, and return the answer. 
+Easy to code, but tricky to prove. (In the following code snippet, we 
+assume that the function LCP() is already implemented.)</p>
+
+<pre>   int baseCost = 0;
+   for(int i = 0; i &lt; label.size(); i++)
+   if(i &lt; 2)
+      baseCost += label[i].size() * label[i].size();
+   else
+      baseCost += 2 * label[i].size() * label[i].size();
+	
+   string start = label[0];
+   string end = label[1];
+
+   sort(label.begin(), label.end());
+   label.push_back(label[0]);
+
+   int maxCost = 0;                                                     // This is the maximum cost of a Hamiltonian cycle
+   for(int i = 0; i &lt; label.size()-1; i++)
+      maxCost += LCP(label[i], label[i+1]) * LCP(label[i], label[i+1]);
+   maxCost -= LCP(start, end) * LCP(start, end);                        // Remove the edge joining 'start' and 'end'
+
+   return baseCost-maxCost;
+</pre>
+
+<p>Here are some other solutions for the second half of this problem. 
+You might like to try and find proofs for them, perhaps using some of 
+the observations made above.</p>
+
+<p>1. Greedily grow the path from both ends. That is, at each step, find the label <i>s</i> among those unused so far that maximizes max(LCP(<i>s</i>, start), LCP(<i>s</i>, end)). (Initially, 'start' = <i>L</i><sub>0</sub> and 'end' = <i>L</i><sub>1</sub>.) If the maximum is found among LCP(<i>s</i>, start), then replace start with <i>s</i>, add the cost of (<i>s</i>, start) to a running total, and remove <i>s</i> from the remaining labels. Similarly for LCP(<i>s</i>, end). Repeat until there are no labels left.</p>
+
+<p>2. Begin by sorting all edges in order of decreasing weight. Then 
+iterate along this sorted list and add an edge to the path if it doesn't
+ invalidate it (e.g., create a cycle, or increase the degree of a vertex
+ to 3, etc.).</p>
+
+<p>(As an aside, note the resemblance of these two algorithms to the <a href="http://en.wikipedia.org/wiki/Minimum_spanning_tree">MST</a> algorithms of <a href="http://en.wikipedia.org/wiki/Prim%27s_algorithm">Prim</a> and <a href="http://en.wikipedia.org/wiki/Kruskal%27s_algorithm">Kruskal</a>.)</p>
+
+<p>3. Start with <i>N</i> = 0 (using the notation above), so that all nodes are in the same set. Then increment <i>N</i>. This may break some sets into smaller ones. Each time this occurs, we must join the smaller sets with edges of length (<i>N</i>-1)<sup>2</sup> and add the weights of these new edges to the overall cost. (We may have to use <i>T</i><sub><i>N</i></sub> edges or <i>T</i><sub><i>N</i></sub> - 1 edges, depending on whether nodes 0 and 1 are in the same set or not.) Continue incrementing <i>N</i>
+ until all the sets have been broken into sets of one node each; then we
+ are done, since this means we've used label.size()-1 edges. Note that, 
+for this approach, it is not necessary to construct the path explicitly;
+ maintaining an overall running cost is sufficient.</p>
+
+<p><u>Alternative solutions and additional comments.</u></p> 
+
+<p>&lt;PLACE YOUR COMMENTS HERE&gt;</p>
+
+<p>
+
+By&nbsp;<a href="http://apps.topcoder.com/tc?module=MemberProfile&amp;cr=22647221" class="coderTextRed">sl2</a><br> 
+
+<em>TopCoder Member</em> 
+
+</p>
+                            </div>
+
+                            <!--
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/">
+<rdf:Description
+    rdf:about="http://apps.topcoder.com/wiki/display/tc/SRM+496"
+    dc:identifier="http://apps.topcoder.com/wiki/display/tc/SRM+496"
+    dc:title="SRM 496"
+    trackback:ping="http://apps.topcoder.com/wiki/rpc/trackback/55705636"/>
+</rdf:RDF>
+-->
+
+                                
+                                <!--
+    Root decorator: all decisions about how a page is to be decorated via the
+                    inline decoration begins here.
+-->
+
+
+
+<!--
+    Switch based upon the context. However, for now, just delegate to a decorator
+    identified directly by the context.
+-->
+
+
+    
+    
+
+<div class="wiki-content" style="margin-right:10px;">
+    <p style="clear: both"><!-- comments should always display underneath the content. we should have a 'clear:both' here just in case there are floats or aligned images in the content -->
+
+    
+    
+    
+    
+                                    </p></div>
+
+
+
+                                                            </td>
+
+
+                                                    </tr>
+        </tbody></table>
+
+        
+        </td>
+    </tr>
+</tbody></table>
+
+    
+
+        </td>
+    </tr>
+</tbody>
+</table>
+
+
+<!-- delay the loading of large javascript files to the end so that they don't interfere with the loading of page content -->
+<span style="display: none">
+    <script type="text/javascript" language="JavaScript">var domainName = 'http://apps.topcoder.com/wiki'; var entityId = '55705636'; var spaceKey = 'tc'</script>
+    <script type="text/javascript" language="JavaScript" src="SRM%20496%20-%20TopCoder%20Wiki_files/labels-javascript"></script>
+    <script>new Ajax.Autocompleter('labelName', 'labelsAutocompleteList', '55705636', { tokens: new Array(',', ' '), dwrFunction: GenerateAutocompleteLabelsListForEntity.autocompleteLabels});</script>
+</span>
+
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+    <tr>
+        <td class="footer" width="100%">
+            <a href="http://www.topcoder.com/" class="footerLinks">Home</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+            <a href="http://www.topcoder.com/tc?module=Static&amp;d1=about&amp;d2=index" class="footerLinks">About TopCoder</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+            <a href="http://www.topcoder.com/tc?module=Static&amp;d1=pressroom&amp;d2=index" class="footerLinks">Press Room</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+            <a href="http://www.topcoder.com/tc?module=Static&amp;d1=about&amp;d2=contactus" class="footerLinks">Contact Us</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+            <a href="http://www.topcoder.com/tc?module=Static&amp;d1=about&amp;d2=privacy" class="footerLinks">Privacy</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+            <a href="http://www.topcoder.com/tc?module=Static&amp;d1=about&amp;d2=terms" class="footerLinks">Terms</a>
+            <br>
+            <a href="http://www.topcoder.com/tc" class="footerLinks">Developer Center</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+            <a href="http://www.topcoder.com/corp/?module=Static&amp;d1=corp&amp;d2=index" class="footerLinks">Corporate Services</a>
+        </td>
+    </tr>
+    <tr><td class="copyright" width="100%">Copyright TopCoder, Inc. 2001-<script type="text/javascript">d=new Date();document.write(d.getFullYear());</script>2013</td></tr>
+</tbody>
+</table>
+
+
+
+</body></html>

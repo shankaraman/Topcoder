@@ -1,0 +1,33 @@
+#include<iostream>
+#include<vector>
+#include<algorithm>
+using namespace std;
+class TriangleType
+{
+    public:
+        string type(int a,int b,int c)
+        {
+            vector <int> triangle;
+            triangle.push_back(a);
+            triangle.push_back(b);
+            triangle.push_back(c);
+            sort(triangle.begin(),triangle.end());
+            a=triangle[0];b=triangle[1];c=triangle[2];
+            if ( (a+b) <= c)
+            {
+                return "IMPOSSIBLE";
+            }
+            else if ( (a*a) + (b*b) == c*c)
+            {
+                return "RIGHT";
+            }
+            else if ( (a*a) + (b*b) < c*c)
+            {
+                return "OBTUSE";
+            }
+            else if ( (a*a) + (b*b) > c*c)
+            {
+                return "ACUTE";
+            }
+        }
+};

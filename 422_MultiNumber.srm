@@ -1,0 +1,53 @@
+#include<iostream>
+#include<vector>
+#include<sstream>
+using namespace std;
+class MultiNumber
+{
+    public:
+        string check(int number)
+        {
+            int temp = number;
+            string Result;
+            ostringstream convert;
+            convert << temp;
+            Result = convert.str();
+            if (Result.size() == 1)
+            {
+                return "NO";
+            }
+            int one=1,div,part=1;
+            vector<int>carry,carry1;
+            while (number>0)
+            {
+                div = number / 10;
+                part = 1;
+                while (div > 0)
+                {
+                    part*=(div%10);
+                    div/=10;
+                }
+                carry1.push_back(part);
+                one*=(number%10);
+                carry.push_back(one);
+                number/=10;
+            }
+            one=0;
+            for (int i=0;i<carry.size();i++)
+            {
+                if (carry[i] == carry1[i])
+                {
+                    one++;
+                    break;
+                }
+            }
+            if (one)
+            {
+                return "YES";
+            }
+            else
+            {
+                return "NO";
+            }
+        }
+};

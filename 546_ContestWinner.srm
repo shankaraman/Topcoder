@@ -1,0 +1,58 @@
+#include<iostream>
+#include<vector>
+#include<set>
+#include<algorithm>
+#incude<string>
+using namespace std;
+class ContestWinner
+{
+	public:
+		int n,h,k;
+		vector <int> distinct,solved;
+		set <int> s;
+		int getWinner(vector <int> events)
+		{
+		//Set Function
+			for(int i=0;i<events.size();i++)
+			{
+				int blah = events[i];
+				s.insert(blah);
+			}
+		//Distinct Elements
+			for(set<int>::iterator i =s.begin();i!=s.end();i++)
+			{
+				distinct.push_back(*i);
+			}
+		//Case where all are Distinct
+			if(distinct.size() == events.size())
+			{
+				return events[0];
+			}
+		//Identical
+			else
+			{
+				for(int i=0;i<distinct.size();i++)
+				{
+					int count=0;
+					for(int j=0;j<events.size();j++)
+					{
+						if(distinct[i] == events[j])
+						{
+							count+=1;
+						}
+					}
+					solved.push_back(count);
+				}
+				int max = *max_element(solved.begin(),solved.end());
+				for(int i=0;i<solved.size();i++)
+				{
+					if(max == solved[i])
+					{
+						k = distinct[i];
+					}
+				}
+				return k;
+			}
+		}
+	};
+			

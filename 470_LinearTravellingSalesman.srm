@@ -1,0 +1,19 @@
+#include<iostream>
+#include<algorithm>
+#include<vector>
+#include<string>
+using namespace std;
+class LinearTravellingSalesman
+{
+	public:
+		int findMinimumDistance(vector <int> x,vector <int> y)
+		{
+			int xx,yy,xm,ym;
+			xx = *max_element(x.begin(),x.end());
+			yy = *max_element(y.begin(),y.end());
+			xm = *min_element(x.begin(),x.end());
+			ym = *min_element(y.begin(),y.end());
+			return ((xx-xm)+(yy-ym));
+		}
+};
+			

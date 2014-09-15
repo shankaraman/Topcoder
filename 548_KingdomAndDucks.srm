@@ -1,0 +1,39 @@
+#include<iostream>
+#include<vector>
+#include<set>
+#include<algorithm>
+using namespace std;
+class KingdomAndDucks
+{
+    public:
+        vector <int> distinct;
+        vector <int> counts;
+        int end;
+        int minDucks(vector <int> duckTypes)
+        {
+            set<int> s(duckTypes.begin(),duckTypes.end());
+            for(set<int>::iterator i=s.begin();i!=s.end();i++)
+            {
+                int w = *i;
+                distinct.push_back(w);
+            }
+            for (int i=0;i<distinct.size();i++)
+            {
+                int count = 0;
+                for(int j=0;j<duckTypes.size();j++)
+                {
+                    if (distinct[i] == duckTypes[j])
+                    {
+                        count+=1;
+                    }
+                }
+                counts.push_back(count);
+            }
+            std::sort(counts.begin(),counts.end());
+            for (std::vector<int>::iterator it=counts.begin(); it!=counts.end(); ++it)
+            {
+                end = *it;
+            }
+            return end*distinct.size();
+        }
+    };

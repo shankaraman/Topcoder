@@ -1,0 +1,2098 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>SRM 516 - TopCoder Wiki</title>
+                
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="-1">
+    <script src="SRM%20516%20-%20TopCoder%20Wiki_files/17680.js" id="hs-analytics"></script><script language="javascript">
+        var contextPath = '/wiki';
+        var i18n = [];
+    </script>
+
+                            <link rel="stylesheet" href="SRM%20516%20-%20TopCoder%20Wiki_files/main-action.css" type="text/css">
+            
+    
+
+        
+            <script type="text/javascript" src="SRM%20516%20-%20TopCoder%20Wiki_files/effects.js"></script>
+    
+
+            <script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script><script src="SRM%20516%20-%20TopCoder%20Wiki_files/ga.js" type="text/javascript"></script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-6340959-1");
+pageTracker._trackPageview();
+</script>
+
+<script type="text/javascript" language="javascript">
+var hs_portalid=17680; 
+var hs_salog_version = "2.00";
+var hs_ppa = "topcoder.app101.hubspot.com";
+document.write(unescape("%3Cscript src='" + document.location.protocol + "//" + hs_ppa + "/salog.js.aspx' type='text/javascript'%3E%3C/script%3E"));
+</script><script src="SRM%20516%20-%20TopCoder%20Wiki_files/salog.html" type="text/javascript"></script>
+
+    <link type="image/x-icon" rel="shortcut icon" href="http://apps.topcoder.com/i/favicon.ico">
+    <link type="text/css" rel="stylesheet" href="SRM%20516%20-%20TopCoder%20Wiki_files/tcStyles.css">
+    <link type="text/css" rel="stylesheet" href="SRM%20516%20-%20TopCoder%20Wiki_files/coders.css">
+    <link type="text/css" rel="stylesheet" href="SRM%20516%20-%20TopCoder%20Wiki_files/wiki.css">
+</head>
+
+                    <body onload="">
+    
+
+
+
+
+
+
+
+
+<script type="text/javascript" src="SRM%20516%20-%20TopCoder%20Wiki_files/popup.js"></script>
+
+<div id="shortcutBar">
+    <div class="icon"><a href="http://community.topcoder.com/tc"><img src="SRM%20516%20-%20TopCoder%20Wiki_files/scHome.png" alt="" onmouseover="postPopUpText('globalPopupText','Home'); popUp(this,'globalPopup');" onmouseout="popHide()"></a></div>
+    <div class="icon"><a href="javascript:arena();"><img src="SRM%20516%20-%20TopCoder%20Wiki_files/scAlgo.png" alt="" onmouseover="postPopUpText('globalPopupText','Algorithm Competitions'); popUp(this,'globalPopup');" onmouseout="popHide()"></a></div>
+    <div class="icon"><a href="http://community.topcoder.com/tc?module=ActiveContests&amp;pt=23"><img src="SRM%20516%20-%20TopCoder%20Wiki_files/scConceptualization.png" alt="" onmouseover="postPopUpText('globalPopupText','Software Conceptualization Competitions'); popUp(this,'globalPopup');" onmouseout="popHide()"></a></div>
+    <div class="icon"><a href="http://community.topcoder.com/tc?module=ActiveContests&amp;pt=6"><img src="SRM%20516%20-%20TopCoder%20Wiki_files/scSpecification.png" alt="" onmouseover="postPopUpText('globalPopupText','Software Specification Competitions'); popUp(this,'globalPopup');" onmouseout="popHide()"></a></div>
+    <div class="icon"><a href="http://community.topcoder.com/tc?module=ActiveContests&amp;pt=7"><img src="SRM%20516%20-%20TopCoder%20Wiki_files/scArchitecture.png" alt="" onmouseover="postPopUpText('globalPopupText','Software Architecture Competitions'); popUp(this,'globalPopup');" onmouseout="popHide()"></a></div>
+    <div class="icon"><a href="http://community.topcoder.com/tc?module=ViewActiveContests&amp;ph=112"><img src="SRM%20516%20-%20TopCoder%20Wiki_files/scDesign.png" alt="" onmouseover="postPopUpText('globalPopupText','Component Design Competitions'); popUp(this,'globalPopup');" onmouseout="popHide()"></a></div>
+    <div class="icon"><a href="http://community.topcoder.com/tc?module=ViewActiveContests&amp;ph=113"><img src="SRM%20516%20-%20TopCoder%20Wiki_files/scDevelopment.png" alt="" onmouseover="postPopUpText('globalPopupText','Component Development Competitions'); popUp(this,'globalPopup');" onmouseout="popHide()"></a></div>
+
+    <div class="icon"><a href="http://community.topcoder.com/tc?module=ActiveContests&amp;pt=14"><img src="SRM%20516%20-%20TopCoder%20Wiki_files/scAssembly.png" alt="" onmouseover="postPopUpText('globalPopupText','Software Assembly Competitions'); popUp(this,'globalPopup');" onmouseout="popHide()"></a></div>
+    <div class="icon"><a href="http://community.topcoder.com/tc?module=ActiveContests&amp;pt=13"><img src="SRM%20516%20-%20TopCoder%20Wiki_files/scTesting.png" alt="" onmouseover="postPopUpText('globalPopupText','Testing Competitions'); popUp(this,'globalPopup');" onmouseout="popHide()"></a></div>
+    <div class="icon"><a href="http://www.topcoder.com/tc?module=ActiveContests&amp;pt=9"><img src="SRM%20516%20-%20TopCoder%20Wiki_files/scBugHunt.png" alt="" onmouseover="postPopUpText('globalPopupText','Bug Hunt Competitions'); popUp(this,'globalPopup');" onmouseout="popHide()"></a></div>
+    <div class="icon"><a href="http://community.topcoder.com/tc?module=ActiveContests&amp;pt=35"><img src="SRM%20516%20-%20TopCoder%20Wiki_files/scContentCreation.gif" alt="" onmouseover="postPopUpText('globalPopupText','Content Creation Competitions'); popUp(this,'globalPopup');" onmouseout="popHide()"></a></div>
+    <div class="icon"><a href="http://community.topcoder.com/tc?module=ActiveContests&amp;pt=36"><img src="SRM%20516%20-%20TopCoder%20Wiki_files/scReporting.gif" alt="" onmouseover="postPopUpText('globalPopupText','Reporting Competitions'); popUp(this,'globalPopup');" onmouseout="popHide()"></a></div>
+    <div class="icon"><a href="javascript:arena();"><img src="SRM%20516%20-%20TopCoder%20Wiki_files/scTCHS.png" alt="" onmouseover="postPopUpText('globalPopupText','High School Competitions'); popUp(this,'globalPopup');" onmouseout="popHide()"></a></div>
+    <div class="icon"><a href="http://community.topcoder.com/longcontest/?module=ViewActiveContests"><img src="SRM%20516%20-%20TopCoder%20Wiki_files/scMarathon.png" alt="" onmouseover="postPopUpText('globalPopupText','Marathon Matches'); popUp(this,'globalPopup');" onmouseout="popHide()"></a></div>
+    <div class="icon"><a href="http://studio.topcoder.com/?module=ViewActiveContests"><img src="SRM%20516%20-%20TopCoder%20Wiki_files/scStudio.png" alt="" onmouseover="postPopUpText('globalPopupText','TopCoder Studio Competitions'); popUp(this,'globalPopup');" onmouseout="popHide()"></a></div>
+</div>
+
+<div id="globalPopup" class="popUp"><div id="globalPopupText"></div></div>
+
+
+<div style="position: absolute; right:0px; top:31px;"><a href="http://www.topcoder.com/reg/"><img src="SRM%20516%20-%20TopCoder%20Wiki_files/register_now.gif" alt="Register Now" style="display:block;"></a></div>
+
+
+<div style="margin: 0px 290px 0px 280px;" align="center">
+   <div id="outerLogo">
+      <div id="innerLogo">
+      <a href="http://www.topcoder.com/"><img src="SRM%20516%20-%20TopCoder%20Wiki_files/topcoder.gif" alt="TopCoder" style="display: block;"></a>
+      </div>
+   </div>
+</div>
+
+<div class="memberCountBox">
+Member Count: 475,326 - 
+
+
+April 9, 2013
+
+&nbsp;<a class="gMetal" href="javascript:tcTime()">[Get Time]</a>
+</div>
+
+<div class="topBar">
+    <div style="float: right; margin: 5px 0px 0px 0px;">
+        
+                <a class="gMetal" href="http://community.topcoder.com/tc?&amp;module=Login">Login</a>
+            
+        
+    </div>
+</div>
+
+
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+    <tr valign="top">
+        <td width="180">
+            
+
+
+
+
+
+
+
+
+
+
+<script language="JavaScript" type="text/javascript" src="SRM%20516%20-%20TopCoder%20Wiki_files/arena.js"></script>
+
+
+<script language="JavaScript" type="text/javascript">
+<!--
+function toggleMenu(menuTitle,menuID){
+   var menu = document.getElementById(menuID);
+   if(menu.style.display == 'block') menu.className = 'CLOSED';
+   else if(menu.className == 'OPEN' && menu.style.display != 'none') menu.className = 'CLOSED';
+   else {
+      menu.className = 'OPEN';
+   }
+   if(menuTitle.blur)menuTitle.blur();
+   if(menuTitle.className == 'exp') menuTitle.className = 'exp_ed';
+   else menuTitle.className = 'exp';
+   return;
+}
+function flipMenu(myMenuName){
+   var menuName = document.getElementById(myMenuName);
+   menuName.className = 'exp_ed';
+}
+
+// -->
+</script>
+
+<div style="padding: 0px;"><img src="SRM%20516%20-%20TopCoder%20Wiki_files/leftnav_top.gif" alt=""></div>
+<div id="navbar">
+    
+<ul>
+<li class="exp"><a href="javascript:void(0)" onclick="Javascript:toggleMenu(this.parentNode,'m_competitions')">Competitions</a>
+<ul id="m_competitions">
+<li class="exp"><a href="javascript:void(0)" onclick="Javascript:toggleMenu(this.parentNode,'m_competitions_overview')">Overview</a>
+<ul id="m_competitions_overview">
+<li><a href="http://apps.topcoder.com/wiki/x/MQD9Ag">Reliability</a></li>
+<li><a href="http://apps.topcoder.com/wiki/x/lYE_/">Ratings</a></li>
+<li><a href="http://apps.topcoder.com/wiki/x/EoK1B/">Badges</a></li>
+<li><a href="http://apps.topcoder.com/wiki/x/aoE_/">How to Get Paid</a></li>
+<li><a href="http://apps.topcoder.com/wiki/x/2gRmAw">Administrative Overview </a></li>
+</ul></li>
+<li class="exp"><a href="javascript:void(0)" onclick="Javascript:toggleMenu(this.parentNode,'m_copilot_opportunities')">Copilot Opportunities</a>
+<ul id="m_copilot_opportunities">
+<li><a href="http://apps.topcoder.com/wiki/display/tc/Copilot+Overview">Overview</a></li>
+<li class="exp"><a href="javascript:void(0)" onclick="Javascript:toggleMenu(this.parentNode,'m_copilot_support')">Track Information</a>
+<ul id="m_copilot_support">
+<li><a href="http://apps.topcoder.com/wiki/display/tc/How+to+Compete+in+Copilot+Opportunities">How to Compete</a></li>
+<li><a href="http://apps.topcoder.com/wiki/display/tc/How+to+Compete+in+Copilot+Opportunities">Documentation</a></li>
+<li><a href="http://apps.topcoder.com/wiki/display/tc/How+to+Compete+in+Copilot+Opportunities">Tutorial</a></li>
+</ul></li>
+<li><a href="http://www.topcoder.com/tc?module=ActiveContests&amp;pt=29">Active Contests</a></li>
+<li><a href="http://www.topcoder.com/tc?module=CompList&amp;ph=140">Past Contests</a></li>
+<li><a href="http://www.topcoder.com/tc?module=ViewCopilotPool&amp;size=20&amp;view=0&amp;sort=12">Copilot Pool</a></li>
+</ul></li>
+<li class="exp"><a href="javascript:void(0)" onclick="Javascript:toggleMenu(this.parentNode,'competition_design')">Design</a>
+<ul id="competition_design">
+<li><a href="http://studio.topcoder.com/">Studio</a></li>
+<li class="exp"><a href="javascript:void(0)" onclick="Javascript:toggleMenu(this.parentNode,'m_conceptualization_competitions')">Conceptualization</a>
+<ul id="m_conceptualization_competitions">
+<li><a href="http://apps.topcoder.com/wiki/display/tc/TopCoder+Conceptualization+Contests">Overview</a></li>
+<li class="exp"><a href="javascript:void(0)" onclick="Javascript:toggleMenu(this.parentNode,'m_conceptualization_support')">Track Information</a>
+<ul id="m_conceptualization_support">
+<li><a href="http://apps.topcoder.com/wiki/display/tc/How+to+Compete+in+Conceptualization+Competitions">How to Compete</a></li>
+<li><a href="http://apps.topcoder.com/wiki/display/tc/Conceptualization+Documentation">Documentation</a></li>
+<li><a href="http://apps.topcoder.com/wiki/display/tc/Conceptualization+Submission+Instructions">Tutorial</a></li>
+</ul></li>
+<li><a href="http://www.topcoder.com/tc?module=ActiveContests&amp;pt=23">Active Contests</a></li>
+<li><a href="http://www.topcoder.com/tc?module=ContestStatus&amp;pt=23">Contest Status</a></li>
+<li><a href="http://www.topcoder.com/tc?module=CompList&amp;ph=134">Past Contests</a></li>
+<li><a href="http://www.topcoder.com/tc?module=ViewReviewAuctions&amp;pt=23">Review Opportunities</a></li>
+<li><a href="http://www.topcoder.com/tc?module=ReviewBoard&amp;pt=23">Meet the Review Board</a></li>
+</ul></li>
+<li class="exp"><a href="javascript:void(0)" onclick="Javascript:toggleMenu(this.parentNode,'m_specification_competitions')">Specification</a>
+<ul id="m_specification_competitions">
+<li><a href="http://apps.topcoder.com/wiki/display/tc/TopCoder+Specification+Contests">Overview</a></li>
+<li class="exp"><a href="javascript:void(0)" onclick="Javascript:toggleMenu(this.parentNode,'m_specification_support')">Track Information</a>
+<ul id="m_specification_support">
+<li><a href="http://apps.topcoder.com/wiki/display/tc/How+to+Compete+in+Specification+Competitions">How to Compete</a></li>
+</ul></li>
+<li><a href="http://www.topcoder.com/tc?module=ActiveContests&amp;pt=6">Active Contests</a></li>
+<li><a href="http://www.topcoder.com/tc?module=ContestStatus&amp;pt=6">Contest Status</a></li>
+<li><a href="http://www.topcoder.com/tc?module=CompList&amp;ph=117">Past Contests</a></li>
+<li><a href="http://www.topcoder.com/tc?module=ViewReviewAuctions&amp;pt=6">Review Opportunities</a></li>
+<li><a href="http://www.topcoder.com/tc?module=ReviewBoard&amp;pt=6">Meet the Review Board</a></li>
+</ul></li>
+<li class="exp"><a href="javascript:void(0)" onclick="Javascript:toggleMenu(this.parentNode,'m_architecture_competitions')">Architecture</a>
+<ul id="m_architecture_competitions">
+<li><a href="http://apps.topcoder.com/wiki/display/tc/Architecture+Overview">Overview</a></li>
+<li class="exp"><a href="javascript:void(0)" onclick="Javascript:toggleMenu(this.parentNode,'m_architecture_support')">Track Information</a>
+<ul id="m_architecture_support">
+<li><a href="http://apps.topcoder.com/wiki/display/tc/Module+Architecture+Tutorial">Module Architecture Tutorial</a></li>
+</ul></li>
+<li><a href="http://www.topcoder.com/tc?module=ActiveContests&amp;pt=7">Active Contests</a></li>
+<li><a href="http://www.topcoder.com/tc?module=ContestStatus&amp;pt=7">Contest Status</a></li>
+<li><a href="http://www.topcoder.com/tc?module=CompList&amp;ph=118">Past Contests</a></li>
+<li><a href="http://www.topcoder.com/tc?module=ViewReviewAuctions&amp;pt=7">Review Opportunities</a></li>
+<li><a href="http://www.topcoder.com/tc?module=ReviewBoard&amp;pt=7">Meet the Review Board</a></li>
+</ul></li>
+<li class="exp"><a href="javascript:void(0)" onclick="Javascript:toggleMenu(this.parentNode,'m_des_competitions')">Component Design</a>
+<ul id="m_des_competitions">
+<li><a href="http://apps.topcoder.com/wiki/display/tc/Component+Design+Overview">Overview</a></li>
+<li class="exp"><a href="javascript:void(0)" onclick="Javascript:toggleMenu(this.parentNode,'m_des_support')">Track Information</a>
+<ul id="m_des_support">
+<li><a href="http://apps.topcoder.com/wiki/display/tc/How+to+Compete+in+Component+Design+Competitions">How to Compete</a></li>
+<li><a href="http://apps.topcoder.com/wiki/display/tc/Component+Design+Documentation">Documentation</a></li>
+<li><a href="http://www.topcoder.com/tc?module=ColorChange&amp;ph=112">Recent Color Changes</a></li>
+<li><a href="http://apps.topcoder.com/wiki/display/tc/Component+Design+Data+Feeds">Data Feeds</a></li>
+</ul></li>
+<li><a href="http://www.topcoder.com/tc?module=ViewActiveContests&amp;ph=112">Active Contests</a></li>
+<li><a href="http://www.topcoder.com/tc?module=ContestStatus&amp;pt=1">Contest Status</a></li>
+<li><a href="http://www.topcoder.com/tc?module=CompList&amp;ph=112">Past Contests</a></li>
+<li><a href="http://www.topcoder.com/tc?module=ViewReviewAuctions&amp;pt=1">Review Opportunities</a></li>
+<li><a href="http://www.topcoder.com/tc?module=ReviewBoard&amp;pt=1">Meet the Review Board</a></li>
+</ul></li>
+</ul></li>
+<li class="exp"><a href="javascript:void(0)" onclick="Javascript:toggleMenu(this.parentNode,'competition_dev')">Development</a>
+<ul id="competition_dev">
+<li class="exp"><a href="javascript:void(0)" onclick="Javascript:toggleMenu(this.parentNode,'m_dev_competitions')">Component Development</a>
+<ul id="m_dev_competitions">
+<li><a href="http://apps.topcoder.com/wiki/display/tc/How+to+Compete+in+Component+Development+Competitions">Overview</a></li>
+<li class="exp"><a href="javascript:void(0)" onclick="Javascript:toggleMenu(this.parentNode,'m_dev_support')">Track Information</a>
+<ul id="m_dev_support">
+<li><a href="http://apps.topcoder.com/wiki/display/tc/How+to+Compete+in+Component+Development+Competitions">How to Compete</a></li>
+<li><a href="http://apps.topcoder.com/wiki/display/tc/Component+Development+Documentation">Documentation</a></li>
+<li><a href="http://www.topcoder.com/tc?module=ColorChange&amp;ph=113">Recent Color Changes</a></li>
+<li><a href="http://apps.topcoder.com/wiki/display/tc/Component+Development+Data+Feeds">Data Feeds</a></li>
+</ul></li>
+<li><a href="http://www.topcoder.com/tc?module=ViewActiveContests&amp;ph=113">Active Contests</a></li>
+<li><a href="http://www.topcoder.com/tc?module=ContestStatus&amp;pt=2">Contest Status</a></li>
+<li><a href="http://www.topcoder.com/tc?module=CompList&amp;ph=113">Past Contests</a></li>
+<li><a href="http://www.topcoder.com/tc?module=ViewReviewAuctions&amp;pt=2">Review Opportunities</a></li>
+<li><a href="http://www.topcoder.com/tc?module=ReviewBoard&amp;pt=2">Meet the Review Board</a></li>
+</ul></li>
+<li class="exp"><a href="javascript:void(0)" onclick="Javascript:toggleMenu(this.parentNode,'m_assembly_competitions')">Assembly</a>
+<ul id="m_assembly_competitions">
+<li><a href="http://apps.topcoder.com/wiki/display/tc/Assembly">Overview</a></li>
+<li class="exp"><a href="javascript:void(0)" onclick="Javascript:toggleMenu(this.parentNode,'m_assembly_support')">Track Information</a>
+<ul id="m_assembly_support">
+<li><a href="http://apps.topcoder.com/wiki/display/tc/How+to+Compete+in+Assembly+Competitions">How to Compete</a></li>
+<li><a href="http://apps.topcoder.com/wiki/display/tc/Assembly+Competition+Tutorial">Tutorial</a></li>
+<li><a href="http://apps.topcoder.com/wiki/display/tc/Assembly+Competition+Documentation">Documentation</a></li>
+</ul></li>
+<li><a href="http://www.topcoder.com/tc?module=ActiveContests&amp;pt=14">Active Contests</a></li>
+<li><a href="http://www.topcoder.com/tc?module=ContestStatus&amp;pt=14">Contest Status</a></li>
+<li><a href="http://www.topcoder.com/tc?module=CompList&amp;ph=125">Past Contests</a></li>
+<li><a href="http://www.topcoder.com/tc?module=ViewReviewAuctions&amp;pt=14">Review Opportunities</a></li>
+<li><a href="http://www.topcoder.com/tc?module=ReviewBoard&amp;pt=14">Meet the Review Board</a></li>
+</ul></li>
+<li class="exp"><a href="javascript:void(0)" onclick="Javascript:toggleMenu(this.parentNode,'m_test_suites_competitions')">Test Suites</a>
+<ul id="m_test_suites_competitions">
+<li><a href="http://apps.topcoder.com/wiki/display/tc/Test+Scenarios+and+Scripts">Overview</a></li>
+<li class="exp"><a href="javascript:void(0)" onclick="Javascript:toggleMenu(this.parentNode,'m_test_suites_support')">Track Information</a>
+<ul id="m_test_suites_support">
+<li><a href="http://apps.topcoder.com/wiki/display/tc/How+to+Compete+in+Testing+Competitions">How to Compete</a></li>
+<li><a href="http://apps.topcoder.com/wiki/display/tc/Testing+Competition+Tutorial">Tutorial</a></li>
+<li><a href="http://apps.topcoder.com/wiki/display/tc/Testing+Competition+Documentation">Documentation</a></li>
+</ul></li>
+<li><a href="http://www.topcoder.com/tc?module=ActiveContests&amp;pt=13">Active Contests</a></li>
+<li><a href="http://www.topcoder.com/tc?module=ContestStatus&amp;pt=13">Contest Status</a></li>
+<li><a href="http://www.topcoder.com/tc?module=CompList&amp;pt=13">Past Contests</a></li>
+<li><a href="http://www.topcoder.com/tc?module=ViewReviewAuctions&amp;pt=13">Review Opportunities</a></li>
+<li><a href="http://www.topcoder.com/tc?module=ReviewBoard&amp;pt=13">Meet the Review Board</a></li>
+</ul></li>
+<li class="exp"><a href="javascript:void(0)" onclick="Javascript:toggleMenu(this.parentNode,'m_reporting_competitions')">Reporting</a>
+<ul id="m_reporting_competitions">
+<li><a href="http://apps.topcoder.com/wiki/display/tc/Reporting">Overview</a></li>
+<li class="exp"><a href="javascript:void(0)" onclick="Javascript:toggleMenu(this.parentNode,'m_reporting_support')">Track Information</a>
+<ul id="m_reporting_support">
+<li><a href="http://apps.topcoder.com/wiki/display/tc/How+to+Compete+in+Reporting+Competitions">How to Compete</a></li>
+<li><a href="http://apps.topcoder.com/wiki/display/tc/Reporting+Competition+Tutorial">Tutorial</a></li>
+<li><a href="http://apps.topcoder.com/wiki/display/tc/Reporting+Competition+Documentation">Documentation</a></li>
+</ul></li>
+<li><a href="http://www.topcoder.com/tc?module=ActiveContests&amp;pt=36">Active Contests</a></li>
+<li><a href="http://www.topcoder.com/tc?module=ContestStatus&amp;pt=36">Contest Status</a></li>
+<li><a href="http://www.topcoder.com/tc?module=CompList&amp;pt=36">Past Contests</a></li>
+<li><a href="http://www.topcoder.com/tc?module=ViewReviewAuctions&amp;pt=36">Review Opportunities</a></li>
+<li><a href="http://www.topcoder.com/tc?module=ReviewBoard&amp;pt=36">Meet the Review Board</a></li>
+</ul></li>
+</ul></li>
+<li class="exp"><a href="javascript:void(0)" onclick="Javascript:toggleMenu(this.parentNode,'competition_ui_dev')">UI Development</a>
+<ul id="competition_ui_dev">
+<li class="exp"><a href="javascript:void(0)" onclick="Javascript:toggleMenu(this.parentNode,'m_ui_prototype_competitions')">UI Prototype</a>
+<ul id="m_ui_prototype_competitions">
+<li><a href="http://apps.topcoder.com/wiki/display/tc/UI+Prototype+Competitions">Overview</a></li>
+<li class="exp"><a href="javascript:void(0)" onclick="Javascript:toggleMenu(this.parentNode,'m_ui_prototype_support')">Track Information</a>
+<ul id="m_ui_prototype_support">
+<li><a href="http://apps.topcoder.com/wiki/display/tc/UI+Prototype+Competitions">UI Prototype Tutorial</a></li>
+</ul></li>
+<li><a href="http://www.topcoder.com/tc?module=ActiveContests&amp;pt=19">Active Contests</a></li>
+<li><a href="http://www.topcoder.com/tc?module=ContestStatus&amp;pt=19">Contest Status</a></li>
+<li><a href="http://www.topcoder.com/tc?module=CompList&amp;pt=19">Past Contests</a></li>
+<li><a href="http://www.topcoder.com/tc?module=ViewReviewAuctions&amp;pt=19">Review Opportunities</a></li>
+<li><a href="http://www.topcoder.com/tc?module=ReviewBoard&amp;pt=19">Meet the Review Board</a></li>
+</ul></li>
+<li class="exp"><a href="javascript:void(0)" onclick="Javascript:toggleMenu(this.parentNode,'m_ria_build_competitions')">RIA Build</a>
+<ul id="m_ria_build_competitions">
+<li><a href="http://apps.topcoder.com/wiki/display/tc/RIA+Build+Competitions">Overview</a></li>
+<li class="exp"><a href="javascript:void(0)" onclick="Javascript:toggleMenu(this.parentNode,'m_ria_build_support')">Track Information</a>
+<ul id="m_ria_build_support">
+<li><a href="http://apps.topcoder.com/wiki/display/tc/RIA+Build+Competitions">RIA Build Tutorial</a></li>
+</ul></li>
+<li><a href="http://www.topcoder.com/tc?module=ActiveContests&amp;pt=24">Active Contests</a></li>
+<li><a href="http://www.topcoder.com/tc?module=ContestStatus&amp;pt=24">Contest Status</a></li>
+<li><a href="http://www.topcoder.com/tc?module=CompList&amp;pt=24">Past Contests</a></li>
+<li><a href="http://www.topcoder.com/tc?module=ViewReviewAuctions&amp;pt=24">Review Opportunities</a></li>
+<li><a href="http://www.topcoder.com/tc?module=ReviewBoard&amp;pt=24">Meet the Review Board</a></li>
+</ul></li>
+<li class="exp"><a href="javascript:void(0)" onclick="Javascript:toggleMenu(this.parentNode,'m_content_creation_competitions')">Content Creation</a>
+<ul id="m_content_creation_competitions">
+<li><a href="http://apps.topcoder.com/wiki/display/tc/Content+Contests+Overview">Overview</a></li>
+<li class="exp"><a href="javascript:void(0)" onclick="Javascript:toggleMenu(this.parentNode,'m_content_creation_support')">Track Information</a>
+<ul id="m_content_creation_support">
+<li><a href="http://apps.topcoder.com/wiki/display/tc/How+to+Compete+in+Content+Creation+Competitions">How to Compete</a></li>
+</ul></li>
+<li><a href="http://www.topcoder.com/tc?module=ActiveContests&amp;pt=35">Active Contests</a></li>
+<li><a href="http://www.topcoder.com/tc?module=ContestStatus&amp;pt=35">Contest Status</a></li>
+<li><a href="http://www.topcoder.com/tc?module=CompList&amp;pt=35">Past Contests</a></li>
+<li><a href="http://www.topcoder.com/tc?module=ViewReviewAuctions&amp;pt=35">Review Opportunities</a></li>
+<li><a href="http://www.topcoder.com/tc?module=ReviewBoard&amp;pt=35">Meet the Review Board</a></li>
+</ul></li>
+</ul></li>
+<li class="exp"><a href="javascript:void(0)" onclick="Javascript:toggleMenu(this.parentNode,'competition_qa')">QA and Maintenance</a>
+<ul id="competition_qa">
+<li class="exp"><a href="javascript:void(0)" onclick="Javascript:toggleMenu(this.parentNode,'m_test_scenarios_competitions')">Test Scenarios</a>
+<ul id="m_test_scenarios_competitions">
+<li><a href="http://apps.topcoder.com/wiki/display/tc/Test+Scenarios+and+Scripts">Overview</a></li>
+<li class="exp"><a href="javascript:void(0)" onclick="Javascript:toggleMenu(this.parentNode,'m_test_scenarios_support')">Track Information</a>
+<ul id="m_test_scenarios_support">
+<li><a href="http://apps.topcoder.com/wiki/display/tc/How+to+Compete+in+Testing+Competitions">How to Compete</a></li>
+<li><a href="http://apps.topcoder.com/wiki/display/tc/Testing+Competition+Tutorial">Tutorial</a></li>
+<li><a href="http://apps.topcoder.com/wiki/display/tc/Testing+Competition+Documentation">Documentation</a></li>
+</ul></li>
+<li><a href="http://www.topcoder.com/tc?module=ActiveContests&amp;pt=26">Active Contests</a></li>
+<li><a href="http://www.topcoder.com/tc?module=ContestStatus&amp;pt=26">Contest Status</a></li>
+<li><a href="http://www.topcoder.com/tc?module=CompList&amp;pt=26">Past Contests</a></li>
+<li><a href="http://www.topcoder.com/tc?module=ViewReviewAuctions&amp;pt=26">Review Opportunities</a></li>
+<li><a href="http://www.topcoder.com/tc?module=ReviewBoard&amp;pt=26">Meet the Review Board</a></li>
+</ul></li>
+<li class="exp"><a href="javascript:void(0)" onclick="Javascript:toggleMenu(this.parentNode,'m_bugraces_competitions')">Bug Race</a>
+<ul id="m_bugraces_competitions">
+<li><a href="http://apps.topcoder.com/wiki/display/tc/Bug+Race+Competition+Overview">Overview</a></li>
+<li class="exp"><a href="javascript:void(0)" onclick="Javascript:toggleMenu(this.parentNode,'m_bugraces_support')">Track Information</a>
+<ul id="m_bugraces_support">
+<li><a href="http://apps.topcoder.com/wiki/display/tc/How+to+Compete+in+Bug+Race+Competitions">How to Compete</a></li>
+</ul></li>
+<li><a href="http://www.topcoder.com/tc?module=ViewActiveBugRaces">Active Contests</a></li>
+<li><a href="http://apps.topcoder.com/wiki/x/FQG2AQ">Review Opportunities</a></li>
+</ul></li>
+<li class="exp"><a href="javascript:void(0)" onclick="Javascript:toggleMenu(this.parentNode,'m_bughunt_competitions')">Bug Hunt</a>
+<ul id="m_bughunt_competitions">
+<li><a href="http://apps.topcoder.com/wiki/x/W5ogAg">Overview</a></li>
+<li class="exp"><a href="javascript:void(0)" onclick="Javascript:toggleMenu(this.parentNode,'m_bughunt_support')">Track Information</a>
+<ul id="m_bughunt_support">
+<li><a href="http://apps.topcoder.com/wiki/x/cpogAg">How to Compete</a></li>
+</ul></li>
+<li><a href="http://www.topcoder.com/tc?module=ActiveContests&amp;pt=9">Active Contests</a></li>
+<li><a href="http://www.topcoder.com/tc?module=ContestStatus&amp;pt=9">Contest Status</a></li>
+<li><a href="http://www.topcoder.com/tc?module=CompList&amp;pt=9">Past Contests</a></li>
+<li><a href="http://www.topcoder.com/tc?module=ViewReviewAuctions&amp;pt=9">Review Opportunities</a></li>
+<li><a href="http://www.topcoder.com/tc?module=ReviewBoard&amp;pt=9">Meet the Review Board</a></li>
+</ul></li>
+</ul></li>
+<li class="exp"><a href="javascript:void(0)" onclick="Javascript:toggleMenu(this.parentNode,'competition_algo')">Algorithm</a>
+<ul id="competition_algo">
+<li class="exp"><a href="javascript:void(0)" onclick="Javascript:toggleMenu(this.parentNode,'m_algo_competitions')">Single Round Matches (SRM)</a>
+<ul id="m_algo_competitions">
+<li><a href="http://apps.topcoder.com/wiki/display/tc/Algorithm+Overview">Overview</a></li>
+<li class="exp"><a href="javascript:void(0)" onclick="Javascript:toggleMenu(this.parentNode,'m_algo_support')">Track Information</a>
+<ul id="m_algo_support">
+<li><a href="http://apps.topcoder.com/wiki/display/tc/How+to+Compete+in+SRM+Algorithm+Competitions">How to Compete</a></li>
+<li><a href="http://apps.topcoder.com/wiki/display/tc/SRM+Algorithm+Competition+FAQs">FAQs</a></li>
+<li><a href="http://apps.topcoder.com/wiki/display/tc/Algorithm+Competition+Rating+System">Rating System</a></li>
+<li><a href="http://apps.topcoder.com/wiki/display/tc/Write+Problems+for+TopCoder">Write Problems</a></li>
+</ul></li>
+<li class="exp"><a href="javascript:void(0)" onclick="Javascript:toggleMenu(this.parentNode,'m_algo_stats')">Statistics</a>
+<ul id="m_algo_stats">
+<li><a href="http://www.topcoder.com/tc?module=MatchList">Match Archive</a></li>
+<li><a href="http://www.topcoder.com/stat?c=round_overview">Match Overviews</a></li>
+<li><a href="http://www.topcoder.com/tc?module=SrmDivisionWins">Match Winners</a></li>
+<li><a href="http://www.topcoder.com/stat?c=last_match">Match Results</a></li>
+<li><a href="http://apps.topcoder.com/wiki/display/tc/Algorithm+Problem+Set+Analysis">Match Editorials</a></li>
+<li><a href="http://www.topcoder.com/tc?module=ProblemArchive">Problem Archive</a></li>
+<li><a href="http://www.topcoder.com/tc?module=ColorChange&amp;ratid=1">Recent Color Changes</a></li>
+<li><a href="http://apps.topcoder.com/wiki/display/tc/Algorithm+Data+Feeds">Data Feeds</a></li>
+</ul></li>
+<li><a href="javascript:arena();">Launch Arena</a></li>
+</ul></li>
+<li class="exp"><a href="javascript:void(0)" onclick="Javascript:toggleMenu(this.parentNode,'m_long_contests')">Marathon Match</a>
+<ul id="m_long_contests">
+<li><a href="http://apps.topcoder.com/wiki/display/tc/Marathon+Match+Overview">Overview</a></li>
+<li class="exp"><a href="javascript:void(0)" onclick="Javascript:toggleMenu(this.parentNode,'m_long_support')">Track Information</a>
+<ul id="m_long_support">
+<li><a href="http://apps.topcoder.com/wiki/display/tc/How+to+Compete+in+Marathon+Match+Events">How to Compete</a></li>
+<li><a href="http://www.topcoder.com/longcontest/?module=Static&amp;d1=support&amp;d2=ratings">Rating System</a></li>
+</ul></li>
+<li class="exp"><a href="javascript:void(0)" onclick="Javascript:toggleMenu(this.parentNode,'m_long_stats')">Statistics</a>
+<ul id="m_long_stats">
+<li><a href="http://www.topcoder.com/longcontest/stats/?module=MatchList">Match Archive</a></li>
+<li><a href="http://www.topcoder.com/longcontest/stats/?module=ViewOverview">Match Overview</a></li>
+<li><a href="http://www.topcoder.com/longcontest/stats/?module=MatchWinners">Match Winners</a></li>
+<li><a href="http://www.topcoder.com/longcontest/?module=Static&amp;d1=match_editorials&amp;d2=archive">Match Editorials</a></li>
+<li><a href="http://www.topcoder.com/longcontest/?module=Static&amp;d1=support&amp;d2=dataFeed">Data Feeds</a></li>
+</ul></li>
+<li><a href="http://www.topcoder.com/longcontest/?module=ViewActiveContests">Active Contests</a></li>
+<li><a href="http://www.topcoder.com/longcontest/?module=ViewPractice">Practice</a></li>
+<li><a href="http://www.topcoder.com/longcontest/?module=ViewQueue">Queue Status</a></li>
+</ul></li>
+</ul></li>
+<li class="exp"><a href="javascript:void(0)" onclick="Javascript:toggleMenu(this.parentNode,'m_hs_competitions')">High School</a>
+<ul id="m_hs_competitions">
+<li><a href="http://www.topcoder.com/tc?module=Static&amp;d1=hs&amp;d2=home">Overview</a></li>
+<li class="exp"><a href="javascript:void(0)" onclick="Javascript:toggleMenu(this.parentNode,'m_hs_stats')">Statistics</a>
+<ul id="m_hs_stats">
+<li><a href="http://www.topcoder.com/tc?module=HSRoundOverview">Match Overview</a></li>
+<li><a href="http://www.topcoder.com/tc?module=HSRoundStatsTeam">Match Results (Team)</a></li>
+<li><a href="http://www.topcoder.com/tc?module=HSRoundStatsInd">Match Results (Indiv.)</a></li>
+<li><a href="http://www.topcoder.com/tc?module=Static&amp;d1=hs&amp;d2=match_editorials&amp;d3=archive">Match Editorials</a></li>
+<li><a href="http://www.topcoder.com/tc?module=ColorChange&amp;ratid=2">Recent Color Changes</a></li>
+<li><a href="http://www.topcoder.com/tc?module=Static&amp;d1=hs&amp;d2=support&amp;d3=dataFeed">Data Feeds</a></li>
+</ul></li>
+<li><a href="http://www.topcoder.com/tc?module=Static&amp;d1=hs&amp;d2=spotlightSessions">Spotlight Sessions</a></li>
+<li><a href="javascript:arena();">Launch Arena</a></li>
+</ul></li>
+<li><a href="http://www.topcoder.com/dr">The Digital Run</a></li>
+<li><a href="http://software.topcoder.com/review">Submit &amp; Review</a></li>
+</ul></li>
+<li class="exp"><a href="javascript:void(0)" onclick="Javascript:toggleMenu(this.parentNode,'m_topcoder_networks')">TopCoder Networks</a>
+<ul id="m_topcoder_networks">
+<li><a href="http://community.topcoder.com/alcatel/">Alcatel Lucent</a></li>
+<li><a href="http://community.topcoder.com/amdapp/">AMD OpenCL</a></li>
+<li><a href="http://community.topcoder.com/darpacs/">DARPA CS-STEM</a></li>
+<li><a href="http://community.topcoder.com/lifetech-network/">Life Technologies</a></li>
+<li><a href="http://community.topcoder.com/ntl/">NASA Tournament Lab</a></li>
+<li><a href="http://community.topcoder.com/x/">PayPalX</a></li>
+</ul></li>
+<li class="exp"><a href="javascript:void(0)" onclick="Javascript:toggleMenu(this.parentNode,'m_events')">Events</a>
+<ul id="m_events">
+<li><a href="http://www.topcoder.com/tc?module=Static&amp;d1=calendar&amp;d2=thisMonth">Event Calendar</a></li>
+<li class="exp"><a href="javascript:void(0)" onclick="Javascript:toggleMenu(this.parentNode,'m_tournaments')">Tournaments</a>
+<ul id="m_tournaments">
+<li><a href="http://www.topcoder.com/tc?module=Static&amp;d1=tournaments&amp;d2=home">TopCoder</a></li>
+<li><a href="http://www.topcoder.com/pl/">Powered by TopCoder</a></li>
+<li><a href="http://www.topcoder.com/tc?module=CRPFStatic&amp;d1=crpf&amp;d2=crpf_overview">Charity</a></li>
+</ul></li>
+</ul></li>
+<li class="exp"><a href="javascript:void(0)" onclick="Javascript:toggleMenu(this.parentNode,'m_stats')">Statistics</a>
+<ul id="m_stats">
+<li class="exp"><a href="javascript:void(0)" onclick="Javascript:toggleMenu(this.parentNode,'m_competitor_stats')">The Tops</a>
+<ul id="m_competitor_stats">
+<li class="exp"><a href="javascript:void(0)" onclick="Javascript:toggleMenu(this.parentNode,'m_top_rated_competitors')">Top Ranked</a>
+<ul id="m_top_rated_competitors">
+<li><a href="http://www.topcoder.com/tc?module=AlgoRank">Algorithm</a></li>
+<li><a href="http://www.topcoder.com/tc?module=HSRank">High School</a></li>
+<li><a href="http://www.topcoder.com/longcontest/stats/?module=CoderRank">Marathon Match</a></li>
+<li><a href="http://www.topcoder.com/stat?c=top_conceptors">Conceptualization</a></li>
+<li><a href="http://www.topcoder.com/stat?c=top_specificators">Specification</a></li>
+<li><a href="http://www.topcoder.com/stat?c=top_architects">Architecture</a></li>
+<li><a href="http://www.topcoder.com/stat?c=top_designers">Design</a></li>
+<li><a href="http://www.topcoder.com/stat?c=top_developers">Development</a></li>
+<li><a href="http://www.topcoder.com/stat?c=top_assemblers">Assembly</a></li>
+<li><a href="http://www.topcoder.com/stat?c=top_testers">Test Suites</a></li>
+</ul></li>
+<li class="exp"><a href="javascript:void(0)" onclick="Javascript:toggleMenu(this.parentNode,'m_recordbook')">Record Book</a>
+<ul id="m_recordbook">
+<li><a href="http://www.topcoder.com/tc?module=Static&amp;d1=statistics&amp;d2=recordbook_home">Algorithm</a></li>
+<li><a href="http://www.topcoder.com/tc?module=Static&amp;d1=compstats&amp;d2=comp_recordbook_home">Component</a></li>
+<li><a href="http://www.topcoder.com/longcontest/?module=Static&amp;d1=stats&amp;d2=recordbook_home">Marathon Match</a></li>
+</ul></li>
+<li class="exp"><a href="javascript:void(0)" onclick="Javascript:toggleMenu(this.parentNode,'m_com')">Coder of the Month</a>
+<ul id="m_com">
+<li><a href="http://www.topcoder.com/tc?module=COMHistory&amp;achtid=5">Algorithm</a></li>
+<li><a href="http://www.topcoder.com/tc?module=COMHistory&amp;achtid=6">Design</a></li>
+<li><a href="http://www.topcoder.com/tc?module=COMHistory&amp;achtid=7">Development</a></li>
+</ul></li>
+</ul></li>
+</ul></li>
+<li class="exp"><a href="javascript:void(0)" onclick="Javascript:toggleMenu(this.parentNode,'m_edu_content')">Tutorials</a>
+<ul id="m_edu_content">
+<li><a href="http://www.topcoder.com/tc?module=Static&amp;d1=education&amp;d2=overview">Overview</a></li>
+<li><a href="http://www.topcoder.com/tc?module=Static&amp;d1=tutorials&amp;d2=alg_index">Algorithm Tutorials</a></li>
+<li><a href="http://www.topcoder.com/tc?module=Static&amp;d1=tutorials&amp;d2=comp_index">Component Tutorials</a></li>
+<li><a href="http://www.topcoder.com/tc?module=Static&amp;d1=tutorials&amp;d2=mm_index">Marathon Tutorials</a></li>
+<li><a href="http://apps.topcoder.com/wiki/dashboard.action">Wiki</a></li>
+</ul></li>
+<li><a href="http://forums.topcoder.com/">Forums</a></li>
+<li><a href="http://www.topcoder.com/tc?&amp;module=SurveyList">Surveys</a></li>
+<li><a href="http://www.topcoder.com/tc?module=MyHome">My TopCoder</a></li>
+<li><a href="http://www.topcoder.com/help">Help Center</a></li>
+<li class="exp"><a href="javascript:void(0)" onclick="Javascript:toggleMenu(this.parentNode,'m_about_tc')">About TopCoder</a>
+<ul id="m_about_tc">
+<li><a href="http://www.topcoder.com/aboutus/">Overview</a></li>
+<li><a href="http://www.topcoder.com/aboutus/">Why Join TopCoder?</a></li>
+<li><a href="http://www.topcoder.com/aboutus/careers/">Working at TopCoder</a></li>
+<li><a href="http://www.topcoder.com/aboutus/management/">Leadership</a></li>
+<li><a href="http://www.topcoder.com/aboutus/news/">Press Room</a></li>
+</ul></li></ul>
+
+    <div style="float: left; padding: 10px 0px 0px 17px;">
+        
+        <a href="http://www.topcoder.com/tc?module=LinkTracking&amp;link=http://apps.topcoder.com/wiki/x/L4TD&amp;refer=leftnav"><img src="SRM%20516%20-%20TopCoder%20Wiki_files/umlTool.png" alt="UML Tool"></a>
+
+        
+        
+        
+        
+    </div>
+    
+
+<div id="navbarSearch">
+<b>Member Search:</b>
+<form action="http://www.topcoder.com/tc" method="get" name="simpleSearchForm" class="noSpace" id="simpleSearchForm">
+   <input class="noSpace" name="module" value="SimpleSearch" type="hidden">
+   <input class="noSpace" name="ha" value="Handle:" size="12" maxlength="15" onfocus="javascript: if (document.simpleSearchForm.ha.value=='Handle:') document.simpleSearchForm.ha.value = '';" onblur="javascript:if (document.simpleSearchForm.ha.value == '')document.simpleSearchForm.ha.value = 'Handle:';" type="text">
+   <a class="gMetal" href="javascript:void%20document.simpleSearchForm.submit();">Go</a><br>
+   <a class="gMetal" href="http://www.topcoder.com/tc?module=ViewAdvanced">Advanced Search</a>
+</form>
+</div>
+</div>
+<div style="float: left; clear:left; padding: 0px 0px 23px 0px;"><img src="SRM%20516%20-%20TopCoder%20Wiki_files/leftnav_bottom.gif" alt=""></div>
+
+
+    <div style="float: left; clear:left; width: 170px; margin: 0px;" align="center">
+        <img src="SRM%20516%20-%20TopCoder%20Wiki_files/brackets.png" alt="" style="margin-bottom: 23px;">
+    </div>
+
+
+        </td>
+        <td class="bodyColumn" width="100%" align="left">
+
+
+    <script type="text/javascript">
+        function hideMessage(messageId)
+        {
+            var message = document.getElementById(messageId)
+            message.style.display = "none";
+            setCookie(messageId, true);
+        }
+    </script>
+
+        
+
+    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+
+                <tbody><tr class="topBar">
+            <td align="left">
+                <span class="topBarDiv">             
+    <script language="JavaScript">
+        function showBreadcrumbsEllipsis()
+        {
+            document.getElementById('breadcrumbsEllipsis').style.display = 'none';
+            document.getElementById('breadcrumbsExpansion').style.display = 'inline';
+        }
+    </script>
+                                                    <a href="http://apps.topcoder.com/wiki/dashboard.action">Dashboard</a>
+                                     &gt;                         <a href="http://apps.topcoder.com/wiki/display/tc">TopCoder Competitions</a>
+                                                    <span id="breadcrumbs">
+                    &gt;
+                    <span id="breadcrumbsEllipsis">
+                        <a href="#" onclick="showBreadcrumbsEllipsis();return false;" title="
+                    TopCoder Handle             &gt;         Other Competitions             &gt;         Algorithm Overview    ">...</a>
+                    </span>
+                    <span id="breadcrumbsExpansion" style="display:none;">
+                                <a href="http://apps.topcoder.com/wiki/display/tc/TopCoder+Handle">TopCoder Handle</a>
+                 &gt;                     <a href="http://apps.topcoder.com/wiki/display/tc/Other+Competitions">Other Competitions</a>
+                 &gt;                     <a href="http://apps.topcoder.com/wiki/display/tc/Algorithm+Overview">Algorithm Overview</a>
+        </span>
+                </span>
+                                                                        
+                                                     &gt;               
+          <a href="http://apps.topcoder.com/wiki/display/tc/Algorithm+Problem+Set+Analysis">Algorithm Problem Set Analysis</a>
+                                     &gt;                         <a href="http://apps.topcoder.com/wiki/display/tc/SRM+516">SRM 516</a>
+                
+     </span>
+            </td>
+
+            <td style="white-space:nowrap" valign="middle" align="right">
+                    <form id="quickSearch" method="POST" action="/wiki/dosearchsite.action" name="searchForm">
+        <input name="quickSearch" value="true" type="hidden">
+        
+        <input name="searchQuery.spaceKey" value="conf_global" type="hidden">
+        <input accesskey="s" name="searchQuery.queryString" size="25" type="text">
+        <input value="Search" type="submit">
+    </form>
+            </td>
+        </tr>
+        
+                <tr>
+            <td style="padding: 5px 0px;" colspan="2">
+            <table style="padding: 0px; margin: 0px; width: 100%;" border="0" cellpadding="0" cellspacing="0">
+                <tbody><tr>
+                                                                        
+                                                                        <td nowrap="nowrap" valign="bottom" width="1%" align="left">
+                        <span class="logoSpaceLink">            <a href="http://apps.topcoder.com/wiki/display/tc">TopCoder Competitions</a>    </span>
+                    </td>
+                    <td valign="top" width="98%" align="right">
+                                                    
+    <span class="smalltext" id="userNavBar">
+            </span>
+                            
+                                <a href="http://apps.topcoder.com/wiki/display/tc/SRM+516?decorator=printable" rel="nofollow"><img src="SRM%20516%20-%20TopCoder%20Wiki_files/print_16.gif" alt="View a printable version of the current page." title="View a printable version of the current page." border="0" height="16" hspace="1" vspace="1" width="16" align="absmiddle"></a>
+
+                                                        
+                                                                                &nbsp;
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" height="22" align="left">
+                        <span class="pagetitle" style="line-height: 1; margin: 0px; text-decoration: none">
+                                        SRM 516
+                            </span>
+                    </td>
+                </tr>
+            </tbody></table>
+            </td>
+        </tr>
+            </tbody></table>
+
+        <!--
+    Root decorator: all decisions about how a page is to be decorated via the
+                    inline decoration begins here.
+-->
+
+
+
+<!--
+    Switch based upon the context. However, for now, just delegate to a decorator
+    identified directly by the context.
+-->
+
+
+    
+    
+
+
+    
+    
+        
+    
+    
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+
+    <tbody><tr>
+        <td>
+            <div class="greynavbar">
+                <span style="float:right; padding: 6px 10px 4px 0px">
+						
+        
+        
+        
+                    <a href="http://apps.topcoder.com/wiki/spaces/browsespace.action?key=tc"><img src="SRM%20516%20-%20TopCoder%20Wiki_files/browse_space.gif" title="Browse Space" border="0" height="16" width="16" align="absmiddle">&nbsp;<span>Browse Space</span></a>
+		    				</span>
+
+				<ul id="foldertab" style="margin-bottom: 0px; padding-top: 10px;">
+											<li><a id="viewPageLink" href="http://apps.topcoder.com/wiki/display/tc/SRM+516" class="current" accesskey="v"><u>V</u>iew</a></li>
+											<li><a id="viewAttachmentsLink" href="http://apps.topcoder.com/wiki/pages/viewpageattachments.action?pageId=65373184" accesskey="a"><u>A</u>ttachments (4)</a></li>
+											<li><a id="viewPageInfoLink" href="http://apps.topcoder.com/wiki/pages/viewinfo.action?pageId=65373184" accesskey="i"><u>I</u>nfo</a></li>
+									</ul>
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td class="pagebody" valign="top">
+
+                        <table style="clear: both" border="0" cellpadding="0" cellspacing="0" width="100%">
+                <tbody><tr>
+                    <td class="pagecontent" valign="top" width="100%">
+
+                    
+                    
+                    
+                                                    
+                            <table style="margin-bottom: 5px" cellspacing="0" width="100%">
+                                <tbody><tr>
+                                    <td valign="top" align="left">
+                                        <span class="smalltext">
+                                                        Added by             mystic_tc
+, last edited by             vexorian
+ on Dec 01, 2011
+                      &nbsp;(<a href="http://apps.topcoder.com/wiki/pages/diffpages.action?pageId=65373184&amp;originalId=69666708">view change</a>)
+              
+                                            
+ 
+<style type="text/css">
+div.auto_complete {
+    width: 350px;
+    background: #fff;
+}
+
+div.auto_complete ul {
+    border: 1px solid #888;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    list-style-type: none;
+}
+
+div.auto_complete ul li {
+    margin: 0;
+    padding: 3px;
+}
+
+div.auto_complete ul li.selected {
+    background-color: #ffb;
+}
+
+div.auto_complete ul strong.highlight {
+    color: #800;
+    margin: 0;
+    padding: 0;
+}
+</style>
+
+
+<!-- Delay the loading of the external javascript file needed for labels (as it takes too long to load and visibly holds loading of the page body) -->
+<!-- To do this without javascript errors over undefined functions, we need to declare stubs here (that are overrided later by the proper implementations) -->
+<script language="JavaScript" type="text/javascript">
+    function doAddLabel(hideTextfieldAfterAddParam)
+    {
+        // stub
+    }
+
+    function onAddLabel()
+    {
+        // stub
+    }
+
+    function showLabelsInput()
+    {
+        // stub
+    }
+</script>
+
+<!-- This is a hack to work around an apparent SiteMesh bug - http://jira.opensymphony.com/browse/SIM-198 -->
+
+
+<span class="error"><span class="errorMessage" id="errorSpan"></span></span>
+<form name="addLabelForm" method="" action="" onsubmit="doAddLabel(false); return false;" style="margin: 0px; padding: 0px">
+    <div style="float: left">Labels:&nbsp;</div>
+    <div id="labelsInfo" style="float: left; width: 90%">
+        <span id="labelsList">
+                    (None)
+                </span>
+            </div>
+    <br clear="all"><!-- Do not remove this line-break. You will make Safari cry. -->
+    <div id="labelInputSpan" style="display: none; clear: both;">
+        <div style="border: 1px solid #cccccc; padding: 8px; align: center; background-color: #f0f0f0">
+
+        <div id="labelOperationErrorContainer" style="display: none"><span class="error"><span class="errorMessage" id="labelOperationErrorMessage"></span></span></div>
+
+        <table width="100%">
+            <tbody><tr>
+                <td>
+                    <div class="formtitle" style="padding-bottom: 3px; font-size: 13px;">Add Labels</div>
+                </td>
+                <td align="right"><div id="waitImageAndStatus" style="display: none; height: 16px;"><img alt="Wait Image" src="SRM%20516%20-%20TopCoder%20Wiki_files/wait.gif" border="0" align="absmiddle">&nbsp;<span id="labelOperationStatus" class="smalltext" style="vertical-align: middle"></span></div></td>
+            </tr>
+            <tr><td width="50%">
+                    Enter labels to add to this page:<br>
+        <input autocomplete="off" id="labelName" name="labelsString" class="monospaceInput" size="40" type="text">
+        <input onclick="doAddLabel(false); return false;" value="Add" type="submit"><input onclick="doAddLabel(true); return false;" value="Done" type="button">
+        <div style="display: none;" class="auto_complete" id="labelsAutocompleteList"></div>
+        <div class="smalltext">
+            <em>Tip:</em> Looking for a label? Just start typing.
+        </div>
+        </td>
+            <td valign="top" width="50%">
+                <div id="suggestedLabelsSpan"></div>
+            </td>
+        </tr></tbody></table>
+        </div>
+    </div>
+</form>
+    <script type="text/javascript">
+        // if there is javascript support, enable the [Edit] link that enables AJAX label adding/removing functionality
+        if (document.getElementById('editLabelsLink'))
+        {
+            document.getElementById('editLabelsLink').style.display = 'inline';
+        }
+    </script>
+                                        </span>
+                                    </td>
+                                    <td valign="top" align="right">
+                                                                            </td>
+                                </tr>
+                            </tbody></table>
+
+                                                        
+                            <div class="wiki-content">
+                               <!-- wiki content -->
+            
+<link type="text/css" rel="stylesheet" href="SRM%20516%20-%20TopCoder%20Wiki_files/style.css">
+<link type="text/css" rel="stylesheet" href="SRM%20516%20-%20TopCoder%20Wiki_files/coders.css">
+<link type="text/css" rel="stylesheet" href="SRM%20516%20-%20TopCoder%20Wiki_files/stats.css">
+<link type="text/css" rel="stylesheet" href="SRM%20516%20-%20TopCoder%20Wiki_files/tcStyles20080219.css">
+
+<div class="linkBox">
+    <a href="http://apps.topcoder.com/tc?module=Static&amp;d1=match_editorials&amp;d2=archive">Archive</a><br>
+    <a href="http://apps.topcoder.com/stat?c=round_overview&amp;er=5&amp;rd=11524">Match Overview</a><br>
+    <a href="http://forums.topcoder.com/?module=ThreadList&amp;forumID=547079">Discuss this match</a>
+</div>
+<span class="bodySubtitle">Single Round Match 516</span><br>
+Tuesday, August 30th, 2011
+<br><br>
+
+<h2>Match summary</h2> 
+
+<p> 
+SRM 516 started fast when many division 1 coders were seemingly able to solve at least
+two problems. The challenge phase and subsequent system test phase proved to be
+full of casualties and at the end less than 100 coders had more than one correct
+submission. The top performers had concerns of their own, the hard
+problem was solved by only 6 coders which needed speed and great challenging skills to
+reach the very top. With his outstanding speed and 150 challenge points, <a href="http://www.topcoder.com/tc?module=MemberProfile&amp;cr=10574855" class="coderTextRed">Petr</a> scored
+yet another SRM win. It was not easy as <a href="http://www.topcoder.com/tc?module=MemberProfile&amp;cr=22263204" class="coderTextRed">tourist</a> was only 10 points bellow the first
+place. The close race does not end there, <a href="http://www.topcoder.com/tc?module=MemberProfile&amp;cr=22689544" class="coderTextRed">wata</a> and <a href="http://www.topcoder.com/tc?module=MemberProfile&amp;cr=22692969" class="coderTextRed">rng_58</a> acquired
+the third and fourth place respectively and were still less than 50 points bellow
+<a href="http://www.topcoder.com/tc?module=MemberProfile&amp;cr=10574855" class="coderTextRed">Petr</a>.<br>
+<br>
+In division 2, the need for speed was as strong as ever, with almost 30 coders solving the hard problem and
+11 solving all three of them. <a href="http://www.topcoder.com/tc?module=MemberProfile&amp;cr=22645503" class="coderTextBlue">rajatag12</a> returns to division 1 after a division 2 win with
+great scores in the problems and 200 challenge points. Former gray coder <a href="http://www.topcoder.com/tc?module=MemberProfile&amp;cr=22897110" class="coderTextGreen">Try_to_try</a> got the second place thanks
+to the fastest 1000 submission. Third place went to <a href="http://www.topcoder.com/tc?module=MemberProfile&amp;cr=22865829" class="coderTextBlue">safariworld</a> who joins division 1 after his 25-th match. 
+</p> 
+
+ 
+<h1> 
+The Problems 
+</h1>
+<p></p> 
+
+<font size="+2"> 
+<b><a href="http://apps.topcoder.com/stat?c=problem_statement&amp;pm=11524&amp;rd=14541" name="11524">NetworkXZeroOne</a></b> 
+</font> 
+<a href="http://apps.topcoder.com/tc?module=ProblemRatingQuestions&amp;pid=11524"><img src="SRM%20516%20-%20TopCoder%20Wiki_files/rate_it.gif" alt="rate it" border="0" hspace="10"></a> 
+<a href="http://forums.topcoder.com/?module=ThreadList&amp;forumID=547079" class="statText"><img src="SRM%20516%20-%20TopCoder%20Wiki_files/btn_discuss_it.gif" alt="discuss it" border="0"></a>
+<br> 
+Used as: Division Two - Level One: <blockquote><table cellspacing="2"> 
+  <tbody><tr> 
+    <td class="bodyText" style="background: #eee;"> 
+      <b>Value</b> 
+    </td> 
+    <td class="bodyText" style="background: #eee;"> 
+      250 
+    </td> 
+  </tr> 
+  <tr> 
+    <td class="bodyText" style="background: #eee;"> 
+      <b>Submission Rate</b> 
+    </td> 
+    <td class="bodyText" style="background: #eee;"> 
+      831 / 925 (89.84%) 
+    </td> 
+  </tr> 
+  <tr> 
+    <td class="bodyText" style="background: #eee;"> 
+      <b>Success Rate</b> 
+    </td> 
+    <td class="bodyText" style="background: #eee;"> 
+      643 / 831 (77.38%) 
+    </td> 
+  </tr> 
+  <tr> 
+    <td class="bodyText" style="background: #eee;"> 
+      <b>High Score</b> 
+    </td> 
+    <td class="bodyText" style="background: #eee;"> 
+      <b>liuzaoxin</b> for 249.99 points (0 mins 12 secs) 
+    </td> 
+  </tr> 
+  <tr> 
+    <td class="bodyText" style="background: #eee;"> 
+      <b>Average Score</b> 
+    </td> 
+    <td class="bodyText" style="background: #eee;"> 
+      197.41 (for 643 correct submissions) 
+    </td> 
+  </tr> 
+</tbody></table></blockquote> 
+<p>
+The key observation was to notice the pattern
+that determines whether a string of x and o characters follows the required
+rule or not. It can be inferred from the examples and it can be confirmed
+by a quick analysis.<br>
+<br>
+Let us focus on the simplest case: making sure that every length-2 substring
+contains an equal number of x and o characters. Since the length is 2, the only
+way for such substring to contain equal amounts of x and o characters
+is to be <i>xo</i>
+or <i>ox</i>. Note that every length-2 substring must follow this 
+property. If we wanted a string of 5 characters, and we decided the
+first pair of characters was <i>xo</i>, then we would forcibly have <i>ox</i> for
+the second pair of characters (the letter o has already been decided). Then we can
+get the remaining characters: <i>xoxox</i>. The only other possibility for a string
+of length five that follows the property for length 2 substrings is <i>oxoxo</i>. By the same
+logic, we can conclude that in order to fulfill the length-2 property, we need
+sequences of alternating characters: oxoxox.... or xoxox... . <br>
+<br>
+Let us now consider substrings of length 4. This time we have to place 2 <i>x</i> and 2 <i>o</i>
+characters. The string is already either of the form oxoxo... or xoxox... because
+the rule for length-2 substrings must also be fulfilled. Note that <i>oxox</i> and <i>xoxo</i> fulfill the
+rule for length-4 substrings as well.<br>
+<br>
+For every even-length substring, if we assume that the substring follows an alernating 
+pattern xoxox... or oxoxox... , the rule for the new even length will also be fulfilled. Since those
+alternating patterns are necessary for the length-2 substrings property and sufficient for 
+the properties of the other even length substrings, we can take
+the conclusion that there are only <i>two</i> different patterns that follow the interesting
+property: xoxoxo... and oxoxoxo...<br>
+<br>
+Building the two strings that match the pattern and have the same length as the
+input message is simple. Once they are built we can
+check if the <b>message</b> is compatible with that pattern. All characters different to
+? in the message must be equal to the equivalent position in the built pattern of alternating
+characters. Once
+ the alternating pattern that is compatible with the message is found, return it. The
+statement guarantees that exactly one of the patterns will be compatible with the message.<br>
+<br>
+
+</p><div class="code panel" style="border-width: 1px;"><div class="codeContent panelContent">
+<pre class="code-java">string reconstruct(string message)
+{
+    <span class="code-comment">// The s variable decides whether the
+</span>    <span class="code-comment">// alternating pattern 
+</span>    <span class="code-comment">// begins with x or o
+</span>    <span class="code-keyword">for</span> (<span class="code-object">int</span> s=0; s&lt;2; s++) {
+        string fixed = message;
+        
+        <span class="code-comment">// ch holds the current character,
+</span>        <span class="code-comment">// it alternates between x and o <span class="code-keyword">for</span> each position
+</span>        <span class="code-object">char</span> ch = (s? 'o' : 'x' );
+
+        bool bad = <span class="code-keyword">false</span>;
+        <span class="code-keyword">for</span> (<span class="code-object">int</span> i=0; i&lt;message.size(); i++) {
+            <span class="code-keyword">if</span> ( message[i] == '?' ) {
+                fixed[i] = ch;
+            } <span class="code-keyword">else</span> <span class="code-keyword">if</span> ( message[i] != ch ) {
+                <span class="code-comment">// The non-? characters in the message must coincide
+</span>                <span class="code-comment">// with those in the pattern we are building.
+</span>                bad = <span class="code-keyword">true</span>;
+            }
+
+            ch = ( (ch=='x') ? 'o' : 'x');
+        }
+        <span class="code-comment">// We found the pattern that matches the message:
+</span>        <span class="code-keyword">if</span> (! bad ) {
+            <span class="code-keyword">return</span> fixed;
+        }
+    }
+    <span class="code-keyword">return</span> <span class="code-quote">"!"</span>;
+}</pre>
+</div></div>
+
+<p></p>
+
+<p><u>Alternative solutions and additional comments.</u></p>
+
+<p>&lt;PLACE YOUR COMMENTS HERE&gt;</p>
+
+<font size="+2"> 
+<b><a href="http://apps.topcoder.com/stat?c=problem_statement&amp;pm=10846&amp;rd=14541" name="10846">NetworkXOneTimePad</a></b> 
+</font> 
+<a href="http://apps.topcoder.com/tc?module=ProblemRatingQuestions&amp;pid=10846"><img src="SRM%20516%20-%20TopCoder%20Wiki_files/rate_it.gif" alt="rate it" border="0" hspace="10"></a> 
+<a href="http://forums.topcoder.com/?module=ThreadList&amp;forumID=547079" class="statText"><img src="SRM%20516%20-%20TopCoder%20Wiki_files/btn_discuss_it.gif" alt="discuss it" border="0"></a>
+<br> 
+Used as: Division Two - Level Two: <blockquote><table cellspacing="2"> 
+  <tbody><tr> 
+    <td class="bodyText" style="background: #eee;"> 
+      <b>Value</b> 
+    </td> 
+    <td class="bodyText" style="background: #eee;"> 
+      500 
+    </td> 
+  </tr> 
+  <tr> 
+    <td class="bodyText" style="background: #eee;"> 
+      <b>Submission Rate</b> 
+    </td> 
+    <td class="bodyText" style="background: #eee;"> 
+      657 / 925 (71.03%) 
+    </td> 
+  </tr> 
+  <tr> 
+    <td class="bodyText" style="background: #eee;"> 
+      <b>Success Rate</b> 
+    </td> 
+    <td class="bodyText" style="background: #eee;"> 
+      212 / 657 (32.27%) 
+    </td> 
+  </tr> 
+  <tr> 
+    <td class="bodyText" style="background: #eee;"> 
+      <b>High Score</b> 
+    </td> 
+    <td class="bodyText" style="background: #eee;"> 
+      <b>mathscholar</b> for 484.84 points (5 mins 3 secs) 
+    </td> 
+  </tr> 
+  <tr> 
+    <td class="bodyText" style="background: #eee;"> 
+      <b>Average Score</b> 
+    </td> 
+    <td class="bodyText" style="background: #eee;"> 
+      292.29 (for 212 correct submissions) 
+    </td> 
+  </tr> 
+</tbody></table></blockquote> 
+
+Used as: Division One - Level One: <blockquote><table cellspacing="2"> 
+  <tbody><tr> 
+    <td class="bodyText" style="background: #eee;"> 
+      <b>Value</b> 
+    </td> 
+    <td class="bodyText" style="background: #eee;"> 
+      250 
+    </td> 
+  </tr> 
+  <tr> 
+    <td class="bodyText" style="background: #eee;"> 
+      <b>Submission Rate</b> 
+    </td> 
+    <td class="bodyText" style="background: #eee;"> 
+      686 / 700 (98.00%) 
+    </td> 
+  </tr> 
+  <tr> 
+    <td class="bodyText" style="background: #eee;"> 
+      <b>Success Rate</b> 
+    </td> 
+    <td class="bodyText" style="background: #eee;"> 
+      461 / 686 (67.20%) 
+    </td> 
+  </tr> 
+  <tr> 
+    <td class="bodyText" style="background: #eee;"> 
+      <b>High Score</b> 
+    </td> 
+    <td class="bodyText" style="background: #eee;"> 
+      <b>embe</b> for 246.47 points (3 mins 24 secs) 
+    </td> 
+  </tr> 
+  <tr> 
+    <td class="bodyText" style="background: #eee;"> 
+      <b>Average Score</b> 
+    </td> 
+    <td class="bodyText" style="background: #eee;"> 
+      190.91 (for 461 correct submissions) 
+    </td> 
+  </tr> 
+</tbody></table></blockquote> 
+<p>
+Let us first begin with a small variation: we have only one plaintext and one ciphertext. Is it
+possible to build the key? Due to how the XOR operation works, the solution is as simple as:
+(plaintext XOR ciphertext). (xor is associative: we have (a xor (a xor b)) = (a xor a) xor b = b.)<br>
+<br>
+In the problem there are multiple plaintexts and ciphertexts. Note that, given
+a key, each ciphertext
+must have one plaintext as its original message before using the key. The previous paragraph
+is handy in that there is a finite number of potential keys. Take ciphertexts[0], 
+one of the plaintexts <i>must</i> be the original message for ciphertexts[0]. We can just iterate through
+each plaintexts[i], find the key that turns plaintexts[i] into ciphertexts[0] and
+verify if that <b>key</b> also works for the remaining ciphertexts. Since there are no
+repeated values among plaintexts, we will only check each potential key once.<br>
+<br>
+Verifying if a key is valid for the entire input is not difficult. We can either change each plaintext into
+new ciphertexts and then verify that all of the input ciphertexts form a subset of the set of
+newly-found ciphertexts. Or we can go the reverse way and turn each ciphertext into its original message.
+Since
+( (a xor k) xor k) = a, we can just xor each ciphertext with the key to find its original message.
+If for each ciphertext, its original message is in the <i>plaintexts</i> array, then the key is valid.
+The result
+is the total number of valid keys we find.<br>
+<br>
+<b>Code</b><br>
+
+</p><div class="code panel" style="border-width: 1px;"><div class="codeContent panelContent">
+<pre class="code-java"><span class="code-keyword">public</span> class NetworkXOneTimePad
+{
+    <span class="code-comment">// Performs xor between strings.
+</span>    <span class="code-comment">// A common work around is to simply convert the strings
+</span>    <span class="code-comment">// to integers. Do note that it introduces some corner cases:
+</span>    <span class="code-comment">//  * Make sure to use 64 bit integers.
+</span>    <span class="code-comment">//  * You have to convert the strings as base 2 numbers, not
+</span>    <span class="code-comment">//    base 10 numbers ( <span class="code-object">String</span> <span class="code-quote">"101"</span> in <span class="code-keyword">this</span> problem represents
+</span>    <span class="code-comment">//    number 5 and not 101).
+</span>    <span class="code-object">String</span> xor(<span class="code-object">String</span> x, <span class="code-object">String</span> y)
+    {
+        <span class="code-object">String</span> r = "";
+        <span class="code-keyword">for</span> (<span class="code-object">int</span> i=0; i&lt;x.length(); i++) {
+            r += ( x.charAt(i) == y.charAt(i) ? '0' : '1' );
+        }
+        <span class="code-keyword">return</span> r;
+    }
+    <span class="code-keyword">public</span> <span class="code-object">int</span> crack(<span class="code-object">String</span>[] plaintexts, <span class="code-object">String</span>[] ciphertexts)
+    {
+        <span class="code-object">int</span> count = 0;
+        <span class="code-keyword">for</span> (<span class="code-object">String</span> p: plaintexts) {
+            <span class="code-comment">// Find the key such that p xor key = ciphertexts[0].
+</span>            <span class="code-object">String</span> key = xor(p, ciphertexts[0]);
+            
+            <span class="code-comment">// Verify <span class="code-keyword">if</span> <span class="code-keyword">for</span> each ciphertext, its original
+</span>            <span class="code-comment">// message using the key exists in plaintexts:
+</span>            <span class="code-object">boolean</span> foundall = <span class="code-keyword">true</span>;
+            <span class="code-keyword">for</span> (<span class="code-object">String</span> cip : ciphertexts) {
+                <span class="code-comment">// Find the original message:
+</span>                <span class="code-object">String</span> dec = xor(cip, key);
+                
+                <span class="code-object">boolean</span> found = <span class="code-keyword">false</span>;
+                <span class="code-keyword">for</span> (<span class="code-object">String</span> x: plaintexts) {
+                     found = (found || x.equals(dec) );
+                }
+                foundall = (foundall &amp;&amp; found);
+            }
+            <span class="code-keyword">if</span> (foundall) {
+                count++;
+            }
+        }
+        <span class="code-keyword">return</span> count;
+    }
+}</pre>
+</div></div>
+
+<p></p>
+
+<p><u>Alternative solutions and additional comments.</u></p>
+
+<p>&lt;PLACE YOUR COMMENTS HERE&gt;</p>
+
+<font size="+2"> 
+<b><a href="http://apps.topcoder.com/stat?c=problem_statement&amp;pm=11239&amp;rd=14541" name="11239">NetworkXMessageRecovery</a></b> 
+</font> 
+<a href="http://apps.topcoder.com/tc?module=ProblemRatingQuestions&amp;pid=11239"><img src="SRM%20516%20-%20TopCoder%20Wiki_files/rate_it.gif" alt="rate it" border="0" hspace="10"></a> 
+<a href="http://forums.topcoder.com/?module=ThreadList&amp;forumID=547079" class="statText"><img src="SRM%20516%20-%20TopCoder%20Wiki_files/btn_discuss_it.gif" alt="discuss it" border="0"></a>
+<br> 
+Used as: Division Two - Level Three: <blockquote><table cellspacing="2"> 
+  <tbody><tr> 
+    <td class="bodyText" style="background: #eee;"> 
+      <b>Value</b> 
+    </td> 
+    <td class="bodyText" style="background: #eee;"> 
+      1000 
+    </td> 
+  </tr> 
+  <tr> 
+    <td class="bodyText" style="background: #eee;"> 
+      <b>Submission Rate</b> 
+    </td> 
+    <td class="bodyText" style="background: #eee;"> 
+      90 / 925 (9.73%) 
+    </td> 
+  </tr> 
+  <tr> 
+    <td class="bodyText" style="background: #eee;"> 
+      <b>Success Rate</b> 
+    </td> 
+    <td class="bodyText" style="background: #eee;"> 
+      30 / 90 (33.33%) 
+    </td> 
+  </tr> 
+  <tr> 
+    <td class="bodyText" style="background: #eee;"> 
+      <b>High Score</b> 
+    </td> 
+    <td class="bodyText" style="background: #eee;"> 
+      <b>Try_to_try</b> for 879.55 points (10 mins 49 secs) 
+    </td> 
+  </tr> 
+  <tr> 
+    <td class="bodyText" style="background: #eee;"> 
+      <b>Average Score</b> 
+    </td> 
+    <td class="bodyText" style="background: #eee;"> 
+      586.67 (for 30 correct submissions) 
+    </td> 
+  </tr> 
+</tbody></table></blockquote> 
+<p>
+<b>Use exactly all the characters used in the input</b><br>
+It is sometimes vital to pay attention to details in the problem statement like
+the constraints. In this case, the original
+message did not have any repetitions and there is also a guarantee
+that at least one original messages of that kind will exist for the given
+subsequences.<br>
+<br>
+Note that there may be many different characters in the input subsequences, and
+we need to use each of those characters because we want to find a message
+such that those strings are its subsequences.<br>
+<br>
+There is also never a need to add any additional character. The task is to 
+minimize the length of the original message and adding characters that did
+not originally exist in the subsequences does not help.<br>
+<br>
+We also do not need to use the same character more than once. The original
+message will not have repetitions and the statement guarantees us that at least
+one message that follows those rules will exist.<br>
+<br>
+As a conclusion, the shortest possible original message will consist of using
+all the characters that are available in the input subsequences.<br>
+<br>
+<b>The order</b><br>
+Although we know the characters that make part of the shortest result, we need
+to decide the order of
+the contents in a way that it is still a valid original message and is also
+the lexicographically-smallest solution. <br>
+<br>
+
+Consider the example: {"acd", "bce"}. Each subsequence determines a mandatory
+order in which the characters must appear. Assuming <i>acd</i> to be a subsequence of
+the original message means that <i>a</i> will come  before <i>c</i> and <i>c</i> before <i>d</i>
+in the original message.
+It could happen that two characters never appear in the same message fragment and
+thus there is no direct relationship. In that case, it is possible that indirect
+relationships do force a specific order. For example, in the
+case {"ad", "dc"}, <i>c</i> must come after <i>d</i>, and <i>d</i> must come after <i>a</i>,
+ergo <i>c</i> must come after <i>a</i>.
+In case there is not even an indirect relationship between two
+characters then placing any of them first is valid, but we will pick to place the smallest one
+first since we
+want to build the lexicographically-first solution.<br>
+<br>
+The process of picking the order  of a series of elements, when some elements
+must forcefully come after other elements is called a 
+<a href="http://en.wikipedia.org/wiki/Topological_sort">Topological sort</a>. 
+The graph is directed, and there is precedence between two characters if one
+comes before another in one of the fragments. There will never be cycles like, for
+example, {xy, yx}, because an original message with no repeated characters will
+always exist. There are at most 52 different
+characters, so we can use the simple topsort algorithm that just iteratively adds
+any character that does not have a pending requirement to the solution.
+In the special case
+when there are multiple characters with no specific requirements, we
+need to pick the 
+lexicographically first one among them.<br>
+<br>
+<b>Code</b>
+
+</p><div class="code panel" style="border-width: 1px;"><div class="codeContent panelContent">
+<pre class="code-java">string recover(vector &lt;string&gt; messages)
+{
+    string topsort = "";
+    <span class="code-object">int</span> n = messages.size();
+    <span class="code-keyword">while</span> (<span class="code-keyword">true</span>) {
+        <span class="code-comment">// Do a topsort
+</span>        <span class="code-keyword">const</span> <span class="code-object">char</span> INF = '{'; <span class="code-comment">//A value higher than any the valid input
+</span>        
+        <span class="code-object">char</span> best = INF;
+        <span class="code-comment">// Find the character that is left to be added
+</span>        <span class="code-comment">// has no requirements and is the
+</span>        <span class="code-comment">// lexicographically smallest
+</span>        <span class="code-keyword">for</span> (<span class="code-object">int</span> i=0; i&lt;n; i++) {
+            <span class="code-keyword">if</span> ( messages[i].size() != 0 ) {
+                <span class="code-object">char</span> ch = messages[i][0];  <span class="code-comment">//Should a first
+</span>                                          <span class="code-comment">// character in one of the messages
+</span>                <span class="code-keyword">for</span> (<span class="code-object">int</span> j=0; j&lt;n; j++) {
+                    <span class="code-comment">// Confirm no requirement preceedes it.
+</span>                    <span class="code-keyword">for</span> (<span class="code-object">int</span> k=1; k&lt;messages[j].size(); k++) {
+                        <span class="code-keyword">if</span> (messages[j][k] == ch) {
+                            ch = INF;
+                        }
+                    }
+                }
+                best = min(best, ch);
+            }
+        }
+        <span class="code-keyword">if</span> ( best == INF) {
+            <span class="code-comment">// No more characters left
+</span>            <span class="code-keyword">break</span>;
+        }
+        topsort += best;
+        <span class="code-comment">// Remove the character from all the lists of requirements:
+</span>        <span class="code-keyword">for</span> (<span class="code-object">int</span> i=0; i&lt;n; i++) {
+            <span class="code-keyword">if</span> ( (messages[i].size() != 0) &amp;&amp; (messages[i][0] == best) ) {
+                messages[i] = messages[i].substr(1);
+            }
+        }
+    }
+    <span class="code-keyword">return</span> topsort;
+}</pre>
+</div></div>
+
+<p></p>
+
+<p><u>Alternative solutions and additional comments.</u></p>
+
+<p>&lt;PLACE YOUR COMMENTS HERE&gt;</p>
+
+<font size="+2"> 
+<b><a href="http://apps.topcoder.com/stat?c=problem_statement&amp;pm=11114&amp;rd=14541" name="11114">RowsOrdering</a></b> 
+</font> 
+<a href="http://apps.topcoder.com/tc?module=ProblemRatingQuestions&amp;pid=11114"><img src="SRM%20516%20-%20TopCoder%20Wiki_files/rate_it.gif" alt="rate it" border="0" hspace="10"></a> 
+<a href="http://forums.topcoder.com/?module=ThreadList&amp;forumID=547079" class="statText"><img src="SRM%20516%20-%20TopCoder%20Wiki_files/btn_discuss_it.gif" alt="discuss it" border="0"></a>
+<br> 
+Used as: Division One - Level Two: <blockquote><table cellspacing="2"> 
+  <tbody><tr> 
+    <td class="bodyText" style="background: #eee;"> 
+      <b>Value</b> 
+    </td> 
+    <td class="bodyText" style="background: #eee;"> 
+      500 
+    </td> 
+  </tr> 
+  <tr> 
+    <td class="bodyText" style="background: #eee;"> 
+      <b>Submission Rate</b> 
+    </td> 
+    <td class="bodyText" style="background: #eee;"> 
+      315 / 700 (45.00%) 
+    </td> 
+  </tr> 
+  <tr> 
+    <td class="bodyText" style="background: #eee;"> 
+      <b>Success Rate</b> 
+    </td> 
+    <td class="bodyText" style="background: #eee;"> 
+      115 / 315 (36.51%) 
+    </td> 
+  </tr> 
+  <tr> 
+    <td class="bodyText" style="background: #eee;"> 
+      <b>High Score</b> 
+    </td> 
+    <td class="bodyText" style="background: #eee;"> 
+      <b>Petr</b> for 466.15 points (7 mins 46 secs) 
+    </td> 
+  </tr> 
+  <tr> 
+    <td class="bodyText" style="background: #eee;"> 
+      <b>Average Score</b> 
+    </td> 
+    <td class="bodyText" style="background: #eee;"> 
+      289.75 (for 115 correct submissions) 
+    </td> 
+  </tr> 
+</tbody></table></blockquote> 
+<p>
+Let us first make sure to understand how the permutations will change the result.
+We want to find the minimum possible sum of the final positions of the given
+strings after they are sorted using the permutations. Each of the permutations
+represents an ordering. The permutation of the M columns will determine which
+column to check first when comparing. The permutations that belong to each column
+are basically rankings that function <i>only</i> for that column, which determines
+which character (number) comes first in comparison when we compare characters
+in that column. Note that the permutations for the columns may be different.<br>
+<br>
+Let us first assume that the order of the columns has already been decided and
+is fixed. For example {0,1, 2, ...}. This means that the lowest-index columns will
+be  compared first. What should we do about the rankings used by each column?<br>
+<br>
+How does the ranking of each column affect the value we want to 
+minimize? Let
+us think a simple case in which there is only one column. There is an 
+example
+case like that: {a, b, c, d, e, f, g}, it should return 28.  This is 
+actually
+a simple case. No matter what ranking we decide, e.g., (a &lt; b &lt; c 
+&lt; d &lt; e &lt; f &lt; g), the
+sum of the positions of the strings after sorting will always be: 
+(1+2+3+4+5+6+7). This
+happens because all of the strings were different. How about a more 
+special example like
+{a, b, c, c}? In this case the sum of the final positions can vary. With
+ (a &lt; b &lt; c), the positions will be (1, 2, 3 and 3) and the sum 
+will be (1 + 2 + 3 + 3). Note that this time the
+three is repeated. If we instead used: (c &lt; a &lt; b) the sum would 
+be (2 + 3 + 1 + 1). Basically,
+the more times a string is repeated, the smaller the position we want to
+ have for it.<br>
+<br>
+An overall formula would be: sum( position * repetitions ) for each character in the column that
+ends in a <i>position</i> and appears <i>repetitions</i> times. We want to minimize this
+sum. After we found a list of frequencies/repetitions for each character in the column,
+we can sort this list in descending order and assign the lowest position to the character
+with the most repetitions, then the second-lowest position to the character with
+the second-most repetitions and etc. This greedy approach works and can be proven by
+a contradiction. Assume two characters <i>a</i> and <i>b</i> are repeated <i>ra</i> and <i>rb</i> times, 
+respectively and are assigned to positions <i>pa</i> and <i>pb</i>. Then the sum will contain
+the following summands:<br>
+<br>
+... + ra * pa + ... rb * pb + ... <br>
+<br>
+Assume that (pa &lt; pb) and (ra &lt; rb). We can tell that:
+</p><pre>                  pb &gt; pa
+      (rb - ra) * pb &gt; (rb - ra) * pa    //rb &gt; ra
+      
+  ra * pa  + rb * pb &gt; ra * pb + rb * pa</pre><p> Which means that we could swap
+  the positions of the characters in the ranking and get a smaller sum. This works
+  for a single  column and we will see it is true for any column in a setting with
+  any number of columns. Let us move to a case {bb, bc, ac}. There are two columns,
+  one column is {b, b, a} and the other is {b, c, c}. Assume for now that
+  the ordering of the second column is fixed as (a &lt; b &lt; c &lt; ...) (and the order of the
+  columns is still fixed as {0, 1,...}). Let us see how the first column affects the
+  positions:<br>
+<br>
+We have strings {bb, bc, ac}. Assume first an ordering (b &lt; a &lt; c) . This means
+that all the strings that have <i>a</i> as a character in this column will come after
+those with b. The second column has the order (a &lt; b &lt; c). So the strings will
+be ordered in the following way: ..., bb, bc, ... ac. Remember that there are 50<sup>M</sup>
+different rows. So every possible string of M characters will exist. This means
+that there are 50<sup>M-1</sup> strings that begin with <i>b</i> and an equal
+number of strings that begin with <i>a</i>. So there are some more strings between the ones
+that matter to us:  ( ba, <b>bb</b>, <b>bc</b>, bd, ... bZ, aa, <b>ab</b>, ... Za, ...ZZ). We are 
+assuming that Z is the last letter in the rankings of both the first and second column.  Since
+there will be 50<sup>M-1</sup> = 50 strings that begin with <i>b</i>, then we can tell the positions of the three
+strings: (bb = 2, bc = 3, ab = 52). In this case note that bb = 0*50 + 2, bc = 0*50 + 3 and ab = 1*50 + 2. This
+becomes very similar to numerical systems and it is like a base 50 number system with 
+the exception that we decide the order of the columns and the values of the
+<i>digits</i> in each column.<br>
+<br>
+Interestingly, we can determine a level of independence between the columns. Imagine that
+we picked the order (a &lt; b &lt; ... &lt; Z) for the first column. Then the values would
+be: (bb = 1*50 + 2 , bc = 1*50 + 3, ab = 0*50 + 2). Note that the numbers provided by
+the second column have not changed: 2 + 3 + 2. We can calculate the best ordering
+for each column without considering the other columns.<br>
+<br>
+Imagine the contents of a column were {a,a,b,a,c,c}, now it does not matter which
+column we are talking about. Only that it is not the last column (this exception
+will be dealt with later). Depending on the number of columns M and the number of
+column, we will multiply the <i>digits</i> of this column by a different power of 50. For example: 50, or 2500, or 50<sup>30</sup>. 
+For now we will call this power P. The ordering that we pick for the characters in this column will
+affect the final result in the following way: Sum( position * repetitions * P ). Note that the
+rule that optimizes this shall be the same: assign the character with the most repetitions to the
+smallest position. Also note that in this case, the lowest position is 0 and not 1.<br>
+<br>
+We did not consider the last column in the last case because in that case the 
+first position number is 1. However, this can be changed. The reason the first position number
+is 1 is because the final positions are 1-indexed. If we assumed the positions to be 0-indexed,
+then the position numbers for the last column would also begin with 0. For example: {a, b, c} would
+get the sum (0 + 1 + 2) instead of (1 + 2 + 3). Note that to transform the final
+result from 0-indexed to 1-indexed, all that will take is to add up <b>N</b>, the total number
+of strings in the input. After moving to 0-indexed positions, the previous rule: P * Sum(position * repetitions)
+will apply to all columns, note that for the last column, P = 50<sup>0</sup> = 1. <br>
+<br>
+Note that the optimal factor Sum(position * repetitions) for each column does
+not really depend on the column's assigned powers of 50. Therefore, it is possible
+to get the best of such value without considering what power of 50 we have. It only
+depends on what kinds of characters and repetitions exist in the column. This makes us
+ready to move to picking the best permutation of columns.<br>
+<br>
+<b>The best permutation of columns</b><br>
+The order of the columns actually determines the exponent of the power of 50 that will be multiplied
+to the <b>factor</b> = Sum(position * repetitions) for each column. For example, if we are talking
+about the first column, the result will have (<b>factor</b> * 50<sup>M-1</sup>) as one of its summands.
+If that was instead the last column, the result would have (<b>factor</b> * 1). Since the
+optimal factors for each column are already known, the problem becomes about picking the
+best position (exponent) possible for each of these factors.<br>
+<br>
+Let us say that <b>factor</b>[i] is the calculated optimal factor for column i and that its
+position in the permutation of columns is <b>position</b>[i]. Then the final result will be:
+Sum( factor[i] * 50 <sup>M - position[i] - 1</sup> , for each i). With a similar argument
+as the one we used before, we can see that it is best to assign the lowest <b>factors</b> to
+the highest column positions to minimize the sum of the positions.<br>
+<br>
+<b>Code</b><br>
+
+</p><div class="code panel" style="border-width: 1px;"><div class="codeContent panelContent">
+<pre class="code-java"><span class="code-keyword">public</span> <span class="code-object">int</span> order(<span class="code-object">String</span>[] rows)
+{
+    <span class="code-object">int</span> M = rows[0].length();
+    <span class="code-object">int</span> N = rows.length;
+    <span class="code-object">int</span>[] columnFactors = <span class="code-keyword">new</span> <span class="code-object">int</span>[M];
+    
+    <span class="code-comment">// Find the factors <span class="code-keyword">for</span> each column:
+</span>    
+    <span class="code-keyword">for</span> (<span class="code-object">int</span> i=0; i&lt;M; i++) {
+        <span class="code-comment">// Count the frequencies
+</span>        <span class="code-comment">// of each character in the column
+</span>        <span class="code-object">char</span>[] ch = <span class="code-keyword">new</span> <span class="code-object">char</span>[N];  <span class="code-comment">//extract the column
+</span>        <span class="code-keyword">for</span> (<span class="code-object">int</span> j=0; j&lt;N; j++) {
+            ch[j] = rows[j].charAt(i);
+        }
+        Arrays.sort(ch, 0, N);
+        ArrayList&lt;<span class="code-object">Integer</span>&gt; freqs = <span class="code-keyword">new</span> ArrayList&lt;<span class="code-object">Integer</span>&gt;();
+        
+        <span class="code-keyword">for</span> (<span class="code-object">int</span> j=0; j&lt;N; j++) {
+            <span class="code-keyword">if</span> ( (j==0) || ( ch[j] != ch[j-1] ) ) {
+                <span class="code-object">int</span> c = 0;
+                <span class="code-object">int</span> k = j+1; 
+                <span class="code-keyword">while</span> ( (k &lt; N) &amp;&amp; (ch[j] == ch[k]) ) {
+                    k++;
+                }
+                <span class="code-comment">//Find the number of times <span class="code-keyword">this</span> character appears
+</span>                <span class="code-comment">// in the column.
+</span>                c = k - j;
+                freqs.add(c);
+            }
+        }
+        <span class="code-object">int</span> factor = 0;
+        Collections.sort(freqs);
+        <span class="code-object">int</span> dist = 0;
+        <span class="code-comment">// Assign the lowest ranks to the most frequent characters
+</span>        <span class="code-keyword">for</span> (<span class="code-object">int</span> j = freqs.size()-1; j&gt;=0; j--) {
+            <span class="code-object">int</span> x = freqs.get(j);
+            
+            factor += x * dist;
+            dist ++;
+        }
+        columnFactors[i] = factor;
+    }
+    <span class="code-comment">// Sort the columnFactors
+</span>    Arrays.sort(columnFactors, 0, M);
+    
+    <span class="code-keyword">final</span> <span class="code-object">int</span> MOD = 1000000007;
+    <span class="code-object">long</span> res = 0;
+    <span class="code-object">long</span> p = 1;
+    <span class="code-comment">// Assign the left-most positions in the permutation
+</span>    <span class="code-comment">// to the columns with the smallest columnFactors
+</span>    <span class="code-keyword">for</span> (<span class="code-object">int</span> i=M-1; i&gt;=0; i--) {
+        res += ( columnFactors[i] * p ) % MOD;
+        
+        p = (p * 50) % MOD;
+    }
+    res += N; <span class="code-comment">//Convert result to 1-indexed
+</span>    <span class="code-keyword">return</span> (<span class="code-object">int</span>)(res % MOD); 
+}</pre>
+</div></div>
+
+<p></p>
+
+<p><u>Alternative solutions and additional comments.</u></p>
+
+<p>&lt;PLACE YOUR COMMENTS HERE&gt;</p>
+
+<font size="+2"> 
+<b><a href="http://apps.topcoder.com/stat?c=problem_statement&amp;pm=10837&amp;rd=14541" name="10837">LexSmallestTour</a></b> 
+</font> 
+<a href="http://apps.topcoder.com/tc?module=ProblemRatingQuestions&amp;pid=10837"><img src="SRM%20516%20-%20TopCoder%20Wiki_files/rate_it.gif" alt="rate it" border="0" hspace="10"></a> 
+<a href="http://forums.topcoder.com/?module=ThreadList&amp;forumID=547079" class="statText"><img src="SRM%20516%20-%20TopCoder%20Wiki_files/btn_discuss_it.gif" alt="discuss it" border="0"></a>
+<br> 
+Used as: Division One - Level Three: <blockquote><table cellspacing="2"> 
+  <tbody><tr> 
+    <td class="bodyText" style="background: #eee;"> 
+      <b>Value</b> 
+    </td> 
+    <td class="bodyText" style="background: #eee;"> 
+      1000 
+    </td> 
+  </tr> 
+  <tr> 
+    <td class="bodyText" style="background: #eee;"> 
+      <b>Submission Rate</b> 
+    </td> 
+    <td class="bodyText" style="background: #eee;"> 
+      47 / 700 (6.71%) 
+    </td> 
+  </tr> 
+  <tr> 
+    <td class="bodyText" style="background: #eee;"> 
+      <b>Success Rate</b> 
+    </td> 
+    <td class="bodyText" style="background: #eee;"> 
+      6 / 47 (12.77%) 
+    </td> 
+  </tr> 
+  <tr> 
+    <td class="bodyText" style="background: #eee;"> 
+      <b>High Score</b> 
+    </td> 
+    <td class="bodyText" style="background: #eee;"> 
+      <b>rng_58</b> for 578.54 points (29 mins 10 secs) 
+    </td> 
+  </tr> 
+  <tr> 
+    <td class="bodyText" style="background: #eee;"> 
+      <b>Average Score</b> 
+    </td> 
+    <td class="bodyText" style="background: #eee;"> 
+      403.91 (for 6 correct submissions) 
+    </td> 
+  </tr> 
+</tbody></table></blockquote> 
+<p>
+Regardless of the name, this problem is actually more similar to finding an 
+<a href="http://en.wikipedia.org/wiki/Eulerian_cycle">Eulerian cycle</a> than the
+travelling salesman problem. The only difference is that two consecutive roads
+must not be of the same type (the same character to represent the sold ware). Finding
+if there is an Eulerian cycle in an <i>undirected</i> graph depends on two simple properties:<br>
+<br>
+• All the vertices in the graph must have even degree.<br>
+• All the vertices with degree larger than 1 (non-isolated) must form part 
+of the same connected component.<br>
+<br>
+The question is whether we can find similar properties that are as simple in
+order to find if the graph contains a cycle in which each two consecutive roads are of
+a different type. In fact, since this cycle must also be Eulerian, we
+can tell that those two properties are needed.<br>
+<br>
+We certainly need to find more properties in relation to avoiding to use the same
+kind of road for two consecutive moves. Begin by noticing that the statement
+puts some emphasis on a special case: <i>"Note that the final road he
+traverses is not considered to be consecutive to the first road he traverses."</i>. How
+does that condition change the problem? Note that the rules for Eulerian cycles
+work in a way that you can begin the cycle at any arbitrary vertex. In the case
+of the problem that is not necessarily true. The cycle we want to find will
+sometimes necessarily begin at vertex 0. Because that would happen in case
+the last road and the first road are of the same type:<br>
+</p>
+
+<p><img src="SRM%20516%20-%20TopCoder%20Wiki_files/trav1.png" border="0" align="absmiddle"></p>
+
+<p>In this case, there is a tour for the salesman in the form
+(0 -&gt; 2 -&gt; 1 -&gt; 0), but the last and first roads are of the same type. If we wanted
+to find the property needed to find if this tour exists, we would need to worry about
+vertex 0. If it was not for that condition, then it would probably be easier to find
+a property.<br>
+<br>
+Let us call a tour such that every consecutive road used and also the last and first roads are
+of different type a <i>perfect tour</i>. We are currently supposing that finding a property
+to see if a perfect tour exists in a graph might be simpler than finding one for
+a normal tour (as described in the statement). If we knew the property for the perfect tour
+would we be able to somehow extend it so it works for normal tours as well? There is a way,
+imagine a normal tour existed and we wanted to make a perfect tour from it. In order
+to do it, we could a loop to vertex 0, and make it of a type not present originally in the graph. The
+idea is to add an intermediary road to use as the last road so that the repetition between the
+last and the first does no longer happen:
+</p>
+
+<p><img src="SRM%20516%20-%20TopCoder%20Wiki_files/trav2.png" border="0" align="absmiddle"></p>
+
+<p>Note that the type of the road is $, that is because
+that is surely going to be different than the letters that are specified in the input. 
+Loops though could complicate things in the future (for
+starters, the rule for Eulerian cycles does not originally consider them). We can avoid
+the loop by adding an intermediary vertex, this time we would need two roads, each with
+a different type. We can name the new vertex <b>n</b>. Note that we could even add another vertex <b>n+1</b>. Although we only need to add one vertex, there is a good
+reason to add two which will be explained later. Note that in both of the later
+cases, the Eulerian graph properties remain true. The degrees of the new vertices are
+even and the number of edges added to vertex 0 is even too. The two new vertices
+will be connected to vertex 0.<br>
+<br>
+Note that if there is a normal tour in the original graph, there will be a perfect
+tour in the graph after we modify it that way. Simply because we added two or three
+roads that can be visited last or first and avoid the collision from the original
+path. More importantly, the converse is also true: If there is a perfect tour
+in the modified graph, there will be a normal tour in the original graph. To verify
+this, simply find the perfect tour then remove the cycle that is formed between
+vertex 0 and the new vertex (or the two new vertices in the second case).<br>
+<br>
+<b>Is there a perfect tour in a given graph?</b><br>
+We have just found out that knowing if there is a perfect tour in a given graph
+will also help us to know if there is a normal tour in the input graph. Let us
+find the properties that make a perfect tour possible.<br>
+<br>
+First, take a look to vertex 0 in the left-most picture above. It has two
+edges of type A. Eventually, you will have to use the edges of each vertex, some
+as entrances to the vertex and some as exits. If you use an edge of type A to enter
+a vertex, you will have to use a different edge type to exit it. Note that this
+is where it is useful that we consider the last and the first road used as 
+consecutive, because when we use the last road to enter a vertex, its equivalent
+exit time is the first road.<br>
+<br>
+For every time we use a road of type A to enter a given vertex, we forcefully need
+to use a different road type as an exit and viceversa. From this it should follow
+that if a vertex has X edges of type A, then there should be at least X edges of
+a type different than A. This should happen for every vertex and for every road
+type: If the degree of a vertex is <i>D</i>, the number of edges of each certain type cannot exceed <i>D</i>/2.
+As we mentioned before, there are other two necessary conditions, the conditions
+used by Eulerian cycles.<br>
+<br>
+What we will see now is that those three conditions (even degrees, a single connected component
+between all vertices with degree higher than 1 and no road type appears more than <i>D</i>/2 times for each
+vertex) are not only necessary, but also sufficient for there to be a perfect tour. There are
+many ways to do it, here is a quick one. Given the first two conditions, there will
+be at least one Eulerian cycle. If the Eulerian cycle in question had a instance
+of two consecutive roads of the same type, both roads would be connected to the same vertex. 
+Since this vertex has two roads of the same type, then by the third condition it will have at least
+two roads of a different type. The Eulerian cycle will have outgoing and ingoing edges
+that visit the same vertex and have a different type. What is possible to do is to just swap the usage of
+these edges in the order they appear in the Eulerian cycles. For example:
+</p>
+
+<p><img src="SRM%20516%20-%20TopCoder%20Wiki_files/trav3.png" border="0" align="absmiddle"></p>
+
+<p>In the figure, we cross the vertex i edges used in the first Eulerian cycle
+to get one in which the roads of type A are not consecutive. This can be done for every vertex that
+sees two consecutive roads of the same type.<br>
+<br>
+<b>Building the salesman tour</b><br>
+By first modifying the graph and using the properties described above to find
+if there is a perfect tour, we can tell if there is a valid salesman tour in
+the input graph. We still need to build the lexicographically-first one. In problems
+where we need to build a lexicographically-first solution and we know how to
+check if a solution exists in a setting we can use the following method:<br>
+<br>
+For each step Salesman tour:<br>
+- Verify if it is possible to go to a specific city in this step. Pick the city
+that is the smallest (because we want the lexicographically-first sequence of cities) 
+such that there exists a valid solution that uses this step.<br>
+<br>
+Let us understand it in function of the current city in which we are and the
+type of the last picked road. We have already removed all used roads. There
+are a number of roads from the current city that we can use, but we should use
+only the smallest one that belongs to a valid solution. For each of those roads,
+we must verify if by using the road for this step we can travel through each of 
+the other roads without repeating them and without using the same road type two
+consecutive times. In order to verify this, we can use our knowledge about perfect
+tours, but first build a graph that would yield a perfect tour if and only if
+it is possible to use the picked road in the resulting salesman tour.<br>
+<br>
+Assume we are at vertex <b>current</b> and the last road was of type <b>previousRoad</b>. We
+can assume that at the beginning <b>current</b> = 0, and <b>previousRoad</b> = some character
+that does not exist. We want to check if it is possible to move to city <b>i</b> in the next
+step. Then we would like to make sure that it is possible to find a path such that:<br>
+<br>
+• The path begins by using the road between <b>current</b> and <b>i</b>.<br>
+• That first road is of a type different than <b>previousRoad</b>.<br>
+• The path visits each of the other roads exactly once and finishes in vertex 0.<br>
+<br>
+In order to convert the problem to one of finding a perfect tour, we can remove the
+road in question, and instead somehow connect vertex 0 with <b>i</b> in a way that
+the last road in this new connection is of the same type as the road connecting <b>current</b>
+and <b>i</b> to ensure that the next road we pick is of a different type. Since we do not
+worry about the types of the roads between 0 and i in this special path, we would
+use special unused characters for the roads between 0 and i.
+</p>
+
+<p><img src="SRM%20516%20-%20TopCoder%20Wiki_files/trav4.png" border="0" align="absmiddle"></p>
+
+<p>Again, the idea should be valid by adding only <b>n</b> and also
+if we add <b>n+1</b> as well. Note that there is a <i>perfect tour</i> in the modified
+graph if and only if there is a valid path connecting vertex <b>current</b> (<b>c</b>) and
+0 that follows the mentioned conditions. Given a perfect tour, you can simply remove the
+edges between 0, <b>n</b>, <b>n+1</b> (if added) and <b>i</b> and re-add the road
+connecting <b>c</b> and <b>i</b> to find the correct path.<br>
+<br>
+<b>Code</b><br>
+We will repeat the process of finding an appropriate road |<b>E</b>| times (number of
+edges). For each of those |<b>E</b>| times, we need to check for at most |<b>V</b>| vertices
+(vertices connected to <b>current</b>). The check involves among other other things,
+verifying if there is only one connected component between vertices with more than
+0 edges. Using a <a href="http://en.wikipedia.org/wiki/Depth-first_search">DFS</a>, we can do that in O(|<b>V</b>| + |<b>E</b>|) time. In
+total we have O(|<b>E</b>|*|<b>E</b>|*|<b>V</b>|). There are at most <b>V</b><sup>2</sup>
+edges, so the total complexity is O(|<b>V</b>|<sup>5</sup>). It may appear large, but
+since there are at most 40 original cities and since we will usually find a correct
+road before using all <b>V</b> alternatives, it will run in time. The following c++ code requires
+less than 0.5 seconds in Topcoder's machines in its worst case.<br>
+<br>
+In the explanation we pointed out that it is possible to add two special vertices instead of
+one vertex. The idea behind that is that when we add a single special vertex, we may
+have multiple roads connecting the same pair of vertex, this is no longer true if we add two
+special vertices. Since each pair of vertices has at most one edge, we can use the
+adjacency-matrix-esque format to represent the graph, which makes it simple to
+add and remove roads. It is possible to do it by adding only one special vertex, but
+the implementation is a little more complicated.<br>
+<br>
+
+</p><div class="code panel" style="border-width: 1px;"><div class="codeContent panelContent">
+<pre class="code-java">struct LexSmallestTour
+{
+    bool visited[52];
+    
+    void dfs(<span class="code-object">int</span> x, <span class="code-keyword">const</span> vector&lt;string&gt; &amp; roads)
+    {
+        <span class="code-keyword">if</span> (! visited[x]) {
+            visited[x] = <span class="code-keyword">true</span>;
+            <span class="code-keyword">for</span> (<span class="code-object">int</span> i=roads.size() - 1; i&gt;=0; i--) {
+                <span class="code-keyword">if</span> (roads[x][i] !='.' ) {
+                    dfs(i, roads);
+                }
+            }
+        }
+    }
+    
+    bool perfectTour(<span class="code-keyword">const</span> vector&lt;string&gt; &amp; roads) 
+    {
+        <span class="code-object">int</span> n = roads.size();
+        fill (visited, visited+n, <span class="code-keyword">false</span> );
+
+        <span class="code-comment">//* all degrees must be n.
+</span>        <span class="code-comment">//* no ware should appear more than degree/2 times 
+</span>        <span class="code-comment">// <span class="code-keyword">for</span> a single vertex's edges.
+</span>        <span class="code-comment">//
+</span>        <span class="code-keyword">for</span> (<span class="code-object">int</span> i=0; i&lt;n; i++) {
+            <span class="code-object">int</span> degree = 0;
+            map&lt;<span class="code-object">char</span>, <span class="code-object">int</span>&gt; count;
+            <span class="code-keyword">for</span> (<span class="code-object">int</span> j=0; j&lt;n; j++) {
+                <span class="code-object">char</span> r = roads[i][j];
+                <span class="code-keyword">if</span> (r != '.') {
+                    count[r] ++;
+                    degree ++;
+                }
+            }
+            <span class="code-keyword">if</span> ( degree % 2 != 0 ) {
+                <span class="code-keyword">return</span> <span class="code-keyword">false</span>;
+            }
+            <span class="code-keyword">for</span> (<span class="code-object">int</span> j=0; j&lt;n; j++) {
+                <span class="code-keyword">if</span> ( count[roads[i][j]] &gt; degree/2 ) {
+                    <span class="code-keyword">return</span> <span class="code-keyword">false</span>;
+                }
+            }
+            <span class="code-keyword">if</span> (degree == 0) {
+                visited[i] = <span class="code-keyword">true</span>;
+            }
+        }        
+        
+        <span class="code-comment">// * All non-isolated vertices must be connected:
+</span>        <span class="code-object">int</span> compos = 0;
+        <span class="code-keyword">for</span> (<span class="code-object">int</span> i=0; i&lt;n; i++) {
+            <span class="code-keyword">if</span> (! visited[i] ) {
+                compos ++;
+                dfs(i, roads);
+            }
+        }
+        <span class="code-keyword">return</span> (compos == 1 );
+    }
+    vector&lt;<span class="code-object">int</span>&gt; determineLexFirstTour(vector&lt;string&gt; roads)
+    {
+        <span class="code-object">int</span> n = roads.size();
+        <span class="code-comment">//add the n, (n+1), special vertices:
+</span>        <span class="code-keyword">for</span> (<span class="code-object">int</span> i=0; i&lt;n; i++) {
+            roads[i] += <span class="code-quote">".."</span>;
+        }
+        <span class="code-keyword">for</span> (<span class="code-object">int</span> i=0; i&lt;2; i++) {
+            roads.push_back(string(n+2,'.'));        
+        }        
+        <span class="code-comment">// does a tour exist? 
+</span>        <span class="code-comment">// a tour exists <span class="code-keyword">if</span> and only <span class="code-keyword">if</span> a <span class="code-quote">"perfect"</span> tour exists
+</span>        <span class="code-comment">// in the following modified graph:
+</span>        <span class="code-comment">// - Add an edge # between 0 and n.
+</span>        <span class="code-comment">// - Add an edge $ between n and n+1
+</span>        <span class="code-comment">// - Add an edge @ between n+1 and 0
+</span>        {
+            vector&lt;string&gt; newg = roads;
+            newg[0][n] = newg[n][0] = '#';
+            newg[n][n+1] = newg[n+1][n] = '$';
+            newg[n+1][0] = newg[0][n+1] = '@';
+            <span class="code-keyword">if</span> ( ! perfectTour(newg) ) {
+                <span class="code-keyword">return</span> vector&lt;<span class="code-object">int</span>&gt;(0);
+            }
+        }
+
+        <span class="code-comment">// A tour exists, build the lex first one:
+</span>        vector&lt;<span class="code-object">int</span>&gt; res(1, 0); <span class="code-comment">//always start at 0.
+</span>        <span class="code-object">int</span> current = 0; <span class="code-comment">//current vertex
+</span>        <span class="code-object">char</span> previousRoad = '?';
+
+        <span class="code-keyword">while</span> (<span class="code-keyword">true</span>) {
+            <span class="code-object">int</span> i = 0;
+            bool found = <span class="code-keyword">false</span>;
+            <span class="code-keyword">while</span> ( (i &lt; n) &amp;&amp; ! found ){
+                <span class="code-comment">//<span class="code-keyword">try</span> current -&gt; i
+</span>                <span class="code-object">char</span> r = roads[current][i];
+                <span class="code-keyword">if</span> ( (r != '.') &amp;&amp; (r != previousRoad) ) {
+                    vector&lt;string&gt; newg = roads;
+                    <span class="code-comment">//remove the road.
+</span>                    newg[current][i] = newg[i][current] = '.';    
+                    <span class="code-comment">//add a road 0 -&gt; (n)
+</span>                    newg[n][0] = newg[0][n] = '$';
+                    <span class="code-comment">//add a road (n) -&gt; (n+1)
+</span>                    newg[n][n+1] = newg[n+1][n] = '#';
+                    <span class="code-comment">//add a road (n+1) -&gt; i with r as <span class="code-object">char</span>.
+</span>                    newg[n+1][i] = newg[i][n+1] = r;
+                    
+                    <span class="code-keyword">if</span> ( perfectTour(newg) ) {
+                        found = <span class="code-keyword">true</span>;
+                        res.push_back(i);
+                        <span class="code-comment">// remove the road we just used.
+</span>                        roads[current][i] = roads[i][current] = '.';
+                        current = i;
+                        previousRoad = r;
+                    }
+                }
+                i ++;
+            }
+            <span class="code-comment">//Once we remove all the roads, we can stop.
+</span>            <span class="code-keyword">if</span> (! found ) {
+                <span class="code-keyword">break</span>;
+            }
+        }
+        <span class="code-keyword">return</span> res;
+    }
+    vector &lt;<span class="code-object">int</span>&gt; determineTour(vector &lt;string&gt; roads, vector &lt;<span class="code-object">int</span>&gt; queries)
+    {
+        vector&lt;<span class="code-object">int</span>&gt; tour = determineLexFirstTour(roads);
+        
+        <span class="code-keyword">if</span> (tour.size() == 0) {
+            <span class="code-keyword">return</span> vector&lt;<span class="code-object">int</span>&gt;(0);
+        }
+        
+        <span class="code-object">int</span> q = queries.size();
+        vector&lt;<span class="code-object">int</span>&gt; results( q );
+        <span class="code-keyword">for</span> (<span class="code-object">int</span> i=0; i&lt;q; i++) {
+            results[i] = tour[ queries[i] ];
+        }
+        <span class="code-keyword">return</span> results;
+    }
+};</pre>
+</div></div>
+
+<p></p>
+<p><u>Alternative solutions and additional comments.</u></p>
+
+
+
+A comment on "We repeat the process of finding an appropriate road |E| 
+times."
+For each of those |E| times, the check can actually be done in O(|V|).
+
+Because to determine whether the edge (i,j) is the next piece of road, 
+we only need to look at the neighborhood of node i:  Choose the first j 
+such that there is still a path from j to 0, using the remaining edges.
+
+
+
+<p>&lt;PLACE YOUR COMMENTS HERE&gt;</p>
+
+<br>
+
+<img style="width:55px;heigth:61px;border:1px solid #CCCCCC;" src="SRM%20516%20-%20TopCoder%20Wiki_files/vexorian_big.html" alt="Author"> 
+
+<br> 
+
+By&nbsp;<a href="http://apps.topcoder.com/tc?module=MemberProfile&amp;cr=22652965" class="coderTextYellow">vexorian</a><br> 
+
+<em>TopCoder Member</em>
+                            </div>
+
+                            <!--
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/">
+<rdf:Description
+    rdf:about="http://apps.topcoder.com/wiki/display/tc/SRM+516"
+    dc:identifier="http://apps.topcoder.com/wiki/display/tc/SRM+516"
+    dc:title="SRM 516"
+    trackback:ping="http://apps.topcoder.com/wiki/rpc/trackback/65373184"/>
+</rdf:RDF>
+-->
+
+                                
+                                <!--
+    Root decorator: all decisions about how a page is to be decorated via the
+                    inline decoration begins here.
+-->
+
+
+
+<!--
+    Switch based upon the context. However, for now, just delegate to a decorator
+    identified directly by the context.
+-->
+
+
+    
+    
+
+<div class="wiki-content" style="margin-right:10px;">
+    <p style="clear: both"><!-- comments should always display underneath the content. we should have a 'clear:both' here just in case there are floats or aligned images in the content -->
+
+    
+            </p><div class="tabletitle" style="border: 0px">
+            <a name="comments">Comments</a>
+                        <span class="smalltext">&nbsp;(<a href="http://apps.topcoder.com/wiki/display/tc/SRM+516?showComments=false">Hide Comments</a>)</span>
+                    </div>
+    
+    
+            
+            
+                                                    <div style="padding: 0 0 0  0 ">
+        <a name="comment-69173550"></a>
+                <div class="commentBox" style="background-color: ">
+            <div class="commentblock"><p>There's encoding issue in this article. Can the editor revise it?</p>
+
+<p>For the <b>LexSmallestTour problem,</b> well, i must admit 
+that&nbsp;it's hard for me to understand the last the paragraph of the 
+question, especially the meaning/purpose of parameter *queries*. Any 
+comment?</p></div>
+            <div class="smallfont" style="color: #666666; width: 98%" align="left">
+                         <img src="SRM%20516%20-%20TopCoder%20Wiki_files/comment_16.gif" border="0" height="16" width="16" align="absmiddle">
+    
+                                
+                
+                                    Posted by             limberg
+ at <a href="http://apps.topcoder.com/wiki/display/tc/SRM+516?focusedCommentId=69173550#comment-69173550">Nov 06, 2011 12:34</a>
+                
+                                                                                                  </div>
+
+            <!--
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/">
+<rdf:Description
+    rdf:about="http://apps.topcoder.com/wiki/display/tc/SRM+516?focusedCommentId=69173550#comment-69173550"
+    dc:identifier="http://apps.topcoder.com/wiki/display/tc/SRM+516?focusedCommentId=69173550#comment-69173550"
+    dc:title="$comment.title"
+    trackback:ping="http://apps.topcoder.com/wiki/rpc/trackback/69173550"/>
+</rdf:RDF>
+-->
+
+                    </div>
+        
+                                </div>
+                                        <div style="padding: 0 0 0  0 ">
+        <a name="comment-69666709"></a>
+                <div class="commentBox" style="background-color: ">
+            <div class="commentblock"><p>The queries parameter comes from the problem statement.</p>
+
+<p>If there does not exist a tour for the salesman, return an empty 
+int[]. Otherwise compute a tour that minimizes the lexicographical 
+ordering of the cities in the order he visits them. Return a int[] 
+containing the same number of elements as the int[] queries. The i-th 
+element of your answer must be the number representing the (queries<span class="error">[i]</span>)-th city visited by the travelling salesman (0-based indexing, the 0-th city visited is the starting city, i.e., city 0).</p></div>
+            <div class="smallfont" style="color: #666666; width: 98%" align="left">
+                         <img src="SRM%20516%20-%20TopCoder%20Wiki_files/comment_16.gif" border="0" height="16" width="16" align="absmiddle">
+    
+                                
+                
+                                    Posted by             vexorian
+ at <a href="http://apps.topcoder.com/wiki/display/tc/SRM+516?focusedCommentId=69666709#comment-69666709">Dec 01, 2011 20:51</a>
+                
+                                                                                                  </div>
+
+            <!--
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/">
+<rdf:Description
+    rdf:about="http://apps.topcoder.com/wiki/display/tc/SRM+516?focusedCommentId=69666709#comment-69666709"
+    dc:identifier="http://apps.topcoder.com/wiki/display/tc/SRM+516?focusedCommentId=69666709#comment-69666709"
+    dc:title="$comment.title"
+    trackback:ping="http://apps.topcoder.com/wiki/rpc/trackback/69666709"/>
+</rdf:RDF>
+-->
+
+                    </div>
+        
+                                </div>
+                            
+            
+                                    </div>
+
+
+
+                                                            </td>
+
+
+                                                    </tr>
+        </tbody></table>
+
+        
+        </td>
+    </tr>
+</tbody></table>
+
+    
+
+        </td>
+    </tr>
+</tbody>
+</table>
+
+
+<!-- delay the loading of large javascript files to the end so that they don't interfere with the loading of page content -->
+<span style="display: none">
+    <script type="text/javascript" language="JavaScript">var domainName = 'http://apps.topcoder.com/wiki'; var entityId = '65373184'; var spaceKey = 'tc'</script>
+    <script type="text/javascript" language="JavaScript" src="SRM%20516%20-%20TopCoder%20Wiki_files/labels-javascript"></script>
+    <script>new Ajax.Autocompleter('labelName', 'labelsAutocompleteList', '65373184', { tokens: new Array(',', ' '), dwrFunction: GenerateAutocompleteLabelsListForEntity.autocompleteLabels});</script>
+</span>
+
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+    <tr>
+        <td class="footer" width="100%">
+            <a href="http://www.topcoder.com/" class="footerLinks">Home</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+            <a href="http://www.topcoder.com/tc?module=Static&amp;d1=about&amp;d2=index" class="footerLinks">About TopCoder</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+            <a href="http://www.topcoder.com/tc?module=Static&amp;d1=pressroom&amp;d2=index" class="footerLinks">Press Room</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+            <a href="http://www.topcoder.com/tc?module=Static&amp;d1=about&amp;d2=contactus" class="footerLinks">Contact Us</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+            <a href="http://www.topcoder.com/tc?module=Static&amp;d1=about&amp;d2=privacy" class="footerLinks">Privacy</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+            <a href="http://www.topcoder.com/tc?module=Static&amp;d1=about&amp;d2=terms" class="footerLinks">Terms</a>
+            <br>
+            <a href="http://www.topcoder.com/tc" class="footerLinks">Developer Center</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+            <a href="http://www.topcoder.com/corp/?module=Static&amp;d1=corp&amp;d2=index" class="footerLinks">Corporate Services</a>
+        </td>
+    </tr>
+    <tr><td class="copyright" width="100%">Copyright TopCoder, Inc. 2001-<script type="text/javascript">d=new Date();document.write(d.getFullYear());</script>2013</td></tr>
+</tbody>
+</table>
+
+
+
+</body></html>

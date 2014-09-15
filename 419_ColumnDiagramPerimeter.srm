@@ -1,0 +1,26 @@
+#include<iostream>
+#include<vector>
+#include<algorithm>
+using namespace std;
+class ColumnDiagramPerimeter
+{
+	public :
+		int getPerimiter(vector <int> a)
+		{
+		
+	    int h,sum=0,total,p;
+	     if (a.size() == 1)
+	    {
+	    	p = a[0]*2;
+	    	return (p+2);
+	    }
+	    h = a.size()*2;
+	    for (int i=0;i<=a.size()-2;i++)
+	    {
+	        sum+=abs(a[i]-a[i+1]);
+	    }
+//	    int one = a.size()-1;
+	    total=sum+a[0]+a[a.size()-1]+h;
+    	return total;
+	}
+};

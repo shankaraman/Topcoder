@@ -1,0 +1,2304 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>SRM 510 - TopCoder Wiki</title>
+                
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="-1">
+    <script src="SRM%20510%20-%20TopCoder%20Wiki_files/17680.js" id="hs-analytics"></script><script language="javascript">
+        var contextPath = '/wiki';
+        var i18n = [];
+    </script>
+
+                            <link rel="stylesheet" href="SRM%20510%20-%20TopCoder%20Wiki_files/main-action.css" type="text/css">
+            
+    
+
+        
+            <script type="text/javascript" src="SRM%20510%20-%20TopCoder%20Wiki_files/effects.js"></script>
+    
+
+            <script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script><script src="SRM%20510%20-%20TopCoder%20Wiki_files/ga.js" type="text/javascript"></script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-6340959-1");
+pageTracker._trackPageview();
+</script>
+
+<script type="text/javascript" language="javascript">
+var hs_portalid=17680; 
+var hs_salog_version = "2.00";
+var hs_ppa = "topcoder.app101.hubspot.com";
+document.write(unescape("%3Cscript src='" + document.location.protocol + "//" + hs_ppa + "/salog.js.aspx' type='text/javascript'%3E%3C/script%3E"));
+</script><script src="SRM%20510%20-%20TopCoder%20Wiki_files/salog.html" type="text/javascript"></script>
+
+    <link type="image/x-icon" rel="shortcut icon" href="http://apps.topcoder.com/i/favicon.ico">
+    <link type="text/css" rel="stylesheet" href="SRM%20510%20-%20TopCoder%20Wiki_files/tcStyles.css">
+    <link type="text/css" rel="stylesheet" href="SRM%20510%20-%20TopCoder%20Wiki_files/coders.css">
+    <link type="text/css" rel="stylesheet" href="SRM%20510%20-%20TopCoder%20Wiki_files/wiki.css">
+</head>
+
+                    <body onload="">
+    
+
+
+
+
+
+
+
+
+<script type="text/javascript" src="SRM%20510%20-%20TopCoder%20Wiki_files/popup.js"></script>
+
+<div id="shortcutBar">
+    <div class="icon"><a href="http://community.topcoder.com/tc"><img src="SRM%20510%20-%20TopCoder%20Wiki_files/scHome.png" alt="" onmouseover="postPopUpText('globalPopupText','Home'); popUp(this,'globalPopup');" onmouseout="popHide()"></a></div>
+    <div class="icon"><a href="javascript:arena();"><img src="SRM%20510%20-%20TopCoder%20Wiki_files/scAlgo.png" alt="" onmouseover="postPopUpText('globalPopupText','Algorithm Competitions'); popUp(this,'globalPopup');" onmouseout="popHide()"></a></div>
+    <div class="icon"><a href="http://community.topcoder.com/tc?module=ActiveContests&amp;pt=23"><img src="SRM%20510%20-%20TopCoder%20Wiki_files/scConceptualization.png" alt="" onmouseover="postPopUpText('globalPopupText','Software Conceptualization Competitions'); popUp(this,'globalPopup');" onmouseout="popHide()"></a></div>
+    <div class="icon"><a href="http://community.topcoder.com/tc?module=ActiveContests&amp;pt=6"><img src="SRM%20510%20-%20TopCoder%20Wiki_files/scSpecification.png" alt="" onmouseover="postPopUpText('globalPopupText','Software Specification Competitions'); popUp(this,'globalPopup');" onmouseout="popHide()"></a></div>
+    <div class="icon"><a href="http://community.topcoder.com/tc?module=ActiveContests&amp;pt=7"><img src="SRM%20510%20-%20TopCoder%20Wiki_files/scArchitecture.png" alt="" onmouseover="postPopUpText('globalPopupText','Software Architecture Competitions'); popUp(this,'globalPopup');" onmouseout="popHide()"></a></div>
+    <div class="icon"><a href="http://community.topcoder.com/tc?module=ViewActiveContests&amp;ph=112"><img src="SRM%20510%20-%20TopCoder%20Wiki_files/scDesign.png" alt="" onmouseover="postPopUpText('globalPopupText','Component Design Competitions'); popUp(this,'globalPopup');" onmouseout="popHide()"></a></div>
+    <div class="icon"><a href="http://community.topcoder.com/tc?module=ViewActiveContests&amp;ph=113"><img src="SRM%20510%20-%20TopCoder%20Wiki_files/scDevelopment.png" alt="" onmouseover="postPopUpText('globalPopupText','Component Development Competitions'); popUp(this,'globalPopup');" onmouseout="popHide()"></a></div>
+
+    <div class="icon"><a href="http://community.topcoder.com/tc?module=ActiveContests&amp;pt=14"><img src="SRM%20510%20-%20TopCoder%20Wiki_files/scAssembly.png" alt="" onmouseover="postPopUpText('globalPopupText','Software Assembly Competitions'); popUp(this,'globalPopup');" onmouseout="popHide()"></a></div>
+    <div class="icon"><a href="http://community.topcoder.com/tc?module=ActiveContests&amp;pt=13"><img src="SRM%20510%20-%20TopCoder%20Wiki_files/scTesting.png" alt="" onmouseover="postPopUpText('globalPopupText','Testing Competitions'); popUp(this,'globalPopup');" onmouseout="popHide()"></a></div>
+    <div class="icon"><a href="http://www.topcoder.com/tc?module=ActiveContests&amp;pt=9"><img src="SRM%20510%20-%20TopCoder%20Wiki_files/scBugHunt.png" alt="" onmouseover="postPopUpText('globalPopupText','Bug Hunt Competitions'); popUp(this,'globalPopup');" onmouseout="popHide()"></a></div>
+    <div class="icon"><a href="http://community.topcoder.com/tc?module=ActiveContests&amp;pt=35"><img src="SRM%20510%20-%20TopCoder%20Wiki_files/scContentCreation.gif" alt="" onmouseover="postPopUpText('globalPopupText','Content Creation Competitions'); popUp(this,'globalPopup');" onmouseout="popHide()"></a></div>
+    <div class="icon"><a href="http://community.topcoder.com/tc?module=ActiveContests&amp;pt=36"><img src="SRM%20510%20-%20TopCoder%20Wiki_files/scReporting.gif" alt="" onmouseover="postPopUpText('globalPopupText','Reporting Competitions'); popUp(this,'globalPopup');" onmouseout="popHide()"></a></div>
+    <div class="icon"><a href="javascript:arena();"><img src="SRM%20510%20-%20TopCoder%20Wiki_files/scTCHS.png" alt="" onmouseover="postPopUpText('globalPopupText','High School Competitions'); popUp(this,'globalPopup');" onmouseout="popHide()"></a></div>
+    <div class="icon"><a href="http://community.topcoder.com/longcontest/?module=ViewActiveContests"><img src="SRM%20510%20-%20TopCoder%20Wiki_files/scMarathon.png" alt="" onmouseover="postPopUpText('globalPopupText','Marathon Matches'); popUp(this,'globalPopup');" onmouseout="popHide()"></a></div>
+    <div class="icon"><a href="http://studio.topcoder.com/?module=ViewActiveContests"><img src="SRM%20510%20-%20TopCoder%20Wiki_files/scStudio.png" alt="" onmouseover="postPopUpText('globalPopupText','TopCoder Studio Competitions'); popUp(this,'globalPopup');" onmouseout="popHide()"></a></div>
+</div>
+
+<div id="globalPopup" class="popUp"><div id="globalPopupText"></div></div>
+
+
+<div style="position: absolute; right:0px; top:31px;"><a href="http://www.topcoder.com/reg/"><img src="SRM%20510%20-%20TopCoder%20Wiki_files/register_now.gif" alt="Register Now" style="display:block;"></a></div>
+
+
+<div style="margin: 0px 290px 0px 280px;" align="center">
+   <div id="outerLogo">
+      <div id="innerLogo">
+      <a href="http://www.topcoder.com/"><img src="SRM%20510%20-%20TopCoder%20Wiki_files/topcoder.gif" alt="TopCoder" style="display: block;"></a>
+      </div>
+   </div>
+</div>
+
+<div class="memberCountBox">
+Member Count: 475,326 - 
+
+
+April 9, 2013
+
+&nbsp;<a class="gMetal" href="javascript:tcTime()">[Get Time]</a>
+</div>
+
+<div class="topBar">
+    <div style="float: right; margin: 5px 0px 0px 0px;">
+        
+                <a class="gMetal" href="http://community.topcoder.com/tc?&amp;module=Login">Login</a>
+            
+        
+    </div>
+</div>
+
+
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+    <tr valign="top">
+        <td width="180">
+            
+
+
+
+
+
+
+
+
+
+
+<script language="JavaScript" type="text/javascript" src="SRM%20510%20-%20TopCoder%20Wiki_files/arena.js"></script>
+
+
+<script language="JavaScript" type="text/javascript">
+<!--
+function toggleMenu(menuTitle,menuID){
+   var menu = document.getElementById(menuID);
+   if(menu.style.display == 'block') menu.className = 'CLOSED';
+   else if(menu.className == 'OPEN' && menu.style.display != 'none') menu.className = 'CLOSED';
+   else {
+      menu.className = 'OPEN';
+   }
+   if(menuTitle.blur)menuTitle.blur();
+   if(menuTitle.className == 'exp') menuTitle.className = 'exp_ed';
+   else menuTitle.className = 'exp';
+   return;
+}
+function flipMenu(myMenuName){
+   var menuName = document.getElementById(myMenuName);
+   menuName.className = 'exp_ed';
+}
+
+// -->
+</script>
+
+<div style="padding: 0px;"><img src="SRM%20510%20-%20TopCoder%20Wiki_files/leftnav_top.gif" alt=""></div>
+<div id="navbar">
+    
+<ul>
+<li class="exp"><a href="javascript:void(0)" onclick="Javascript:toggleMenu(this.parentNode,'m_competitions')">Competitions</a>
+<ul id="m_competitions">
+<li class="exp"><a href="javascript:void(0)" onclick="Javascript:toggleMenu(this.parentNode,'m_competitions_overview')">Overview</a>
+<ul id="m_competitions_overview">
+<li><a href="http://apps.topcoder.com/wiki/x/MQD9Ag">Reliability</a></li>
+<li><a href="http://apps.topcoder.com/wiki/x/lYE_/">Ratings</a></li>
+<li><a href="http://apps.topcoder.com/wiki/x/EoK1B/">Badges</a></li>
+<li><a href="http://apps.topcoder.com/wiki/x/aoE_/">How to Get Paid</a></li>
+<li><a href="http://apps.topcoder.com/wiki/x/2gRmAw">Administrative Overview </a></li>
+</ul></li>
+<li class="exp"><a href="javascript:void(0)" onclick="Javascript:toggleMenu(this.parentNode,'m_copilot_opportunities')">Copilot Opportunities</a>
+<ul id="m_copilot_opportunities">
+<li><a href="http://apps.topcoder.com/wiki/display/tc/Copilot+Overview">Overview</a></li>
+<li class="exp"><a href="javascript:void(0)" onclick="Javascript:toggleMenu(this.parentNode,'m_copilot_support')">Track Information</a>
+<ul id="m_copilot_support">
+<li><a href="http://apps.topcoder.com/wiki/display/tc/How+to+Compete+in+Copilot+Opportunities">How to Compete</a></li>
+<li><a href="http://apps.topcoder.com/wiki/display/tc/How+to+Compete+in+Copilot+Opportunities">Documentation</a></li>
+<li><a href="http://apps.topcoder.com/wiki/display/tc/How+to+Compete+in+Copilot+Opportunities">Tutorial</a></li>
+</ul></li>
+<li><a href="http://www.topcoder.com/tc?module=ActiveContests&amp;pt=29">Active Contests</a></li>
+<li><a href="http://www.topcoder.com/tc?module=CompList&amp;ph=140">Past Contests</a></li>
+<li><a href="http://www.topcoder.com/tc?module=ViewCopilotPool&amp;size=20&amp;view=0&amp;sort=12">Copilot Pool</a></li>
+</ul></li>
+<li class="exp"><a href="javascript:void(0)" onclick="Javascript:toggleMenu(this.parentNode,'competition_design')">Design</a>
+<ul id="competition_design">
+<li><a href="http://studio.topcoder.com/">Studio</a></li>
+<li class="exp"><a href="javascript:void(0)" onclick="Javascript:toggleMenu(this.parentNode,'m_conceptualization_competitions')">Conceptualization</a>
+<ul id="m_conceptualization_competitions">
+<li><a href="http://apps.topcoder.com/wiki/display/tc/TopCoder+Conceptualization+Contests">Overview</a></li>
+<li class="exp"><a href="javascript:void(0)" onclick="Javascript:toggleMenu(this.parentNode,'m_conceptualization_support')">Track Information</a>
+<ul id="m_conceptualization_support">
+<li><a href="http://apps.topcoder.com/wiki/display/tc/How+to+Compete+in+Conceptualization+Competitions">How to Compete</a></li>
+<li><a href="http://apps.topcoder.com/wiki/display/tc/Conceptualization+Documentation">Documentation</a></li>
+<li><a href="http://apps.topcoder.com/wiki/display/tc/Conceptualization+Submission+Instructions">Tutorial</a></li>
+</ul></li>
+<li><a href="http://www.topcoder.com/tc?module=ActiveContests&amp;pt=23">Active Contests</a></li>
+<li><a href="http://www.topcoder.com/tc?module=ContestStatus&amp;pt=23">Contest Status</a></li>
+<li><a href="http://www.topcoder.com/tc?module=CompList&amp;ph=134">Past Contests</a></li>
+<li><a href="http://www.topcoder.com/tc?module=ViewReviewAuctions&amp;pt=23">Review Opportunities</a></li>
+<li><a href="http://www.topcoder.com/tc?module=ReviewBoard&amp;pt=23">Meet the Review Board</a></li>
+</ul></li>
+<li class="exp"><a href="javascript:void(0)" onclick="Javascript:toggleMenu(this.parentNode,'m_specification_competitions')">Specification</a>
+<ul id="m_specification_competitions">
+<li><a href="http://apps.topcoder.com/wiki/display/tc/TopCoder+Specification+Contests">Overview</a></li>
+<li class="exp"><a href="javascript:void(0)" onclick="Javascript:toggleMenu(this.parentNode,'m_specification_support')">Track Information</a>
+<ul id="m_specification_support">
+<li><a href="http://apps.topcoder.com/wiki/display/tc/How+to+Compete+in+Specification+Competitions">How to Compete</a></li>
+</ul></li>
+<li><a href="http://www.topcoder.com/tc?module=ActiveContests&amp;pt=6">Active Contests</a></li>
+<li><a href="http://www.topcoder.com/tc?module=ContestStatus&amp;pt=6">Contest Status</a></li>
+<li><a href="http://www.topcoder.com/tc?module=CompList&amp;ph=117">Past Contests</a></li>
+<li><a href="http://www.topcoder.com/tc?module=ViewReviewAuctions&amp;pt=6">Review Opportunities</a></li>
+<li><a href="http://www.topcoder.com/tc?module=ReviewBoard&amp;pt=6">Meet the Review Board</a></li>
+</ul></li>
+<li class="exp"><a href="javascript:void(0)" onclick="Javascript:toggleMenu(this.parentNode,'m_architecture_competitions')">Architecture</a>
+<ul id="m_architecture_competitions">
+<li><a href="http://apps.topcoder.com/wiki/display/tc/Architecture+Overview">Overview</a></li>
+<li class="exp"><a href="javascript:void(0)" onclick="Javascript:toggleMenu(this.parentNode,'m_architecture_support')">Track Information</a>
+<ul id="m_architecture_support">
+<li><a href="http://apps.topcoder.com/wiki/display/tc/Module+Architecture+Tutorial">Module Architecture Tutorial</a></li>
+</ul></li>
+<li><a href="http://www.topcoder.com/tc?module=ActiveContests&amp;pt=7">Active Contests</a></li>
+<li><a href="http://www.topcoder.com/tc?module=ContestStatus&amp;pt=7">Contest Status</a></li>
+<li><a href="http://www.topcoder.com/tc?module=CompList&amp;ph=118">Past Contests</a></li>
+<li><a href="http://www.topcoder.com/tc?module=ViewReviewAuctions&amp;pt=7">Review Opportunities</a></li>
+<li><a href="http://www.topcoder.com/tc?module=ReviewBoard&amp;pt=7">Meet the Review Board</a></li>
+</ul></li>
+<li class="exp"><a href="javascript:void(0)" onclick="Javascript:toggleMenu(this.parentNode,'m_des_competitions')">Component Design</a>
+<ul id="m_des_competitions">
+<li><a href="http://apps.topcoder.com/wiki/display/tc/Component+Design+Overview">Overview</a></li>
+<li class="exp"><a href="javascript:void(0)" onclick="Javascript:toggleMenu(this.parentNode,'m_des_support')">Track Information</a>
+<ul id="m_des_support">
+<li><a href="http://apps.topcoder.com/wiki/display/tc/How+to+Compete+in+Component+Design+Competitions">How to Compete</a></li>
+<li><a href="http://apps.topcoder.com/wiki/display/tc/Component+Design+Documentation">Documentation</a></li>
+<li><a href="http://www.topcoder.com/tc?module=ColorChange&amp;ph=112">Recent Color Changes</a></li>
+<li><a href="http://apps.topcoder.com/wiki/display/tc/Component+Design+Data+Feeds">Data Feeds</a></li>
+</ul></li>
+<li><a href="http://www.topcoder.com/tc?module=ViewActiveContests&amp;ph=112">Active Contests</a></li>
+<li><a href="http://www.topcoder.com/tc?module=ContestStatus&amp;pt=1">Contest Status</a></li>
+<li><a href="http://www.topcoder.com/tc?module=CompList&amp;ph=112">Past Contests</a></li>
+<li><a href="http://www.topcoder.com/tc?module=ViewReviewAuctions&amp;pt=1">Review Opportunities</a></li>
+<li><a href="http://www.topcoder.com/tc?module=ReviewBoard&amp;pt=1">Meet the Review Board</a></li>
+</ul></li>
+</ul></li>
+<li class="exp"><a href="javascript:void(0)" onclick="Javascript:toggleMenu(this.parentNode,'competition_dev')">Development</a>
+<ul id="competition_dev">
+<li class="exp"><a href="javascript:void(0)" onclick="Javascript:toggleMenu(this.parentNode,'m_dev_competitions')">Component Development</a>
+<ul id="m_dev_competitions">
+<li><a href="http://apps.topcoder.com/wiki/display/tc/How+to+Compete+in+Component+Development+Competitions">Overview</a></li>
+<li class="exp"><a href="javascript:void(0)" onclick="Javascript:toggleMenu(this.parentNode,'m_dev_support')">Track Information</a>
+<ul id="m_dev_support">
+<li><a href="http://apps.topcoder.com/wiki/display/tc/How+to+Compete+in+Component+Development+Competitions">How to Compete</a></li>
+<li><a href="http://apps.topcoder.com/wiki/display/tc/Component+Development+Documentation">Documentation</a></li>
+<li><a href="http://www.topcoder.com/tc?module=ColorChange&amp;ph=113">Recent Color Changes</a></li>
+<li><a href="http://apps.topcoder.com/wiki/display/tc/Component+Development+Data+Feeds">Data Feeds</a></li>
+</ul></li>
+<li><a href="http://www.topcoder.com/tc?module=ViewActiveContests&amp;ph=113">Active Contests</a></li>
+<li><a href="http://www.topcoder.com/tc?module=ContestStatus&amp;pt=2">Contest Status</a></li>
+<li><a href="http://www.topcoder.com/tc?module=CompList&amp;ph=113">Past Contests</a></li>
+<li><a href="http://www.topcoder.com/tc?module=ViewReviewAuctions&amp;pt=2">Review Opportunities</a></li>
+<li><a href="http://www.topcoder.com/tc?module=ReviewBoard&amp;pt=2">Meet the Review Board</a></li>
+</ul></li>
+<li class="exp"><a href="javascript:void(0)" onclick="Javascript:toggleMenu(this.parentNode,'m_assembly_competitions')">Assembly</a>
+<ul id="m_assembly_competitions">
+<li><a href="http://apps.topcoder.com/wiki/display/tc/Assembly">Overview</a></li>
+<li class="exp"><a href="javascript:void(0)" onclick="Javascript:toggleMenu(this.parentNode,'m_assembly_support')">Track Information</a>
+<ul id="m_assembly_support">
+<li><a href="http://apps.topcoder.com/wiki/display/tc/How+to+Compete+in+Assembly+Competitions">How to Compete</a></li>
+<li><a href="http://apps.topcoder.com/wiki/display/tc/Assembly+Competition+Tutorial">Tutorial</a></li>
+<li><a href="http://apps.topcoder.com/wiki/display/tc/Assembly+Competition+Documentation">Documentation</a></li>
+</ul></li>
+<li><a href="http://www.topcoder.com/tc?module=ActiveContests&amp;pt=14">Active Contests</a></li>
+<li><a href="http://www.topcoder.com/tc?module=ContestStatus&amp;pt=14">Contest Status</a></li>
+<li><a href="http://www.topcoder.com/tc?module=CompList&amp;ph=125">Past Contests</a></li>
+<li><a href="http://www.topcoder.com/tc?module=ViewReviewAuctions&amp;pt=14">Review Opportunities</a></li>
+<li><a href="http://www.topcoder.com/tc?module=ReviewBoard&amp;pt=14">Meet the Review Board</a></li>
+</ul></li>
+<li class="exp"><a href="javascript:void(0)" onclick="Javascript:toggleMenu(this.parentNode,'m_test_suites_competitions')">Test Suites</a>
+<ul id="m_test_suites_competitions">
+<li><a href="http://apps.topcoder.com/wiki/display/tc/Test+Scenarios+and+Scripts">Overview</a></li>
+<li class="exp"><a href="javascript:void(0)" onclick="Javascript:toggleMenu(this.parentNode,'m_test_suites_support')">Track Information</a>
+<ul id="m_test_suites_support">
+<li><a href="http://apps.topcoder.com/wiki/display/tc/How+to+Compete+in+Testing+Competitions">How to Compete</a></li>
+<li><a href="http://apps.topcoder.com/wiki/display/tc/Testing+Competition+Tutorial">Tutorial</a></li>
+<li><a href="http://apps.topcoder.com/wiki/display/tc/Testing+Competition+Documentation">Documentation</a></li>
+</ul></li>
+<li><a href="http://www.topcoder.com/tc?module=ActiveContests&amp;pt=13">Active Contests</a></li>
+<li><a href="http://www.topcoder.com/tc?module=ContestStatus&amp;pt=13">Contest Status</a></li>
+<li><a href="http://www.topcoder.com/tc?module=CompList&amp;pt=13">Past Contests</a></li>
+<li><a href="http://www.topcoder.com/tc?module=ViewReviewAuctions&amp;pt=13">Review Opportunities</a></li>
+<li><a href="http://www.topcoder.com/tc?module=ReviewBoard&amp;pt=13">Meet the Review Board</a></li>
+</ul></li>
+<li class="exp"><a href="javascript:void(0)" onclick="Javascript:toggleMenu(this.parentNode,'m_reporting_competitions')">Reporting</a>
+<ul id="m_reporting_competitions">
+<li><a href="http://apps.topcoder.com/wiki/display/tc/Reporting">Overview</a></li>
+<li class="exp"><a href="javascript:void(0)" onclick="Javascript:toggleMenu(this.parentNode,'m_reporting_support')">Track Information</a>
+<ul id="m_reporting_support">
+<li><a href="http://apps.topcoder.com/wiki/display/tc/How+to+Compete+in+Reporting+Competitions">How to Compete</a></li>
+<li><a href="http://apps.topcoder.com/wiki/display/tc/Reporting+Competition+Tutorial">Tutorial</a></li>
+<li><a href="http://apps.topcoder.com/wiki/display/tc/Reporting+Competition+Documentation">Documentation</a></li>
+</ul></li>
+<li><a href="http://www.topcoder.com/tc?module=ActiveContests&amp;pt=36">Active Contests</a></li>
+<li><a href="http://www.topcoder.com/tc?module=ContestStatus&amp;pt=36">Contest Status</a></li>
+<li><a href="http://www.topcoder.com/tc?module=CompList&amp;pt=36">Past Contests</a></li>
+<li><a href="http://www.topcoder.com/tc?module=ViewReviewAuctions&amp;pt=36">Review Opportunities</a></li>
+<li><a href="http://www.topcoder.com/tc?module=ReviewBoard&amp;pt=36">Meet the Review Board</a></li>
+</ul></li>
+</ul></li>
+<li class="exp"><a href="javascript:void(0)" onclick="Javascript:toggleMenu(this.parentNode,'competition_ui_dev')">UI Development</a>
+<ul id="competition_ui_dev">
+<li class="exp"><a href="javascript:void(0)" onclick="Javascript:toggleMenu(this.parentNode,'m_ui_prototype_competitions')">UI Prototype</a>
+<ul id="m_ui_prototype_competitions">
+<li><a href="http://apps.topcoder.com/wiki/display/tc/UI+Prototype+Competitions">Overview</a></li>
+<li class="exp"><a href="javascript:void(0)" onclick="Javascript:toggleMenu(this.parentNode,'m_ui_prototype_support')">Track Information</a>
+<ul id="m_ui_prototype_support">
+<li><a href="http://apps.topcoder.com/wiki/display/tc/UI+Prototype+Competitions">UI Prototype Tutorial</a></li>
+</ul></li>
+<li><a href="http://www.topcoder.com/tc?module=ActiveContests&amp;pt=19">Active Contests</a></li>
+<li><a href="http://www.topcoder.com/tc?module=ContestStatus&amp;pt=19">Contest Status</a></li>
+<li><a href="http://www.topcoder.com/tc?module=CompList&amp;pt=19">Past Contests</a></li>
+<li><a href="http://www.topcoder.com/tc?module=ViewReviewAuctions&amp;pt=19">Review Opportunities</a></li>
+<li><a href="http://www.topcoder.com/tc?module=ReviewBoard&amp;pt=19">Meet the Review Board</a></li>
+</ul></li>
+<li class="exp"><a href="javascript:void(0)" onclick="Javascript:toggleMenu(this.parentNode,'m_ria_build_competitions')">RIA Build</a>
+<ul id="m_ria_build_competitions">
+<li><a href="http://apps.topcoder.com/wiki/display/tc/RIA+Build+Competitions">Overview</a></li>
+<li class="exp"><a href="javascript:void(0)" onclick="Javascript:toggleMenu(this.parentNode,'m_ria_build_support')">Track Information</a>
+<ul id="m_ria_build_support">
+<li><a href="http://apps.topcoder.com/wiki/display/tc/RIA+Build+Competitions">RIA Build Tutorial</a></li>
+</ul></li>
+<li><a href="http://www.topcoder.com/tc?module=ActiveContests&amp;pt=24">Active Contests</a></li>
+<li><a href="http://www.topcoder.com/tc?module=ContestStatus&amp;pt=24">Contest Status</a></li>
+<li><a href="http://www.topcoder.com/tc?module=CompList&amp;pt=24">Past Contests</a></li>
+<li><a href="http://www.topcoder.com/tc?module=ViewReviewAuctions&amp;pt=24">Review Opportunities</a></li>
+<li><a href="http://www.topcoder.com/tc?module=ReviewBoard&amp;pt=24">Meet the Review Board</a></li>
+</ul></li>
+<li class="exp"><a href="javascript:void(0)" onclick="Javascript:toggleMenu(this.parentNode,'m_content_creation_competitions')">Content Creation</a>
+<ul id="m_content_creation_competitions">
+<li><a href="http://apps.topcoder.com/wiki/display/tc/Content+Contests+Overview">Overview</a></li>
+<li class="exp"><a href="javascript:void(0)" onclick="Javascript:toggleMenu(this.parentNode,'m_content_creation_support')">Track Information</a>
+<ul id="m_content_creation_support">
+<li><a href="http://apps.topcoder.com/wiki/display/tc/How+to+Compete+in+Content+Creation+Competitions">How to Compete</a></li>
+</ul></li>
+<li><a href="http://www.topcoder.com/tc?module=ActiveContests&amp;pt=35">Active Contests</a></li>
+<li><a href="http://www.topcoder.com/tc?module=ContestStatus&amp;pt=35">Contest Status</a></li>
+<li><a href="http://www.topcoder.com/tc?module=CompList&amp;pt=35">Past Contests</a></li>
+<li><a href="http://www.topcoder.com/tc?module=ViewReviewAuctions&amp;pt=35">Review Opportunities</a></li>
+<li><a href="http://www.topcoder.com/tc?module=ReviewBoard&amp;pt=35">Meet the Review Board</a></li>
+</ul></li>
+</ul></li>
+<li class="exp"><a href="javascript:void(0)" onclick="Javascript:toggleMenu(this.parentNode,'competition_qa')">QA and Maintenance</a>
+<ul id="competition_qa">
+<li class="exp"><a href="javascript:void(0)" onclick="Javascript:toggleMenu(this.parentNode,'m_test_scenarios_competitions')">Test Scenarios</a>
+<ul id="m_test_scenarios_competitions">
+<li><a href="http://apps.topcoder.com/wiki/display/tc/Test+Scenarios+and+Scripts">Overview</a></li>
+<li class="exp"><a href="javascript:void(0)" onclick="Javascript:toggleMenu(this.parentNode,'m_test_scenarios_support')">Track Information</a>
+<ul id="m_test_scenarios_support">
+<li><a href="http://apps.topcoder.com/wiki/display/tc/How+to+Compete+in+Testing+Competitions">How to Compete</a></li>
+<li><a href="http://apps.topcoder.com/wiki/display/tc/Testing+Competition+Tutorial">Tutorial</a></li>
+<li><a href="http://apps.topcoder.com/wiki/display/tc/Testing+Competition+Documentation">Documentation</a></li>
+</ul></li>
+<li><a href="http://www.topcoder.com/tc?module=ActiveContests&amp;pt=26">Active Contests</a></li>
+<li><a href="http://www.topcoder.com/tc?module=ContestStatus&amp;pt=26">Contest Status</a></li>
+<li><a href="http://www.topcoder.com/tc?module=CompList&amp;pt=26">Past Contests</a></li>
+<li><a href="http://www.topcoder.com/tc?module=ViewReviewAuctions&amp;pt=26">Review Opportunities</a></li>
+<li><a href="http://www.topcoder.com/tc?module=ReviewBoard&amp;pt=26">Meet the Review Board</a></li>
+</ul></li>
+<li class="exp"><a href="javascript:void(0)" onclick="Javascript:toggleMenu(this.parentNode,'m_bugraces_competitions')">Bug Race</a>
+<ul id="m_bugraces_competitions">
+<li><a href="http://apps.topcoder.com/wiki/display/tc/Bug+Race+Competition+Overview">Overview</a></li>
+<li class="exp"><a href="javascript:void(0)" onclick="Javascript:toggleMenu(this.parentNode,'m_bugraces_support')">Track Information</a>
+<ul id="m_bugraces_support">
+<li><a href="http://apps.topcoder.com/wiki/display/tc/How+to+Compete+in+Bug+Race+Competitions">How to Compete</a></li>
+</ul></li>
+<li><a href="http://www.topcoder.com/tc?module=ViewActiveBugRaces">Active Contests</a></li>
+<li><a href="http://apps.topcoder.com/wiki/x/FQG2AQ">Review Opportunities</a></li>
+</ul></li>
+<li class="exp"><a href="javascript:void(0)" onclick="Javascript:toggleMenu(this.parentNode,'m_bughunt_competitions')">Bug Hunt</a>
+<ul id="m_bughunt_competitions">
+<li><a href="http://apps.topcoder.com/wiki/x/W5ogAg">Overview</a></li>
+<li class="exp"><a href="javascript:void(0)" onclick="Javascript:toggleMenu(this.parentNode,'m_bughunt_support')">Track Information</a>
+<ul id="m_bughunt_support">
+<li><a href="http://apps.topcoder.com/wiki/x/cpogAg">How to Compete</a></li>
+</ul></li>
+<li><a href="http://www.topcoder.com/tc?module=ActiveContests&amp;pt=9">Active Contests</a></li>
+<li><a href="http://www.topcoder.com/tc?module=ContestStatus&amp;pt=9">Contest Status</a></li>
+<li><a href="http://www.topcoder.com/tc?module=CompList&amp;pt=9">Past Contests</a></li>
+<li><a href="http://www.topcoder.com/tc?module=ViewReviewAuctions&amp;pt=9">Review Opportunities</a></li>
+<li><a href="http://www.topcoder.com/tc?module=ReviewBoard&amp;pt=9">Meet the Review Board</a></li>
+</ul></li>
+</ul></li>
+<li class="exp"><a href="javascript:void(0)" onclick="Javascript:toggleMenu(this.parentNode,'competition_algo')">Algorithm</a>
+<ul id="competition_algo">
+<li class="exp"><a href="javascript:void(0)" onclick="Javascript:toggleMenu(this.parentNode,'m_algo_competitions')">Single Round Matches (SRM)</a>
+<ul id="m_algo_competitions">
+<li><a href="http://apps.topcoder.com/wiki/display/tc/Algorithm+Overview">Overview</a></li>
+<li class="exp"><a href="javascript:void(0)" onclick="Javascript:toggleMenu(this.parentNode,'m_algo_support')">Track Information</a>
+<ul id="m_algo_support">
+<li><a href="http://apps.topcoder.com/wiki/display/tc/How+to+Compete+in+SRM+Algorithm+Competitions">How to Compete</a></li>
+<li><a href="http://apps.topcoder.com/wiki/display/tc/SRM+Algorithm+Competition+FAQs">FAQs</a></li>
+<li><a href="http://apps.topcoder.com/wiki/display/tc/Algorithm+Competition+Rating+System">Rating System</a></li>
+<li><a href="http://apps.topcoder.com/wiki/display/tc/Write+Problems+for+TopCoder">Write Problems</a></li>
+</ul></li>
+<li class="exp"><a href="javascript:void(0)" onclick="Javascript:toggleMenu(this.parentNode,'m_algo_stats')">Statistics</a>
+<ul id="m_algo_stats">
+<li><a href="http://www.topcoder.com/tc?module=MatchList">Match Archive</a></li>
+<li><a href="http://www.topcoder.com/stat?c=round_overview">Match Overviews</a></li>
+<li><a href="http://www.topcoder.com/tc?module=SrmDivisionWins">Match Winners</a></li>
+<li><a href="http://www.topcoder.com/stat?c=last_match">Match Results</a></li>
+<li><a href="http://apps.topcoder.com/wiki/display/tc/Algorithm+Problem+Set+Analysis">Match Editorials</a></li>
+<li><a href="http://www.topcoder.com/tc?module=ProblemArchive">Problem Archive</a></li>
+<li><a href="http://www.topcoder.com/tc?module=ColorChange&amp;ratid=1">Recent Color Changes</a></li>
+<li><a href="http://apps.topcoder.com/wiki/display/tc/Algorithm+Data+Feeds">Data Feeds</a></li>
+</ul></li>
+<li><a href="javascript:arena();">Launch Arena</a></li>
+</ul></li>
+<li class="exp"><a href="javascript:void(0)" onclick="Javascript:toggleMenu(this.parentNode,'m_long_contests')">Marathon Match</a>
+<ul id="m_long_contests">
+<li><a href="http://apps.topcoder.com/wiki/display/tc/Marathon+Match+Overview">Overview</a></li>
+<li class="exp"><a href="javascript:void(0)" onclick="Javascript:toggleMenu(this.parentNode,'m_long_support')">Track Information</a>
+<ul id="m_long_support">
+<li><a href="http://apps.topcoder.com/wiki/display/tc/How+to+Compete+in+Marathon+Match+Events">How to Compete</a></li>
+<li><a href="http://www.topcoder.com/longcontest/?module=Static&amp;d1=support&amp;d2=ratings">Rating System</a></li>
+</ul></li>
+<li class="exp"><a href="javascript:void(0)" onclick="Javascript:toggleMenu(this.parentNode,'m_long_stats')">Statistics</a>
+<ul id="m_long_stats">
+<li><a href="http://www.topcoder.com/longcontest/stats/?module=MatchList">Match Archive</a></li>
+<li><a href="http://www.topcoder.com/longcontest/stats/?module=ViewOverview">Match Overview</a></li>
+<li><a href="http://www.topcoder.com/longcontest/stats/?module=MatchWinners">Match Winners</a></li>
+<li><a href="http://www.topcoder.com/longcontest/?module=Static&amp;d1=match_editorials&amp;d2=archive">Match Editorials</a></li>
+<li><a href="http://www.topcoder.com/longcontest/?module=Static&amp;d1=support&amp;d2=dataFeed">Data Feeds</a></li>
+</ul></li>
+<li><a href="http://www.topcoder.com/longcontest/?module=ViewActiveContests">Active Contests</a></li>
+<li><a href="http://www.topcoder.com/longcontest/?module=ViewPractice">Practice</a></li>
+<li><a href="http://www.topcoder.com/longcontest/?module=ViewQueue">Queue Status</a></li>
+</ul></li>
+</ul></li>
+<li class="exp"><a href="javascript:void(0)" onclick="Javascript:toggleMenu(this.parentNode,'m_hs_competitions')">High School</a>
+<ul id="m_hs_competitions">
+<li><a href="http://www.topcoder.com/tc?module=Static&amp;d1=hs&amp;d2=home">Overview</a></li>
+<li class="exp"><a href="javascript:void(0)" onclick="Javascript:toggleMenu(this.parentNode,'m_hs_stats')">Statistics</a>
+<ul id="m_hs_stats">
+<li><a href="http://www.topcoder.com/tc?module=HSRoundOverview">Match Overview</a></li>
+<li><a href="http://www.topcoder.com/tc?module=HSRoundStatsTeam">Match Results (Team)</a></li>
+<li><a href="http://www.topcoder.com/tc?module=HSRoundStatsInd">Match Results (Indiv.)</a></li>
+<li><a href="http://www.topcoder.com/tc?module=Static&amp;d1=hs&amp;d2=match_editorials&amp;d3=archive">Match Editorials</a></li>
+<li><a href="http://www.topcoder.com/tc?module=ColorChange&amp;ratid=2">Recent Color Changes</a></li>
+<li><a href="http://www.topcoder.com/tc?module=Static&amp;d1=hs&amp;d2=support&amp;d3=dataFeed">Data Feeds</a></li>
+</ul></li>
+<li><a href="http://www.topcoder.com/tc?module=Static&amp;d1=hs&amp;d2=spotlightSessions">Spotlight Sessions</a></li>
+<li><a href="javascript:arena();">Launch Arena</a></li>
+</ul></li>
+<li><a href="http://www.topcoder.com/dr">The Digital Run</a></li>
+<li><a href="http://software.topcoder.com/review">Submit &amp; Review</a></li>
+</ul></li>
+<li class="exp"><a href="javascript:void(0)" onclick="Javascript:toggleMenu(this.parentNode,'m_topcoder_networks')">TopCoder Networks</a>
+<ul id="m_topcoder_networks">
+<li><a href="http://community.topcoder.com/alcatel/">Alcatel Lucent</a></li>
+<li><a href="http://community.topcoder.com/amdapp/">AMD OpenCL</a></li>
+<li><a href="http://community.topcoder.com/darpacs/">DARPA CS-STEM</a></li>
+<li><a href="http://community.topcoder.com/lifetech-network/">Life Technologies</a></li>
+<li><a href="http://community.topcoder.com/ntl/">NASA Tournament Lab</a></li>
+<li><a href="http://community.topcoder.com/x/">PayPalX</a></li>
+</ul></li>
+<li class="exp"><a href="javascript:void(0)" onclick="Javascript:toggleMenu(this.parentNode,'m_events')">Events</a>
+<ul id="m_events">
+<li><a href="http://www.topcoder.com/tc?module=Static&amp;d1=calendar&amp;d2=thisMonth">Event Calendar</a></li>
+<li class="exp"><a href="javascript:void(0)" onclick="Javascript:toggleMenu(this.parentNode,'m_tournaments')">Tournaments</a>
+<ul id="m_tournaments">
+<li><a href="http://www.topcoder.com/tc?module=Static&amp;d1=tournaments&amp;d2=home">TopCoder</a></li>
+<li><a href="http://www.topcoder.com/pl/">Powered by TopCoder</a></li>
+<li><a href="http://www.topcoder.com/tc?module=CRPFStatic&amp;d1=crpf&amp;d2=crpf_overview">Charity</a></li>
+</ul></li>
+</ul></li>
+<li class="exp"><a href="javascript:void(0)" onclick="Javascript:toggleMenu(this.parentNode,'m_stats')">Statistics</a>
+<ul id="m_stats">
+<li class="exp"><a href="javascript:void(0)" onclick="Javascript:toggleMenu(this.parentNode,'m_competitor_stats')">The Tops</a>
+<ul id="m_competitor_stats">
+<li class="exp"><a href="javascript:void(0)" onclick="Javascript:toggleMenu(this.parentNode,'m_top_rated_competitors')">Top Ranked</a>
+<ul id="m_top_rated_competitors">
+<li><a href="http://www.topcoder.com/tc?module=AlgoRank">Algorithm</a></li>
+<li><a href="http://www.topcoder.com/tc?module=HSRank">High School</a></li>
+<li><a href="http://www.topcoder.com/longcontest/stats/?module=CoderRank">Marathon Match</a></li>
+<li><a href="http://www.topcoder.com/stat?c=top_conceptors">Conceptualization</a></li>
+<li><a href="http://www.topcoder.com/stat?c=top_specificators">Specification</a></li>
+<li><a href="http://www.topcoder.com/stat?c=top_architects">Architecture</a></li>
+<li><a href="http://www.topcoder.com/stat?c=top_designers">Design</a></li>
+<li><a href="http://www.topcoder.com/stat?c=top_developers">Development</a></li>
+<li><a href="http://www.topcoder.com/stat?c=top_assemblers">Assembly</a></li>
+<li><a href="http://www.topcoder.com/stat?c=top_testers">Test Suites</a></li>
+</ul></li>
+<li class="exp"><a href="javascript:void(0)" onclick="Javascript:toggleMenu(this.parentNode,'m_recordbook')">Record Book</a>
+<ul id="m_recordbook">
+<li><a href="http://www.topcoder.com/tc?module=Static&amp;d1=statistics&amp;d2=recordbook_home">Algorithm</a></li>
+<li><a href="http://www.topcoder.com/tc?module=Static&amp;d1=compstats&amp;d2=comp_recordbook_home">Component</a></li>
+<li><a href="http://www.topcoder.com/longcontest/?module=Static&amp;d1=stats&amp;d2=recordbook_home">Marathon Match</a></li>
+</ul></li>
+<li class="exp"><a href="javascript:void(0)" onclick="Javascript:toggleMenu(this.parentNode,'m_com')">Coder of the Month</a>
+<ul id="m_com">
+<li><a href="http://www.topcoder.com/tc?module=COMHistory&amp;achtid=5">Algorithm</a></li>
+<li><a href="http://www.topcoder.com/tc?module=COMHistory&amp;achtid=6">Design</a></li>
+<li><a href="http://www.topcoder.com/tc?module=COMHistory&amp;achtid=7">Development</a></li>
+</ul></li>
+</ul></li>
+</ul></li>
+<li class="exp"><a href="javascript:void(0)" onclick="Javascript:toggleMenu(this.parentNode,'m_edu_content')">Tutorials</a>
+<ul id="m_edu_content">
+<li><a href="http://www.topcoder.com/tc?module=Static&amp;d1=education&amp;d2=overview">Overview</a></li>
+<li><a href="http://www.topcoder.com/tc?module=Static&amp;d1=tutorials&amp;d2=alg_index">Algorithm Tutorials</a></li>
+<li><a href="http://www.topcoder.com/tc?module=Static&amp;d1=tutorials&amp;d2=comp_index">Component Tutorials</a></li>
+<li><a href="http://www.topcoder.com/tc?module=Static&amp;d1=tutorials&amp;d2=mm_index">Marathon Tutorials</a></li>
+<li><a href="http://apps.topcoder.com/wiki/dashboard.action">Wiki</a></li>
+</ul></li>
+<li><a href="http://forums.topcoder.com/">Forums</a></li>
+<li><a href="http://www.topcoder.com/tc?&amp;module=SurveyList">Surveys</a></li>
+<li><a href="http://www.topcoder.com/tc?module=MyHome">My TopCoder</a></li>
+<li><a href="http://www.topcoder.com/help">Help Center</a></li>
+<li class="exp"><a href="javascript:void(0)" onclick="Javascript:toggleMenu(this.parentNode,'m_about_tc')">About TopCoder</a>
+<ul id="m_about_tc">
+<li><a href="http://www.topcoder.com/aboutus/">Overview</a></li>
+<li><a href="http://www.topcoder.com/aboutus/">Why Join TopCoder?</a></li>
+<li><a href="http://www.topcoder.com/aboutus/careers/">Working at TopCoder</a></li>
+<li><a href="http://www.topcoder.com/aboutus/management/">Leadership</a></li>
+<li><a href="http://www.topcoder.com/aboutus/news/">Press Room</a></li>
+</ul></li></ul>
+
+    <div style="float: left; padding: 10px 0px 0px 17px;">
+        
+        <a href="http://www.topcoder.com/tc?module=LinkTracking&amp;link=http://apps.topcoder.com/wiki/x/L4TD&amp;refer=leftnav"><img src="SRM%20510%20-%20TopCoder%20Wiki_files/umlTool.png" alt="UML Tool"></a>
+
+        
+        
+        
+        
+    </div>
+    
+
+<div id="navbarSearch">
+<b>Member Search:</b>
+<form action="http://www.topcoder.com/tc" method="get" name="simpleSearchForm" class="noSpace" id="simpleSearchForm">
+   <input class="noSpace" name="module" value="SimpleSearch" type="hidden">
+   <input class="noSpace" name="ha" value="Handle:" size="12" maxlength="15" onfocus="javascript: if (document.simpleSearchForm.ha.value=='Handle:') document.simpleSearchForm.ha.value = '';" onblur="javascript:if (document.simpleSearchForm.ha.value == '')document.simpleSearchForm.ha.value = 'Handle:';" type="text">
+   <a class="gMetal" href="javascript:void%20document.simpleSearchForm.submit();">Go</a><br>
+   <a class="gMetal" href="http://www.topcoder.com/tc?module=ViewAdvanced">Advanced Search</a>
+</form>
+</div>
+</div>
+<div style="float: left; clear:left; padding: 0px 0px 23px 0px;"><img src="SRM%20510%20-%20TopCoder%20Wiki_files/leftnav_bottom.gif" alt=""></div>
+
+
+    <div style="float: left; clear:left; width: 170px; margin: 0px;" align="center">
+        <img src="SRM%20510%20-%20TopCoder%20Wiki_files/brackets.png" alt="" style="margin-bottom: 23px;">
+    </div>
+
+
+        </td>
+        <td class="bodyColumn" width="100%" align="left">
+
+
+    <script type="text/javascript">
+        function hideMessage(messageId)
+        {
+            var message = document.getElementById(messageId)
+            message.style.display = "none";
+            setCookie(messageId, true);
+        }
+    </script>
+
+        
+
+    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+
+                <tbody><tr class="topBar">
+            <td align="left">
+                <span class="topBarDiv">             
+    <script language="JavaScript">
+        function showBreadcrumbsEllipsis()
+        {
+            document.getElementById('breadcrumbsEllipsis').style.display = 'none';
+            document.getElementById('breadcrumbsExpansion').style.display = 'inline';
+        }
+    </script>
+                                                    <a href="http://apps.topcoder.com/wiki/dashboard.action">Dashboard</a>
+                                     &gt;                         <a href="http://apps.topcoder.com/wiki/display/tc">TopCoder Competitions</a>
+                                                    <span id="breadcrumbs">
+                    &gt;
+                    <span id="breadcrumbsEllipsis">
+                        <a href="#" onclick="showBreadcrumbsEllipsis();return false;" title="
+                    TopCoder Handle             &gt;         Other Competitions             &gt;         Algorithm Overview    ">...</a>
+                    </span>
+                    <span id="breadcrumbsExpansion" style="display:none;">
+                                <a href="http://apps.topcoder.com/wiki/display/tc/TopCoder+Handle">TopCoder Handle</a>
+                 &gt;                     <a href="http://apps.topcoder.com/wiki/display/tc/Other+Competitions">Other Competitions</a>
+                 &gt;                     <a href="http://apps.topcoder.com/wiki/display/tc/Algorithm+Overview">Algorithm Overview</a>
+        </span>
+                </span>
+                                                                        
+                                                     &gt;               
+          <a href="http://apps.topcoder.com/wiki/display/tc/Algorithm+Problem+Set+Analysis">Algorithm Problem Set Analysis</a>
+                                     &gt;                         <a href="http://apps.topcoder.com/wiki/display/tc/SRM+510">SRM 510</a>
+                
+     </span>
+            </td>
+
+            <td style="white-space:nowrap" valign="middle" align="right">
+                    <form id="quickSearch" method="POST" action="/wiki/dosearchsite.action" name="searchForm">
+        <input name="quickSearch" value="true" type="hidden">
+        
+        <input name="searchQuery.spaceKey" value="conf_global" type="hidden">
+        <input accesskey="s" name="searchQuery.queryString" size="25" type="text">
+        <input value="Search" type="submit">
+    </form>
+            </td>
+        </tr>
+        
+                <tr>
+            <td style="padding: 5px 0px;" colspan="2">
+            <table style="padding: 0px; margin: 0px; width: 100%;" border="0" cellpadding="0" cellspacing="0">
+                <tbody><tr>
+                                                                        
+                                                                        <td nowrap="nowrap" valign="bottom" width="1%" align="left">
+                        <span class="logoSpaceLink">            <a href="http://apps.topcoder.com/wiki/display/tc">TopCoder Competitions</a>    </span>
+                    </td>
+                    <td valign="top" width="98%" align="right">
+                                                    
+    <span class="smalltext" id="userNavBar">
+            </span>
+                            
+                                <a href="http://apps.topcoder.com/wiki/display/tc/SRM+510?decorator=printable" rel="nofollow"><img src="SRM%20510%20-%20TopCoder%20Wiki_files/print_16.gif" alt="View a printable version of the current page." title="View a printable version of the current page." border="0" height="16" hspace="1" vspace="1" width="16" align="absmiddle"></a>
+
+                                                        
+                                                                                &nbsp;
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" height="22" align="left">
+                        <span class="pagetitle" style="line-height: 1; margin: 0px; text-decoration: none">
+                                        SRM 510
+                            </span>
+                    </td>
+                </tr>
+            </tbody></table>
+            </td>
+        </tr>
+            </tbody></table>
+
+        <!--
+    Root decorator: all decisions about how a page is to be decorated via the
+                    inline decoration begins here.
+-->
+
+
+
+<!--
+    Switch based upon the context. However, for now, just delegate to a decorator
+    identified directly by the context.
+-->
+
+
+    
+    
+
+
+    
+    
+        
+    
+    
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+
+    <tbody><tr>
+        <td>
+            <div class="greynavbar">
+                <span style="float:right; padding: 6px 10px 4px 0px">
+						
+        
+        
+        
+                    <a href="http://apps.topcoder.com/wiki/spaces/browsespace.action?key=tc"><img src="SRM%20510%20-%20TopCoder%20Wiki_files/browse_space.gif" title="Browse Space" border="0" height="16" width="16" align="absmiddle">&nbsp;<span>Browse Space</span></a>
+		    				</span>
+
+				<ul id="foldertab" style="margin-bottom: 0px; padding-top: 10px;">
+											<li><a id="viewPageLink" href="http://apps.topcoder.com/wiki/display/tc/SRM+510" class="current" accesskey="v"><u>V</u>iew</a></li>
+											<li><a id="viewAttachmentsLink" href="http://apps.topcoder.com/wiki/pages/viewpageattachments.action?pageId=61508716" accesskey="a"><u>A</u>ttachments (0)</a></li>
+											<li><a id="viewPageInfoLink" href="http://apps.topcoder.com/wiki/pages/viewinfo.action?pageId=61508716" accesskey="i"><u>I</u>nfo</a></li>
+									</ul>
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td class="pagebody" valign="top">
+
+                        <table style="clear: both" border="0" cellpadding="0" cellspacing="0" width="100%">
+                <tbody><tr>
+                    <td class="pagecontent" valign="top" width="100%">
+
+                    
+                    
+                    
+                                                    
+                            <table style="margin-bottom: 5px" cellspacing="0" width="100%">
+                                <tbody><tr>
+                                    <td valign="top" align="left">
+                                        <span class="smalltext">
+                                                        Added by             mystic_tc
+, last edited by             ghooo
+ on Jul 21, 2011
+                      &nbsp;(<a href="http://apps.topcoder.com/wiki/pages/diffpages.action?pageId=61508716&amp;originalId=63048905">view change</a>)
+              
+                                            
+ 
+<style type="text/css">
+div.auto_complete {
+    width: 350px;
+    background: #fff;
+}
+
+div.auto_complete ul {
+    border: 1px solid #888;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    list-style-type: none;
+}
+
+div.auto_complete ul li {
+    margin: 0;
+    padding: 3px;
+}
+
+div.auto_complete ul li.selected {
+    background-color: #ffb;
+}
+
+div.auto_complete ul strong.highlight {
+    color: #800;
+    margin: 0;
+    padding: 0;
+}
+</style>
+
+
+<!-- Delay the loading of the external javascript file needed for labels (as it takes too long to load and visibly holds loading of the page body) -->
+<!-- To do this without javascript errors over undefined functions, we need to declare stubs here (that are overrided later by the proper implementations) -->
+<script language="JavaScript" type="text/javascript">
+    function doAddLabel(hideTextfieldAfterAddParam)
+    {
+        // stub
+    }
+
+    function onAddLabel()
+    {
+        // stub
+    }
+
+    function showLabelsInput()
+    {
+        // stub
+    }
+</script>
+
+<!-- This is a hack to work around an apparent SiteMesh bug - http://jira.opensymphony.com/browse/SIM-198 -->
+
+
+<span class="error"><span class="errorMessage" id="errorSpan"></span></span>
+<form name="addLabelForm" method="" action="" onsubmit="doAddLabel(false); return false;" style="margin: 0px; padding: 0px">
+    <div style="float: left">Labels:&nbsp;</div>
+    <div id="labelsInfo" style="float: left; width: 90%">
+        <span id="labelsList">
+                    (None)
+                </span>
+            </div>
+    <br clear="all"><!-- Do not remove this line-break. You will make Safari cry. -->
+    <div id="labelInputSpan" style="display: none; clear: both;">
+        <div style="border: 1px solid #cccccc; padding: 8px; align: center; background-color: #f0f0f0">
+
+        <div id="labelOperationErrorContainer" style="display: none"><span class="error"><span class="errorMessage" id="labelOperationErrorMessage"></span></span></div>
+
+        <table width="100%">
+            <tbody><tr>
+                <td>
+                    <div class="formtitle" style="padding-bottom: 3px; font-size: 13px;">Add Labels</div>
+                </td>
+                <td align="right"><div id="waitImageAndStatus" style="display: none; height: 16px;"><img alt="Wait Image" src="SRM%20510%20-%20TopCoder%20Wiki_files/wait.gif" border="0" align="absmiddle">&nbsp;<span id="labelOperationStatus" class="smalltext" style="vertical-align: middle"></span></div></td>
+            </tr>
+            <tr><td width="50%">
+                    Enter labels to add to this page:<br>
+        <input autocomplete="off" id="labelName" name="labelsString" class="monospaceInput" size="40" type="text">
+        <input onclick="doAddLabel(false); return false;" value="Add" type="submit"><input onclick="doAddLabel(true); return false;" value="Done" type="button">
+        <div style="display: none;" class="auto_complete" id="labelsAutocompleteList"></div>
+        <div class="smalltext">
+            <em>Tip:</em> Looking for a label? Just start typing.
+        </div>
+        </td>
+            <td valign="top" width="50%">
+                <div id="suggestedLabelsSpan"></div>
+            </td>
+        </tr></tbody></table>
+        </div>
+    </div>
+</form>
+    <script type="text/javascript">
+        // if there is javascript support, enable the [Edit] link that enables AJAX label adding/removing functionality
+        if (document.getElementById('editLabelsLink'))
+        {
+            document.getElementById('editLabelsLink').style.display = 'inline';
+        }
+    </script>
+                                        </span>
+                                    </td>
+                                    <td valign="top" align="right">
+                                                                            </td>
+                                </tr>
+                            </tbody></table>
+
+                                                        
+                            <div class="wiki-content">
+                               <!-- wiki content -->
+            
+<link type="text/css" rel="stylesheet" href="SRM%20510%20-%20TopCoder%20Wiki_files/style.css">
+<link type="text/css" rel="stylesheet" href="SRM%20510%20-%20TopCoder%20Wiki_files/coders.css">
+<link type="text/css" rel="stylesheet" href="SRM%20510%20-%20TopCoder%20Wiki_files/stats.css">
+<link type="text/css" rel="stylesheet" href="SRM%20510%20-%20TopCoder%20Wiki_files/tcStyles20080219.css">
+
+<div class="linkBox">
+    <a href="http://apps.topcoder.com/tc?module=Static&amp;d1=match_editorials&amp;d2=archive">Archive</a><br>
+    <a href="http://apps.topcoder.com/stat?c=round_overview&amp;er=5&amp;rd=14439">Match Overview</a><br>
+    <a href="http://forums.topcoder.com/?module=ThreadList&amp;forumID=545178">Discuss this match</a>
+</div>
+<span class="bodySubtitle">Single Round Match 510</span><br>
+Tuesday, June 21th, 2011
+<br><br>
+
+<h2>Match summary</h2> 
+
+<p> 
+In a warm up match between two important TCO rounds, coders were ready to show their worth.
+The problem set turned to be worthy training. In
+division 1, less than 30 coders solved more than one problem and nobody was able
+to correctly solve the hard problem. Among the small elite that solved two problems,
+speed and challenges defined who would get the first place. <a href="http://www.topcoder.com/tc?module=MemberProfile&amp;cr=22674179" class="coderTextRed">RAD.</a> managed
+to score an SRM win by combining the second fastest submission for the 500-points
+problem and a succesful challenge. Following very closely: <a href="http://www.topcoder.com/tc?module=MemberProfile&amp;cr=22657324" class="coderTextRed">theycallhimtom</a>, <a href="http://www.topcoder.com/tc?module=MemberProfile&amp;cr=7459080" class="coderTextRed">ardiankp</a>,
+<a href="http://www.topcoder.com/tc?module=MemberProfile&amp;cr=11948018" class="coderTextRed">anrieff</a> (with almost 400 points in challenges) and <a href="http://www.topcoder.com/tc?module=MemberProfile&amp;cr=22668143" class="coderTextRed">syco</a>
+acquired the remaining places in the top 5.
+<br>
+<br>
+In division 2, 10 coders were able to correctly solve all three problems. Of them, <a href="http://www.topcoder.com/tc?module=MemberProfile&amp;cr=22732667" class="coderTextBlue">grep</a>
+and <a href="http://www.topcoder.com/tc?module=MemberProfile&amp;cr=22881979" class="coderTextBlue">KiraZ</a> dominated and got the first and second place, respectively.
+</p> 
+ 
+<h1> 
+The Problems 
+</h1>
+<p></p> 
+
+<font size="+2"> 
+<b><a href="http://apps.topcoder.com/stat?c=problem_statement&amp;pm=11462&amp;rd=14439" name="11462">TheAlmostLuckyNumbersDivTwo</a></b> 
+</font> 
+<a href="http://www.topcoder.com/tc?module=ProblemRatingQuestions&amp;pid=11462"><img src="SRM%20510%20-%20TopCoder%20Wiki_files/rate_it.gif" alt="rate it" border="0" hspace="10"></a> 
+<a href="http://apps.topcoder.com/?module=ThreadList&amp;forumID=545178" class="statText"><img src="SRM%20510%20-%20TopCoder%20Wiki_files/btn_discuss_it.gif" alt="discuss it" border="0"></a>
+<br> 
+Used as: Division Two - Level One: <blockquote><table cellspacing="2"> 
+  <tbody><tr> 
+    <td class="bodyText" style="background: #eee;"> 
+      <b>Value</b> 
+    </td> 
+    <td class="bodyText" style="background: #eee;"> 
+      250 
+    </td> 
+  </tr> 
+  <tr> 
+    <td class="bodyText" style="background: #eee;"> 
+      <b>Submission Rate</b> 
+    </td> 
+    <td class="bodyText" style="background: #eee;"> 
+      750 / 867 (86.51%) 
+    </td> 
+  </tr> 
+  <tr> 
+    <td class="bodyText" style="background: #eee;"> 
+      <b>Success Rate</b> 
+    </td> 
+    <td class="bodyText" style="background: #eee;"> 
+      687 / 750 (91.60%) 
+    </td> 
+  </tr> 
+  <tr> 
+    <td class="bodyText" style="background: #eee;"> 
+      <b>High Score</b> 
+    </td> 
+    <td class="bodyText" style="background: #eee;"> 
+      <b>hemant_gangolia</b> for 249.95 points (0 mins 24 secs) 
+    </td> 
+  </tr> 
+  <tr> 
+    <td class="bodyText" style="background: #eee;"> 
+      <b>Average Score</b> 
+    </td> 
+    <td class="bodyText" style="background: #eee;"> 
+      211.34 (for 687 correct submissions) 
+    </td> 
+  </tr> 
+</tbody></table></blockquote> 
+<p>As usual, let us begin by checking the constraints. There are at most 1000000 numbers
+in the range from <b>a</b> to <b>b</b>. 1000000 is not a high number. So we could
+first try all values <b>x</b> in the range and for each, verify if it is almost lucky
+and then count it in that case. Given a fixed number <b>x</b>,
+it is simple to verify if it is an almost lucky number. Extracting digits of
+a number is a classical task and it should also be possible to use your language's
+features to convert the number to a string and then iterating through its digits and
+counting those that are not 4 or 7. If the total is more than 1, the number
+is not almost lucky. Since we can tell whether a number <b>x</b> is almost lucky, we can repeat
+that procedure with each number in the range and count those that are almost lucky.<br>
+<br>
+The maximum number of digits of a number between 1 and 1000000 is 7. Though for 
+most of those numbers, we have only 6 digits (those from 100000 to 999999). 1000000 total
+numbers from <b>a</b> to <b>b</b> multiplied by 6 gives us 6000000 as an upper bound
+for the number of operations that we will need. Since that is actually a fairly low amount,
+we can be sure that this simple approach should run in time in TC's server. The
+following Java code takes around 0.25 seconds in its worst case:<br>
+<br>
+
+
+</p><div class="code panel" style="border-width: 1px;"><div class="codeContent panelContent">
+<pre class="code-java"><span class="code-keyword">public</span> <span class="code-object">int</span> find(<span class="code-object">int</span> a, <span class="code-object">int</span> b)
+{
+    <span class="code-object">int</span> count = 0;
+    <span class="code-comment">// For each x:
+</span>    <span class="code-keyword">for</span> (<span class="code-object">int</span> x=a; x&lt;=b; x++) {
+        <span class="code-comment">//Verify <span class="code-keyword">if</span> x is almost lucky.
+</span>        <span class="code-object">String</span> s = ""+x;
+        <span class="code-comment">//By counting the number of unlucky digits
+</span>        <span class="code-object">int</span> unlucky = 0;
+        <span class="code-keyword">for</span> (<span class="code-object">int</span> i=0; i&lt;s.length(); i++) {
+            <span class="code-object">char</span> d = s.charAt(i);
+            <span class="code-keyword">if</span> ( (d!='7') &amp;&amp; (d!='4' ) ) {
+               unlucky ++;
+            }
+        }
+        <span class="code-comment">// If the number is lucky, increment the count
+</span>        <span class="code-keyword">if</span> ( unlucky &lt;= 1 ) {
+            count ++;
+        }
+    }
+    <span class="code-keyword">return</span> count;
+}</pre>
+</div></div>
+
+<p></p>
+
+<p><u>Alternative solutions and additional comments.</u></p>
+
+<p>&lt;PLACE YOUR COMMENTS HERE&gt;</p>
+
+<font size="+2"> 
+<b><a href="http://apps.topcoder.com/stat?c=problem_statement&amp;pm=11464&amp;rd=14439" name="11464">TheLuckyGameDivTwo</a></b> 
+</font> 
+<a href="http://apps.topcoder.com/tc?module=ProblemRatingQuestions&amp;pid=11464"><img src="SRM%20510%20-%20TopCoder%20Wiki_files/rate_it.gif" alt="rate it" border="0" hspace="10"></a> 
+<a href="http://forums.topcoder.com/?module=ThreadList&amp;forumID=545178" class="statText"><img src="SRM%20510%20-%20TopCoder%20Wiki_files/btn_discuss_it.gif" alt="discuss it" border="0"></a>
+<br> 
+Used as: Division Two - Level Two: <blockquote><table cellspacing="2"> 
+  <tbody><tr> 
+    <td class="bodyText" style="background: #eee;"> 
+      <b>Value</b> 
+    </td> 
+    <td class="bodyText" style="background: #eee;"> 
+      500 
+    </td> 
+  </tr> 
+  <tr> 
+    <td class="bodyText" style="background: #eee;"> 
+      <b>Submission Rate</b> 
+    </td> 
+    <td class="bodyText" style="background: #eee;"> 
+      449 / 867 (51.79%) 
+    </td> 
+  </tr> 
+  <tr> 
+    <td class="bodyText" style="background: #eee;"> 
+      <b>Success Rate</b> 
+    </td> 
+    <td class="bodyText" style="background: #eee;"> 
+      150 / 449 (33.41%) 
+    </td> 
+  </tr> 
+  <tr> 
+    <td class="bodyText" style="background: #eee;"> 
+      <b>High Score</b> 
+    </td> 
+    <td class="bodyText" style="background: #eee;"> 
+      <b>wiliamchen</b> for 491.93 points (3 mins 39 secs) 
+    </td> 
+  </tr> 
+  <tr> 
+    <td class="bodyText" style="background: #eee;"> 
+      <b>Average Score</b> 
+    </td> 
+    <td class="bodyText" style="background: #eee;"> 
+      286.83 (for 150 correct submissions) 
+    </td> 
+  </tr> 
+</tbody></table></blockquote> 
+<p>
+There are two decision problems that we can consider each separately: Given a range
+picked by John, Brus has to pick a range of
+<b>bLen</b> numbers that contains the least amount of lucky numbers. The second one
+is: Given the range <b>a</b>-<b>b</b>, John must pick a range of <b>jLen</b> numbers such that Brus'
+pick contains as many lucky numbers as possible. Let us begin with John's decision.<br>
+<br>
+Let us assume that we know how to solve Brus' subproblem and let us skip to solving John's. 
+Assuming that we are in the worst case possible : <b>a</b> = 1, <b>b</b> = 4747. Then there are at most
+4747 options for the starting point of John's interval. Assuming Brus'
+solution does not take much time, we could assume that we can simply call it once 
+per each possible choice of John and then pick the maximum result for John.<br>
+<br>
+When solving Brus' subproblem, there are also at most 4747 choices for the
+beginning of the range he will pick. After we have a given range of Brus' choice we
+need to count the number of lucky numbers in that range. If we were to also try
+all possible of Brus' choices, there would be 4747 of them. The product 4747*4747 is
+actually large, so we should have a quick way to, given a potential Brus' choice,
+count the total number of lucky numbers in that range.<br>
+<br>
+<b>Quickly counting the number of lucky numbers in a range</b><br>
+This is not as hard as it sounds. The trick is that we can precalculate some information before running
+the cycles that are needed for John's and Brus' decisions. For example, we could first
+add all the lucky numbers to a list. Since we do not care about numbers greater
+than 4747, we only need the lucky numbers with 4 or less digits. There are 2<sup>4</sup> + 2<sup>3</sup> + 2<sup>2</sup> + 2 of them. (For each
+digit position, there are two choices (4 or 7), so for each number of digits, there
+are 2<sup><b>n</b></sup> possible lucky numbers.) So we can save all those lucky numbers (at most
+32) to a list. In total, the decision problem would need at most 4747*4747*32 operations, or more
+formally: O(<b>b</b> * <b>b</b> * 2<sup>log_10(<b>b</b>)</sup>) operations (Which is actually O(<b>b</b> * <b>b</b> * <b>b</b><sup>1/3.32</sup>)). It is actually low enough. But it is not
+hard to optimize it to O(<b>b</b> * <b>b</b>). Since the maximum number of a range is
+4747, simply
+use an array <b>lowerLucky</b>[x] that returns the total number of lucky numbers less than
+a number <b>x</b>. This array is useful when calculating the number of lucky numbers between
+two integers <b>p</b> and <b>q</b>, inclusive: that is <b>lowerLucky</b>[<b>q</b>+1] - <b>lowerLucky</b>[<b>p</b>]. In order
+to precalculate this array, simply iterate through each value of <b>x</b>. If <b>x</b> is lucky, then
+(<b>lowerLucky</b>[<b>x</b>+1] = <b>lowerLucky</b>[<b>x</b>] + 1) else (<b>lowerLucky</b>[<b>x</b>+1] = <b>lowerLucky</b>[<b>x</b>]). To check
+if a number is lucky, go through its digits like in the previous problem.<br>
+<br>
+<b>Summary</b><br>
+<b>*</b> Both John's and Brus' decisions have a small range of choices, so we
+can brute force each of them. It requires a nested O(<b>b</b>*<b>b</b>) loop to work. 
+<br><b>*</b> It needs a quick way to calculate the number of lucky numbers inside a range.
+This is simple to do by prior precalculation of a list of lucky numbers, or of an array that contains
+the count of lucky numbers below each number.<br>
+<br>
+<b>Code</b><br><br>
+The following Java code takes less than 0.1 seconds in its worst case:<br>
+<br>
+
+</p><div class="code panel" style="border-width: 1px;"><div class="codeContent panelContent">
+<pre class="code-java"><span class="code-object">boolean</span> isLucky(<span class="code-object">int</span> x)
+{
+    <span class="code-object">String</span> s=""+x;
+    <span class="code-keyword">for</span> (<span class="code-object">char</span> ch: s.toCharArray() ) {
+        <span class="code-keyword">if</span> (ch != '4' &amp;&amp; ch != '7') {
+            <span class="code-keyword">return</span> <span class="code-keyword">false</span>;
+        }
+    }
+    <span class="code-keyword">return</span> <span class="code-keyword">true</span>;
+}
+<span class="code-keyword">public</span> <span class="code-object">int</span> find(<span class="code-object">int</span> a, <span class="code-object">int</span> b, <span class="code-object">int</span> jLen, <span class="code-object">int</span> bLen)
+{
+    <span class="code-comment">//Generate the lowerLucky array
+</span>    <span class="code-object">int</span>[] lowerLucky = <span class="code-keyword">new</span> <span class="code-object">int</span>[b+2];
+    lowerLucky[0] = 0;
+    <span class="code-keyword">for</span> (<span class="code-object">int</span> x=1; x&lt;=b; x++) {        
+       lowerLucky[x+1] = lowerLucky[x] + (isLucky(x) ? 1: 0);
+    }
+    <span class="code-object">int</span> mxJohn = 0;
+    <span class="code-comment">//Try every possible start <span class="code-keyword">for</span> John's interval,
+</span>    <span class="code-comment">//Pick the one which ends with the  most lucky numbers
+</span>    <span class="code-keyword">for</span> (<span class="code-object">int</span> jStart=a; jStart+jLen-1&lt;=b; jStart++) {
+        <span class="code-object">int</span> mnBrus = 1000000;
+        <span class="code-comment">//Try every possible start <span class="code-keyword">for</span> Brus' interval
+</span>        <span class="code-comment">//pick the one with the least lucky numbers
+</span>        <span class="code-keyword">for</span> (<span class="code-object">int</span> bStart=jStart; bStart+bLen-1&lt;=jStart+jLen-1; bStart++) {
+            <span class="code-object">int</span> c = lowerLucky[bStart+bLen] - lowerLucky[bStart];
+            mnBrus = <span class="code-object">Math</span>.min(mnBrus, c);
+        }
+        mxJohn = <span class="code-object">Math</span>.max(mxJohn, mnBrus);
+    }
+    <span class="code-keyword">return</span> mxJohn;
+}</pre>
+</div></div>
+
+<p></p>
+
+<p><u>Alternative solutions and additional comments.</u></p>
+
+<p>&lt;PLACE YOUR COMMENTS HERE&gt;</p>
+
+<font size="+2"> 
+<b><a href="http://apps.topcoder.com/stat?c=problem_statement&amp;pm=11466&amp;rd=14439" name="11466">TheLuckyBasesDivTwo</a></b> 
+</font> 
+<a href="http://apps.topcoder.com/tc?module=ProblemRatingQuestions&amp;pid=11466"><img src="SRM%20510%20-%20TopCoder%20Wiki_files/rate_it.gif" alt="rate it" border="0" hspace="10"></a> 
+<a href="http://forums.topcoder.com/?module=ThreadList&amp;forumID=545178" class="statText"><img src="SRM%20510%20-%20TopCoder%20Wiki_files/btn_discuss_it.gif" alt="discuss it" border="0"></a>
+<br> 
+Used as: Division Two - Level Three: <blockquote><table cellspacing="2"> 
+  <tbody><tr> 
+    <td class="bodyText" style="background: #eee;"> 
+      <b>Value</b> 
+    </td> 
+    <td class="bodyText" style="background: #eee;"> 
+      1000 
+    </td> 
+  </tr> 
+  <tr> 
+    <td class="bodyText" style="background: #eee;"> 
+      <b>Submission Rate</b> 
+    </td> 
+    <td class="bodyText" style="background: #eee;"> 
+      107 / 867 (12.34%) 
+    </td> 
+  </tr> 
+  <tr> 
+    <td class="bodyText" style="background: #eee;"> 
+      <b>Success Rate</b> 
+    </td> 
+    <td class="bodyText" style="background: #eee;"> 
+      14 / 107 (13.08%) 
+    </td> 
+  </tr> 
+  <tr> 
+    <td class="bodyText" style="background: #eee;"> 
+      <b>High Score</b> 
+    </td> 
+    <td class="bodyText" style="background: #eee;"> 
+      <b>grep</b> for 766.27 points (16 mins 48 secs) 
+    </td> 
+  </tr> 
+  <tr> 
+    <td class="bodyText" style="background: #eee;"> 
+      <b>Average Score</b> 
+    </td> 
+    <td class="bodyText" style="background: #eee;"> 
+      524.44 (for 14 correct submissions) 
+    </td> 
+  </tr> 
+</tbody></table></blockquote> 
+<p>
+Let us first consider the most straightforward approach: brute force for all bases possible and
+count the ones in which the number is lucky. In order to use that approach we would need two things:
+ a) An upper bound for the bases to check. And b) A quick way to know if a given base is lucky or not.
+Regarding b), the idea to use this approach should actually come from the observation that it is
+actually simple and relatively fast to verify if the number is 
+lucky in a given base <b>x</b>. In order to extract the base <b>x</b> digits out of <b>n</b> when the base is fixed, the 
+procedure is the same as when the base is our own base 10, but using the new base. To elaborate, the number <b>n</b> is equal to a certain polynomial:<br>
+</p><pre>    <b>n</b> = D0 * <b>x</b><sup>0</sup> + D1 * <b>x</b><sup>1</sup> + D2 * <b>x</b><sup>2</sup> + ...
+</pre><p>(Note that <b>x</b><sup>0</sup> = 1.) This comes directly from the numeric base definition that is present even in the problem statement. The first digit <b>D0</b> is actually equal to (<b>n</b> % <b>x</b>) (where % is the <a href="http://en.wikipedia.org/wiki/Modulo_operator">modulo</a> operator,
+which returns the remainder of the integer division <b>n</b>/<b>x</b>).
+It is because you can tell that D0 is
+smaller than <b>x</b> (by definition) and that the other terms in the polynomial are all multiples of
+<b>x</b>. After extracting the first digit, we are interested in the next ones and we should remove the
+first digit out of <b>n</b>. The simplest way is to simply divide <b>n</b> by <b>x</b> (integer division). So we get:
+</p><pre>    <b>D0</b>  = <b>n</b> % <b>x</b>
+    <b>n</b>/<b>x</b> = D1 * <b>x</b><sup>0</sup> + D2 * <b>x</b><sup>1</sup> + ...
+</pre><p>
+What happens after dividing <b>n</b> by <b>x</b> is that the <b>D0</b> part is discarded as the remainder and
+what is left is similar to the original case. In fact, if we denote the new value of <b>n</b> as <b>n</b>', we
+can tell that <b>D1</b> = (<b>n</b>' % <b>x</b>) , and then <b>n</b>'' = <b>n</b>'/<b>x</b>. We can repeat this
+process until <b>n</b> is equal to 0.<br>
+<br>
+Therefore, we can extract digits easily (and the extraction works in O( Log<sub><b>x</b></sub>(<b>n</b>)) time, because we divide <b>n</b> by <b>x</b> until it becomes 0). We need the
+second requirement to use the simple loop approach: an upper bound for the base to check. 
+For this, let us return to the extraction of the first digit: (<b>D0</b> = <b>n</b> % <b>x</b>). If <b>x</b> was larger than <b>n</b> then <b>D0</b> would
+be equal to <b>n</b> and the next <b>n</b>' = <b>n</b> / <b>x</b> would be 0. This happens to every base that is greater
+than <b>n</b>. So, the numeric representation of <b>n</b> in that base would not change. This has two consequences:<br>
+<br><b>*</b> Certain numbers will be lucky in infinitely many bases. This is something that is mentioned
+by the statement, and is true: all bases larger than <b>n</b> give the same representation for <b>n</b>, one in which
+the first and only digit is equal to <b>n</b>. If <b>n</b> was 4 or 7, then all of the bases greater than <b>n</b>
+would be lucky, because the representation would always be 4 or 7. So, in case <b>n</b> is equal to 4 or 7, we
+should directly return -1.
+<br><b>*</b> The maximum base we need to check is <b>n</b>. This happens because in the case <b>n</b> was not 4 or 7, then
+all the bases greater than <b>n</b> would not be lucky.
+
+</p><p>We now have an upper bound for the bases we have to check, it is <b>n</b>. There is a problem with this, however.
+If we need to check all bases from 2 to <b>n</b>, then we have an O(<b>n</b>) loop. Inside the loop, we need an O(log(<b>n</b>)) loop to extract the digits and count them. In total, the approach needs O(<b>n</b>*log(<b>n</b>)) time. <b>n</b> can be as large
+as 10<sup>12</sup> and that is way too high to run in time.<br>
+<br>
+The key observation to overcome this problem is that, as we increase the base <b>x</b>, the number of
+digits should decrease. For example, the number 512 needs 10 digits in base 2, but only 3 digits in base 10 and one
+digit in base 513. Cases with few digits are not complicated to handle. 
+We already know which numbers cause <b>n</b> to have 1 digit. Let us describe a way to
+count all the bases that will make <b>n</b> a lucky number with 2 digits.<br>
+<br>
+We want a base <b>x</b> such that the number <b>n</b> has two digits and is lucky. There are only 4 possible numbers
+that are lucky and have two digits: 44, 47, 74 and 77. Let us focus on counting the
+bases for which <b>n</b> is equal to 47. By the way that numeric systems work, we want to find an <b>x</b> that
+solves the following polynomial:<br>
+</p><pre>    4 * <b>x</b> + 7 = <b>n</b>     <b>x</b> = (<b>n</b> - 7) / 4
+</pre><p>Since <b>x</b> is the only unknown variable, this equation has at most one solution, so there is
+only one base <b>x</b> in which <b>n</b> will be equal to 47. Note that there are many
+conditions. The base <b>x</b> must be a integer number. So (<b>n</b> - 7) must be a multiple of 4. The base must
+also be larger than both 7 and 4. (If <b>x</b> was smaller than 4, then number 4 could not be a valid digit.) This
+process can be generalized to each pair of digits (<b>a</b>, <b>b</b>):
+</p><pre>    <b>a</b> * <b>x</b> + <b>b</b> = <b>n</b>     <b>x</b> = (<b>n</b> - <b>b</b>) / <b>a</b>
+                          // (<b>n</b> - <b>b</b>) divides <b>a</b>, <b>x</b> &gt; <b>a</b> , <b>x</b> &gt; <b>b</b>
+</pre><p>Given a pair (<b>a</b>,<b>b</b>) of digits (which can be (4,4), (4,7), (7,4) or (7,7)), if (<b>n</b> - <b>b</b>) is a multiple
+of <b>a</b> and the result (<b>x</b> = (<b>n</b> - <b>b</b>) / <b>a</b>) is greater than both <b>a</b> and <b>b</b>, then there exists a base
+<b>x</b> such that <b>n</b> is equal to (<b>a</b> <b>b</b>) when represented in that base. After trying each of these
+pairs and counting those that are possible, we can have the total count of
+lucky bases in which <b>n</b> has 2 digits.<br>
+<br>
+Back to the simple loop approach. Since we already know the number of 2-digit bases, we do not
+need to count them. Thus we only need to count the bases that yield numbers that
+have more than 2 digits. Remember that as the base increases, the number of digits decreases, so we can
+calculate the maximum base that will yield a 3-digit number and all bases smaller than this base
+will yield more than 2 digits. If the base <b>x</b> has 3 digits, we have:<br>
+</p><pre>    Max <b>x</b>: <b>n</b> = <b>D2</b> * <b>x</b><sup>2</sup> + <b>D1</b> * <b>x</b><sup>1</sup> + <b>D0</b>
+</pre><p>We can assume that <b>D2</b>, <b>D1</b> and <b>D0</b> are all non-negative integers. If we want <b>x</b> to be
+as large as possible, then these numbers would have to be as small as possible, and that means that
+<b>D1</b> and <b>D0</b> would be 0. <b>D2</b> has to be at least one though because else the number would 
+actually not have three digits. Therefore we have:
+</p><pre>    <b>n</b> = <b>x</b><sup>2</sup>.
+</pre><p>Which means that <b>x</b> may be at most the square root of <b>n</b>. In other words, for a base to have three or
+more digits, the base should not exceed the square root of <b>n</b>. Thanks to this, we only need to check
+all bases that are &lt;= sqrt(<b>n</b>) and count those that are lucky. This means that the simple bruteforce
+approach's complexity has become O(sqrt(<b>n</b>) * log(<b>n</b>)). Note that this is only possible
+because we do 4 O(1) operations to count the bases that yield 2-digit numbers.<br>
+<br>
+<b>Summary</b>
+<br><b>*</b> If <b>n</b> is 4 or 7, all infinitely many bases greater than <b>n</b> are lucky. Return -1.
+<br><b>*</b> Split the remaining cases in two parts. Count the number of lucky bases that make <b>n</b> have two
+digits and the number of lucky bases that make <b>n</b> have more than two digits separately.
+<br><b>*</b> When a base has two digits, <b>n</b> will be 44, 47, 77 or 47. For each of these cases we can solve
+the equation <b>a</b> * x + <b>b</b> = <b>n</b> to find the base. This needs to be validated because the base
+must be integer and greater than <b>a</b> and <b>b</b>.
+<br><b>*</b> In the remaining cases, we can use a bruteforce loop and try all possible bases from 2 to
+the square root of <b>n</b>. Convert <b>n</b> to each of those bases and count those that are lucky.
+<br><b>*</b> Adding both results together yields the final answer.
+<br><br>
+<b>Code</b><br>
+
+
+</p><div class="code panel" style="border-width: 1px;"><div class="codeContent panelContent">
+<pre class="code-java"><span class="code-object">long</span> count3DorMore(<span class="code-object">long</span> n)
+{
+<span class="code-comment">// counts all the bases x such that the base
+</span><span class="code-comment">// is lucky and n in that base has at least 4 digits
+</span><span class="code-comment">//
+</span><span class="code-comment">// (b*b*b will always be &lt;= n)
+</span><span class="code-comment">//
+</span>    <span class="code-object">long</span> cnt = 0;
+    <span class="code-keyword">for</span> (<span class="code-object">long</span> b=2; b&lt;=n; b++) {
+        <span class="code-object">int</span> cdigits = 0;
+        <span class="code-object">long</span> x = n;
+        <span class="code-object">boolean</span> luck = <span class="code-keyword">true</span>;
+        <span class="code-keyword">while</span> ( x &gt; 0 ) {
+            luck = luck &amp;&amp; ( x%b==4 || x%b==7 );
+            x /= b;
+            cdigits ++;
+        }
+        <span class="code-keyword">if</span> (cdigits &lt;= 2) {
+            <span class="code-keyword">break</span>;
+        }
+        <span class="code-keyword">if</span> ( luck ) {
+            cnt ++;
+        }
+    }
+    <span class="code-keyword">return</span> cnt;
+}
+<span class="code-object">boolean</span> canDoPair(<span class="code-object">long</span> n, <span class="code-object">long</span> a, <span class="code-object">long</span> b)
+{
+    <span class="code-comment">// Does a x exist such that:
+</span>    <span class="code-comment">// (x : a*x + b = n)
+</span>    <span class="code-comment">// x &gt; a, x &gt; b ?
+</span>    <span class="code-object">long</span> ax = n - b;
+    <span class="code-keyword">if</span> ( ax % a == 0) {
+        <span class="code-object">long</span> x = ax / a;
+        <span class="code-keyword">return</span> (x &gt; a &amp;&amp; x &gt; b);
+    }
+    <span class="code-keyword">return</span> <span class="code-keyword">false</span>;
+}
+
+<span class="code-object">long</span> count2D(<span class="code-object">long</span> n) {
+<span class="code-comment">// counts all the bases x such that the base
+</span><span class="code-comment">// is lucky and n is a two digit number in that base
+</span><span class="code-comment">//
+</span>    <span class="code-object">long</span> r = 0;
+    <span class="code-keyword">for</span>(<span class="code-object">long</span> a=4; a&lt;=7; a+=3) {
+        <span class="code-keyword">for</span>(<span class="code-object">long</span> b=4; b&lt;=7; b+=3) {
+            r += (canDoPair(n, a, b) ? 1 : 0);
+        }
+    }
+    <span class="code-keyword">return</span> r;
+}
+
+<span class="code-keyword">public</span> <span class="code-object">long</span> find(<span class="code-object">long</span> n)
+{
+    <span class="code-keyword">if</span> (n==4 || n==7) {
+        <span class="code-comment">// Any base &gt; n will be lucky.
+</span>        <span class="code-keyword">return</span> -1;
+    }
+    <span class="code-object">long</span> res = 0;
+    res += count3DorMore(n);
+    res += count2D(n);
+    
+    <span class="code-keyword">return</span> res;        
+    
+}</pre>
+</div></div>
+
+
+<p></p>
+
+<p><u>Alternative solutions and additional comments.</u></p>
+
+<p>There is a <a href="http://en.wikipedia.org/wiki/Binary_search">binary search</a>-based approach. Remember
+that there is a limited number of combinations of 4 and 7 that may be representations of <b>n</b>. We may consider
+picking each of these combinations and verifying if there is a base that represents <b>n</b> as that
+combination of digits. Let us estimate the maximum number of such combinations. For that we first
+need a maximum number of digits. As usual, the higher the base, the smaller the number of digits,
+and vice versa. Base 2 yields the largest amount of digits needed to represent <b>n</b>. However, note that
+no number can be lucky in base 2, because digits 4 and 7 do not belong to base 2. So, the base needs
+to be at least 5. The number of digits of <b>n</b> in base 5 is the base 5 logarithm of <b>n</b>. For
+<b>n</b> = 10^12, the result is 18 digits. However, base 5 does not allow digit 7 which means
+there is only one digit available. This means that there are at most 18 base-5 numbers that could be
+equal to <b>n</b>. The same is true for bases 6 and 7. Base 8 finally allows both lucky digits,
+the base 8 logarithm of 10^12 is : 13.28. Which means we need at most 14 digits when 4 and 7 are allowed.<br>
+<br>
+The sum of all combinations of 4 and 7 with at most 14 digits is: 2<sup>2</sup> + 2<sup>3</sup> + ... 2<sup>14</sup>. Which is
+around 2<sup>15</sup>. To those combinations, we need to add the remaining 4 numbers of 15, 16, 17 and 18 digits that
+contain only 4s (to handle bases 5, 6 and 7). The total amount is (2<sup>15</sup>+4).<br>
+<br>
+For each of those combinations, we need to verify if there exists a base <b>x</b> in which <b>n</b> becomes equal to
+that combination. Let us, for example try a 3 digits combination:
+</p><pre>    P(<b>x</b>) = <b>D2</b> * <b>x</b><sup>2</sup> + <b>D1</b> * <b>x</b><sup>1</sup> + <b>D0</b> = <b>n</b>
+</pre><p>Note that the solution is also going to be unique, because we need <b>x</b>
+ to be positive and the
+solution should be unique for any combination. This equation is more 
+complicated than the one for 2 digit numbers, but still it should be 
+possible to solve it. We 
+also need to solve more complicated equations for combinations of more 
+digits. The easier to implement general approach
+to solving these equations is binary search, since we want the result <b>x</b> to be an integer. We can change the problem into maximizing the value 
+of <b>x</b>:
+</p><pre>    max(<b>x</b>) : P(<b>x</b>) = <b>D2</b> * <b>x</b><sup>2</sup> + <b>D1</b> * <b>x</b><sup>1</sup> + <b>D0</b> &lt;= <b>n</b>
+</pre><p>If we find the maximum <b>x</b> that follows that equation, then the polynomial P(<b>x</b>)
+for this maximum will either be equal to <b>n</b> (in that case, the maximum <b>x</b> is the solution to the
+equation) or it will be smaller than <b>n</b>, in which case, there is no integer solution for that
+equation. After changing the problem to a maximization one with a condition, let us call C(<b>x</b>)
+a boolean function that is true if ( P(<b>x</b>) &lt;= <b>n</b>) and false otherwise. If 
+C(<b>x</b>) is true, then for any value (<b>y</b> &lt; <b>x</b>): C(<b>y</b>) will be true because the polynomial P(<b>y</b>) will always be smaller than P(<b>x</b>) and thus also smaller than <b>n</b>. If C(<b>x</b>) is false, then for
+any value (<b>y</b> &gt; <b>x</b>): C(<b>y</b>) will also be false (because P(<b>y</b>) will be forcefully greater
+than P(<b>x</b>) which is greater than <b>n</b>). We can also easily tell that C(0) will be true, because ( P(0) = 0 ) and
+(0 &lt;= <b>n</b>). Also, C(<b>n</b>+1) will be false. Therefore, we can do a binary search to find the maximum
+<b>x</b> such that C(<b>x</b>) is true.<br>
+<br>
+If we can generate all the valid combinations and do a binary search for each one to validate it, we can count
+all the lucky bases for a given <b>n</b>. The complexity is around O(2<sup>log_8(<b>n</b>)+1</sup> * log(<b>n</b>) ) which is actually O( <b>n</b><sup>1/3</sup> * log(<b>n</b>) ) after some operations. 
+<br>
+<br>
+</p><p><u>Another Solution.</u></p>
+<p><b>n</b> = D0 * <b>x</b><sup>0</sup> + D1 * <b>x</b><sup>1</sup> + D2 * <b>x</b><sup>2</sup> + ...<br><br>
+Divide n into 2 parts: <br><br>
+
+<b>n</b> = (D0 * <b>x</b><sup>0</sup>) + (D1 * <b>x</b><sup>1</sup> + D2 * <b>x</b><sup>2</sup> + ...) <br><br>
+Let <b>a</b>= D0 * <b>x</b><sup>0</sup> , <br><br>
+<b>b</b> = D1 * <b>x</b><sup>1</sup> + D2 * <b>x</b><sup>2</sup> + ...<br><br><br>
+Then <b>b</b> = x * (D1 * <b>x</b><sup>0</sup> + D2 * <b>x</b><sup>1</sup> + D3 * <b>x</b><sup>2</sup> + ...)<br><br>
+This means <b>x</b>|<b>b</b>, which means the lucky bases must divide <b>b</b>.<br><br>
+
+In order for <b>x</b> to be a lucky base then <b>a</b> can only be either 4 or 7. Then <b>b</b> can be either (<b>n</b>-4)  or (<b>n</b>-7). <br>
+The potential lucky bases are the factors (primes and non primes) of these 2 numbers (<b>n</b>-4) and (<b>n</b>-7). <br>
+Get the factors then loop through all these factors and count the number of lucky bases.<br><br>
+
+
+  </p>
+&lt;PLACE YOUR COMMENTS HERE&gt;<p></p>
+
+<font size="+2"> 
+<b><a href="http://apps.topcoder.com/stat?c=problem_statement&amp;pm=11461&amp;rd=14439" name="11461">TheAlmostLuckyNumbersDivOne</a></b> 
+</font> 
+<a href="http://apps.topcoder.com/tc?module=ProblemRatingQuestions&amp;pid=11461"><img src="SRM%20510%20-%20TopCoder%20Wiki_files/rate_it.gif" alt="rate it" border="0" hspace="10"></a> 
+<a href="http://forums.topcoder.com/?module=ThreadList&amp;forumID=545178" class="statText"><img src="SRM%20510%20-%20TopCoder%20Wiki_files/btn_discuss_it.gif" alt="discuss it" border="0"></a>
+<br> 
+Used as: Division One - Level One: <blockquote><table cellspacing="2"> 
+  <tbody><tr> 
+    <td class="bodyText" style="background: #eee;"> 
+      <b>Value</b> 
+    </td> 
+    <td class="bodyText" style="background: #eee;"> 
+      250 
+    </td> 
+  </tr> 
+  <tr> 
+    <td class="bodyText" style="background: #eee;"> 
+      <b>Submission Rate</b> 
+    </td> 
+    <td class="bodyText" style="background: #eee;"> 
+      380 / 576 (65.97%) 
+    </td> 
+  </tr> 
+  <tr> 
+    <td class="bodyText" style="background: #eee;"> 
+      <b>Success Rate</b> 
+    </td> 
+    <td class="bodyText" style="background: #eee;"> 
+      254 / 380 (66.84%) 
+    </td> 
+  </tr> 
+  <tr> 
+    <td class="bodyText" style="background: #eee;"> 
+      <b>High Score</b> 
+    </td> 
+    <td class="bodyText" style="background: #eee;"> 
+      <b>Petr</b> for 247.29 points (2 mins 59 secs) 
+    </td> 
+  </tr> 
+  <tr> 
+    <td class="bodyText" style="background: #eee;"> 
+      <b>Average Score</b> 
+    </td> 
+    <td class="bodyText" style="background: #eee;"> 
+      164.62 (for 254 correct submissions) 
+    </td> 
+  </tr> 
+</tbody></table></blockquote> 
+<p>
+Unlike the easier version, this time it should not be possible to go through <b>a</b> to <b>b</b> and 
+check if each of those numbers is an almost lucky number. There are going to be at most 10^16 numbers
+between <b>a</b> and <b>b</b>. It is still a counting problem in which the values we are counting follow some combined
+conditions. In problems like this one, a good step is to estimate just about how
+many of the elements being counted will there be at most. If the value turns out
+to be fairly small, then we can use a bruteforce / backtracking approach to count them.
+Do not let the 64-bit return type confuse you, in reality the total number of
+almost lucky numbers between 1 and 10^16 is not very high. Let us try to estimate
+this number. Numbers that are smaller than or equal to 10^16 will have at most 16 digits. 10^16 (1 with 16 zeros) can
+be ignored because it contains more than one unlucky digit. Let us first try the numbers that
+are completely lucky (contain only 4 or 7): (2<sup>16</sup> + .... + 2<sup>3</sup> + 2<sup>2</sup> + 2). This
+is because for each fixed number of digits <b>L</b> there are 2<sup><b>L</b></sup> ways to place a 4 or a 7 in each position. The sum is equal to (2<sup>17</sup>-2 = 131070). The number of almost lucky numbers that contain one
+unlucky digit is different. For a number of digits <b>L</b>, pick a location <b>L</b> in which to place a digit different than 4 or 7 and place
+4 or 7 to the other digit positions: this yields <b>L</b> * 2<sup><b>L</b>-1</sup> * 8. <b>L</b> because of the choice of
+<b>L</b> positions, 2<sup><b>L</b>-1</sup> ways to place 4s or 7s in the remaining positions and 8 because of
+the choice of 8 digits different than 4 or 7 for the unlucky position. In total we have: (16*8*2<sup>15</sup> + .... + 2*8*<sup>1</sup> + 8), the sum
+is 7864328. The total there are 131070 + 7864328 =  7995398 numbers.<br>
+<br>
+That value is low, however, it may have been very complicated to go through all that effort during the match. It
+is possible to make easier estimates that are also useful. For example, you could have said that out of 2<sup>17</sup>
+ choices for completely lucky numbers we multiply the number of them by 
+128 (16 * 8) (because for each of these choices we can add
+a new unlucky digit at one of at most 16 positions). The result for that
+ rough estimation is 16777216, which
+we know is larger than the real value, but is still low enough for the 
+next step.<br>
+<br>
+<b>Backtracking</b><br>
+We know that the maximum number of almost lucky numbers is actually not very big and around 8 digits-long. In counting
+problems where the elements being counted are composed of parts and the total of elements is not actually
+very high, we can consider <a href="http://apps.topcoder.com/forums/?module=Thread&amp;threadID=686289">Backtracking</a> as an alternative.
+This approach may be called DFS (because it is basically a Depth-first search in a implicit graph) or brute force (because we do
+try all values as well). But we will call it backtracking because we will make sure to crop partial solutions
+that we are sure won't take us to a valid one. The main idea in backtracking is to use recursion to generate a list/vector
+of components that make a solution. In our case, the parts are digits and the solution is an almost
+lucky number. We begin with an empty number, this number is 0. Then the backtracking function will take a number
+<b>x</b> as an argument -- the current number representing our list of digits.<br>
+<br><b>*</b> We will make sure to never add more than 1 unlucky digit. Then <b>x</b> will be almost
+lucky. However, we also need to verify that it is between <b>a</b> and <b>b</b>, inclusive. In that case, we
+can increase the total.
+<br><b>*</b> If <b>x</b> is greater than <b>b</b>, then we should stop adding more digits as any number with more
+digits will also be greater than <b>b</b>.
+<br><b>*</b> For each instance, we can add a digit to <b>x</b>, this will create a new number with that digit
+appended, and we should recurse using this new number. Since we should never add more than
+two unlucky digits, we should have add an argument <b>uAdded</b> to the function to remember if
+a unlucky digit has already been added so to avoid doing it twice. This argument is true if we have
+already added an unlucky digit.
+<br><b>*</b> A special case is digit 0. We should only add that digit to numbers that are not empty. Else we will end in
+an infinite loop.
+<br>
+In each of the called instances of the function, <b>x</b> will be an 
+almost lucky number. So the backtracking function
+will not be called more than 7995398 times. In each of these calls we 
+may need at most 10 operations (one for each
+digit that we try to add). In total we will not use less than 7995398*10
+ steps, which is enough to run in time in Topcoder's servers.<br>
+<br>
+<b>Summary</b><br>
+The maximum of almost lucky numbers that we need to count is at most 7995398. This is low enough for us
+to do a backtracking solution that just generates each number as a list of digits that only
+contains at most one unlucky digit.<br>
+<br>
+<b>Code</b><br>
+The following is a Java implementation of the backtracking idea. It needs 0.3 seconds in its worst case.<br>
+
+</p><div class="code panel" style="border-width: 1px;"><div class="codeContent panelContent">
+<pre class="code-java"><span class="code-keyword">public</span> class TheAlmostLuckyNumbersDivOne
+{
+    <span class="code-object">long</span> a, b, total;
+    
+    void backtrack(<span class="code-object">long</span> x, <span class="code-object">boolean</span> uAdded)
+    {
+        <span class="code-keyword">if</span> (x &lt;= b) {
+            <span class="code-keyword">if</span> (x &gt;= a) {
+                <span class="code-comment">// x is an almost lucky number
+</span>                <span class="code-comment">//between a and b, inclusive.
+</span>                total ++;
+            }
+            <span class="code-keyword">if</span> (! uAdded ) {
+                <span class="code-comment">//We can add unlucky digits:
+</span>                <span class="code-keyword">for</span> (<span class="code-object">int</span> d=1; d&lt;10; d++) {
+                    <span class="code-keyword">if</span> ( d != 4 &amp;&amp; d != 7 ) {
+                        <span class="code-comment">//Recurse with the added digit
+</span>                        <span class="code-comment">// (mark uAdded as <span class="code-keyword">true</span>):
+</span>                        backtrack(x*10 + d, <span class="code-keyword">true</span>);
+                    }
+                }
+                <span class="code-comment">// We can add 0 once we have already
+</span>                <span class="code-comment">// added a non-zero digit:
+</span>                <span class="code-keyword">if</span> (x != 0) {
+                    backtrack(x*10, <span class="code-keyword">true</span>);
+                }
+            }
+            <span class="code-comment">// add 4 or 7 as digit:
+</span>            backtrack(x*10 + 4, uAdded);
+            backtrack(x*10 + 7, uAdded);
+        }
+    }
+    <span class="code-keyword">public</span> <span class="code-object">long</span> find(<span class="code-object">long</span> a, <span class="code-object">long</span> b)
+    {
+        <span class="code-keyword">this</span>.a = a;
+        <span class="code-keyword">this</span>.b = b;
+        
+        total = 0;
+        backtrack(0, <span class="code-keyword">false</span>);
+        
+        <span class="code-keyword">return</span> total;
+    }
+}</pre>
+</div></div>
+
+<p></p>
+
+<p><u>Alternative solutions and additional comments.</u></p>
+
+<p>&lt;PLACE YOUR COMMENTS HERE&gt;</p>
+
+<font size="+2"> 
+<b><a href="http://apps.topcoder.com/stat?c=problem_statement&amp;pm=11463&amp;rd=14439" name="11463">TheLuckyGameDivOne</a></b> 
+</font> 
+<a href="http://apps.topcoder.com/tc?module=ProblemRatingQuestions&amp;pid=11463"><img src="SRM%20510%20-%20TopCoder%20Wiki_files/rate_it.gif" alt="rate it" border="0" hspace="10"></a> 
+<a href="http://forums.topcoder.com/?module=ThreadList&amp;forumID=545178" class="statText"><img src="SRM%20510%20-%20TopCoder%20Wiki_files/btn_discuss_it.gif" alt="discuss it" border="0"></a>
+<br> 
+Used as: Division One - Level Two: <blockquote><table cellspacing="2"> 
+  <tbody><tr> 
+    <td class="bodyText" style="background: #eee;"> 
+      <b>Value</b> 
+    </td> 
+    <td class="bodyText" style="background: #eee;"> 
+      500 
+    </td> 
+  </tr> 
+  <tr> 
+    <td class="bodyText" style="background: #eee;"> 
+      <b>Submission Rate</b> 
+    </td> 
+    <td class="bodyText" style="background: #eee;"> 
+      113 / 576 (19.62%) 
+    </td> 
+  </tr> 
+  <tr> 
+    <td class="bodyText" style="background: #eee;"> 
+      <b>Success Rate</b> 
+    </td> 
+    <td class="bodyText" style="background: #eee;"> 
+      32 / 113 (28.32%) 
+    </td> 
+  </tr> 
+  <tr> 
+    <td class="bodyText" style="background: #eee;"> 
+      <b>High Score</b> 
+    </td> 
+    <td class="bodyText" style="background: #eee;"> 
+      <b>theycallhimtom</b> for 354.65 points (19 mins 59 secs) 
+    </td> 
+  </tr> 
+  <tr> 
+    <td class="bodyText" style="background: #eee;"> 
+      <b>Average Score</b> 
+    </td> 
+    <td class="bodyText" style="background: #eee;"> 
+      230.93 (for 32 correct submissions) 
+    </td> 
+  </tr> 
+</tbody></table></blockquote> 
+<p>
+This problem is similar to TheLuckyGameDivTwo, but with much higher constraints. Let us consider
+this explanation to be a continuation of the one of the easier version. Thus it may be a good
+idea to first try solving that easier version before reading this explanation.<br>
+<br>
+Like in the easier version of the problem, TheLuckyGameDivTwo, we must consider two
+decision problems. The large constraints are surely going to make things more complicated. Note, however,
+that there are (2<sup>10</sup>+2<sup>9</sup>+...2<sup>2</sup>) = 2046 
+lucky numbers smaller than 10^10. This
+small value is most likely going to be useful. There are three 
+sub-problems. In this situation we will begin talking about Brus's 
+problem.<br>
+<br>
+<b>Brus's problem</b><br>
+Let us assume that John has already picked a range of numbers between <b>start</b> and <b>end</b>, inclusive.
+Brus must pick a <b>bLen</b> sized interval of numbers such that it contains the minimum amount of lucky numbers.
+In this situation, it will pay to formalize things a bit: let us call F(<b>x</b>) the total number of 
+lucky numbers that exist between <b>x</b> and <b>x</b> + <b>bLen</b> - 1, inclusive. (That is, the number of lucky
+numbers that would be in Brus' picked interval if it starts at <b>x</b>.) This time, there are many
+possible choices for <b>x</b>. It may be any of the numbers between <b>start</b> and <b>end</b> - <b>bLen</b> + 1, inclusive. There
+are <b>jLen</b> numbers between <b>start</b> and <b>end</b> and <b>bLen</b> may be 1, so the maximum number of positions that Brus may try is equal to the maximum value of <b>jLen</b>. In this case,
+that is 10^10, very large for any 
+approach based on trying each of them. The function F(<b>x</b>) is also going to be
+complicated to implement, but
+for now let us assume we know how to handle it and focus only on Brus.<br>
+<br>
+We have a range (<b>start</b>, <b>end</b> - <b>bLen</b> + 1 ) of numbers of which we need to pick a <b>x</b> such that F(<b>x</b>) is minimum. All of the numbers will be part of an interval. So, we need to calculate: min(F(<b>start</b>), F(<b>start</b>+1), ..., F(i), F(i+1), ... F(<b>end</b> - <b>bLen</b> + 1)). What should be noticeable here is that the interval that begins at <b>i</b> will have numbers in common with the interval that begins at (<b>i</b>+1). What is more important though, is the difference. We can then see
+that the move from the interval that begins at <b>i</b> to the interval that begins at (<b>i</b>+1) is
+equivalent to removing number <b>i</b> and adding (<b>i</b>+<b>bLen</b>) to replace it.<br>
+<br>
+(<b>i</b>, <b>i</b>+1, ... , <b>i</b> + <b>bLen</b> - 1) -&gt; (<b>i</b>+1, <b>i</b>+2, ... , <b>i</b> + <b>bLen</b>)<br> 
+<br>
+<b>*</b> Assume that <b>i</b> is a lucky number, then F(<b>i</b>+1) cannot be greater than F(<b>i</b>). In fact, the only way for F(<b>i</b>+1) to
+be equal to F(<b>i</b>) is if (<b>i</b>+<b>bLen</b>) is lucky else F(<b>i</b>+1) will be smaller than F(<b>i</b>). So we have F(<b>i</b>+1) &lt;= F(<b>i</b>).<br>
+<b>*</b> If <b>i</b> is not a lucky number then F(<b>i</b>+1) cannot be smaller than F(<b>i</b>) because if number (<b>i</b>+<b>bLen</b>) is lucky then
+F(<b>i</b>+1) will be greater than F(<b>i</b>) and if (<b>i</b>+<b>bLen</b>) is not lucky then (F(<b>i</b>+1) = F(<b>i</b>)). So we have F(<b>i</b>+1) &gt;= F(<b>i</b>).<br>
+<br>
+From the second conclusion we have that for every non-lucky number <b>i</b>: F(<b>i</b>+1) &gt;= F(<b>i</b>). Since we are interested
+only in finding the minimum F(<b>x</b>) we should not consider F(<b>i</b>+1). This also translates to every sequence of non-lucky
+numbers. Imagine a sequence of unlucky numbers <b>k</b>, <b>k</b>+1, ..., <b>k</b>+T. Since none of these numbers is lucky then
+we can claim that: F(<b>k</b>+T) &gt;= F(<b>k</b>+T-1) &gt;= ...) &gt;= F(<b>k</b>+1) &gt;= F(<b>k</b>) , so we would only need
+to consider F(<b>k</b>).<br>
+<br>
+From the first conclusion: if <b>i</b> is lucky, then F(<b>i</b>+1) will always be &lt;= F(<b>i</b>). Note that for every lucky number <b>i</b>, (<b>i</b>+1) will not be lucky. This means that we should never need to get F(<b>i</b>) for a lucky number because F(<b>i</b>+1) will be at least as small.
+Note also that since (<b>i</b>+1) is unlucky, then F(<b>i</b>1) will also be &lt;= F(<b>i</b>+2). In fact, F(<b>i</b>+1) should
+be less than or equal to all the F(<b>j</b>) for each unlucky number <b>j</b> that follows <b>i</b>. As an overall conclusion,
+the only numbers
+that matter to us when minimizing F(<b>x</b>) are all numbers (<b>i</b>+1)
+such that <b>i</b> is a lucky number. So when given
+a range [<b>start</b>, <b>end</b>-<b>bLen</b>+1] , we should calculate F(<b>i</b>+1)
+for each (<b>i</b>+1) that belongs to that range such that <b>i</b> is lucky.
+The minimum over those values will  be the minimum possible F(<b>x</b>) for all
+the values in the range. There is, however a small catch. Although
+F(<b>start</b>) may be &lt;=  F(<b>start</b>-1) if (<b>start</b>-1) is not lucky,
+we cannot consider F(<b>start</b>-1) as it does
+not belong to the allowed range, so F(<b>start</b>) may also be a possible minimum.
+Make sure to consider F(<b>start</b>) when 
+minimizing the result for Brus. In total, we need to consider F(<b>a</b>) and 
+also F(<b>i</b>+1) for every (<b>i</b>+1) in range such that <b>i</b> is lucky thus
+will need a O(<b>L</b>) loop for Brus' decision, where <b>L</b> is the number
+of lucky numbers between <b>a</b> and <b>b</b> (at most 2046).<br>
+<br>
+<b>John's turn</b><br>
+Let us continue with the formalization. We have a range [<b>a</b>, <b>b</b>]
+from which we have to pick a <b>start</b> of John's
+interval of length <b>jLen</b> that will be used by Brus to pick a minimum
+from and we want the number of lucky
+numbers in the minimum interval picked by Brus to be the maximum possible.
+The allowed
+values for <b>start</b> are actually all those that belong to the
+range [<b>a</b>, <b>b</b> - <b>jLen</b> + 1]. Let us call the
+function that returns Brus' result B(<b>x</b>). Note that: <br>
+<br>
+B(<b>x</b>) = min( F(<b>x</b>), F(<b>x</b>+1), .... F(<b>x</b> + <b>jLen</b> - <b>bLen</b>) ).<br>
+<br>
+(<b>x</b> + <b>jLen</b> - <b>bLen</b> comes from (<b>x</b> + <b>jLen</b> - 1 - <b>bLen</b> + 1).)
+As with moving from F(<b>i</b>) to F(<b>i</b>+1) there is a conversion between
+B(<b>x</b>) and B(<b>x</b>+1):<br>
+<br>
+min( F(<b>x</b>), F(<b>x</b>+1), .... F(<b>x</b> + <b>jLen</b> - <b>bLen</b>) ) -&gt; min( F(<b>x</b>+1), F(<b>x</b>+2), .... F(<b>x</b> + <b>jLen</b> - <b>bLen</b> + 1) ) .<br>
+<br>
+It also works backwards, the move from B(<b>x</b>+1) to B(<b>x</b>) involves removing the number at the tail and
+adding F(<b>x</b>) to the minimum function:<br>
+<br>
+min( F(<b>x</b>+1), F(<b>x</b>+2), .... F(<b>x</b> + <b>jLen</b> - <b>bLen</b> + 1) ) -&gt; min( F(<b>x</b>), F(<b>x</b>+1), .... F(<b>x</b> + <b>jLen</b> - <b>bLen</b>) ) .<br>
+<br>
+There is the possibility that F(<b>x</b> + <b>jLen</b> - <b>bLen</b> + 1) was the 
+only value equal to B(<b>x</b>+1), which means that all the other values 
+F(<b>x</b>+1), F(<b>x</b>+2),... were greater than F(<b>x</b> + <b>jLen</b> - <b>bLenn</b> + 1).
+If this happens then the minimum between (<b>x</b>+1) and (<b>x</b> + <b>jLen</b> - <b>bLen</b>),
+inclusive,
+has increased. We also need to add the new element F(<b>x</b>). Note then that
+if F(<b>x</b>) &gt;= F(<b>x</b>+1) we can be certain that (B(<b>x</b>) &gt;= B(<b>x</b> + 1)).
+<br>
+From that conclusion, if we knew that (F(<b>i</b>-1) &gt;= F(<b>i</b>)), then we
+can know that (B(<b>i</b>-1) &gt;= B(<b>i</b>)). We are interested in
+finding the maximum value of B(<b>x</b>). So, we can ignore all
+<b>i</b> such that: (F(<b>i</b>-1) &gt;= F(<b>i</b>)).
+In other words to calculate max(B(<b>a</b>), B(<b>a</b>+1), B(<b>a</b>+2), .... )
+we should only consider the values of <b>i</b> such that
+( F(<b>i</b>-1) &lt; F(<b>i</b>) ). Which are those values? 
+Note that there can be a transition from F(<b>i</b>) to F(<b>i</b>-1):<br>
+<br>
+(<b>i</b>, <b>i</b> + 1, .... <b>i</b> + <b>bLen</b> - 1) -&gt; (<b>i</b>-1, <b>i</b>, ...., <b>i</b> + <b>bLen</b> -2)<br>
+<br>
+The element that is being removed is (<b>i</b> + <b>bLen</b> - 1). 
+This element is lucky if and only if F(<b>i</b>-1) &lt;= F(<b>i</b>). Because
+there is a possibility that the newly added element, (<b>i</b>-1) is lucky
+which would make the F(<b>i</b>) and F(<b>i</b>-1) equal. This
+observation is helpful because we can claim that (<b>i</b> + <b>bLen</b> - 1)
+being lucky is a <i>necessary</i>
+condition for (F(<b>i</b>-1) &lt; F(<b>i</b>)). 
+In other words, the numbers <b>i</b> such that (F(<b>i</b>-1) &lt; F(<b>i</b>))
+ must be  such that (<b>i</b> + <b>bLen</b> - 1) is lucky. 
+ If (<b>j</b> = <b>i</b> + <b>bLen</b> - 1) is lucky then <b>i</b> is equal to
+ (<b>j</b> - <b>bLen</b> + 1). So, for each lucky number <b>j</b>
+ between <b>a</b> and <b>b</b>, inclusive, there is a chance that
+( F(<b>j</b> - <b>bLen</b> + 1) &lt; F(<b>j</b> - <b>bLen</b>) ).
+Which means that (<b>i</b> = <b>j</b> - <b>bLen</b> + 1) could be the
+best position
+from which to start John's interval. Since we cannot skip from B(<b>a</b>)
+to B(<b>a</b>-1), we should also
+consider B(<b>a</b>). In total, there are O(<b>L</b>) candidate positions for
+John to start his interval.<br>
+<br>
+<b>The lucky numbers</b><br>
+Right now, we need two cycles totaling O(<b>L</b>*<b>L</b>) to pick John's 
+candidate positions and Brus's candidate positions
+nested in them. <b>L</b> is at most 2046. Note that we have not thought of a way
+to calculate F(<b>x</b>) yet. Since it
+will be called O(<b>L</b>*<b>L</b>) times, it should be a fast function.
+Also note that John's and Brus's algorithms
+each assume that we have a list of all the lucky numbers between
+<b>a</b> and <b>b</b>. This list can be generated 
+quickly with a backtracking solution similar to the one used in the
+division 1 250 problem (remember that
+there are at most 2046 of these numbers).<br>
+<br>
+If we assume that we have generated that list, and the list is sorted, 
+then it should be possible
+to answer the query [Number of elements between <b>x</b> and <b>x</b>+<b>bLen</b>-1, inclusive] 
+using <a href="http://en.wikipedia.org/wiki/Binary_search">binary search</a>. We 
+can use binary search to implement a function countLower(<b>x</b>) that yields the
+total number of lucky numbers less than <b>x</b>. Then 
+the total number of lucky numbers in a range [<b>x</b>, <b>x</b>+<b>bLen</b>-1],
+inclusive would be: (countLower(<b>x</b>+<b>bLen</b>) - countLower(<b>x</b>)).<br>
+<br>
+<b>Summary</b><br>
+<b>*</b> It can be shown that the only relevant locations at which John can begin his interval are: <b>a</b> and also (<b>j</b> - <b>bLen</b> + 1), for each lucky number <b>j</b>.<br>
+<b>*</b> Similarly, it can be shown that the only relevant locations at
+which Brus can begin his interval 
+after John picked a interval [<b>start</b>, <b>end</b>] are: 
+<b>start</b> and also (<b>i</b>+1), for each lucky number <b>i</b>.<br>
+<b>*</b> Combining both strategies plus a quick way to count the total number
+of lucky numbers in an interval, we can
+have an O(<b>L</b>*<b>L</b>*log(<b>L</b>)) algorithm where <b>L</b> is the total number of lucky numbers in the range [<b>a</b>, <b>b</b>].<br>
+<b>*</b> As a subtask, use backtracking to generate all the relevant lucky numbers.<br> 
+<br>
+<b>Code</b><br>
+The following Java implementation takes around 0.15 seconds in the worst case:
+
+
+</p><div class="code panel" style="border-width: 1px;"><div class="codeContent panelContent">
+<pre class="code-java"><span class="code-keyword">public</span> class TheLuckyGameDivOne
+{
+    <span class="code-object">long</span> a, b;
+    <span class="code-object">long</span>[] luckyNums;
+    <span class="code-object">int</span> t;
+    
+    <span class="code-comment">// USe Backtrack to generate the lucky numbers.
+</span>    void backtrack(<span class="code-object">long</span> x) {
+        <span class="code-keyword">if</span> ( x &lt;= b ) {
+            <span class="code-keyword">if</span> ( a &lt;= x ) {
+                luckyNums[t++] = x;
+            }
+            backtrack(x*10+4);
+            backtrack(x*10+7);
+        }
+    }
+
+    <span class="code-object">int</span> countLower(<span class="code-object">long</span> x) {
+        <span class="code-comment">//Counts lucky nums strictly less than x:
+</span>        <span class="code-comment">// Using binary search.
+</span>    
+        <span class="code-comment">// Find minimum i: luckyNums[i]&gt;=x
+</span>        <span class="code-object">int</span> lo = -1, hi = t;
+        <span class="code-keyword">while</span> (lo + 1 &lt; hi) {
+            <span class="code-object">int</span> ha = (hi+lo) / 2;
+            <span class="code-keyword">if</span> ( luckyNums[ha] &gt;= x ) {
+                hi = ha;
+            } <span class="code-keyword">else</span> {
+                lo = ha;
+            }
+        }
+        <span class="code-keyword">return</span> hi;
+    }
+
+    <span class="code-comment">// Counts the total amount of lucky numbers that are 
+</span>    <span class="code-comment">// inside a Brus interval that begins at position x.            
+</span>    <span class="code-object">int</span> F(<span class="code-object">long</span> x, <span class="code-object">long</span> bLen) {
+        <span class="code-keyword">return</span> countLower(x + bLen) - countLower(x);
+    }
+    
+    <span class="code-comment">// Picks a interval <span class="code-keyword">for</span> Brus such that it has
+</span>    <span class="code-comment">// the least lucky numbers.
+</span>    <span class="code-object">int</span> getBrus(<span class="code-object">long</span> start, <span class="code-object">long</span> end, <span class="code-object">long</span> bLen) {
+        <span class="code-comment">// <span class="code-keyword">try</span> at start
+</span>        <span class="code-object">int</span> res = F(start, bLen);
+
+        <span class="code-comment">//<span class="code-keyword">try</span> positions right after every lucky number:
+</span>        <span class="code-object">int</span> hi=0;        
+        <span class="code-keyword">for</span> (<span class="code-object">int</span> j=0; j&lt;t; j++ ) {
+            <span class="code-keyword">if</span>( luckyNums[j]+1 &gt;= start &amp;&amp; luckyNums[j]+bLen&lt;=end ) {
+                res = <span class="code-object">Math</span>.min(res, F(luckyNums[j]+1, bLen) );
+            }
+        }
+        <span class="code-keyword">return</span> res;
+    }
+    
+    <span class="code-keyword">public</span> <span class="code-object">int</span> find(<span class="code-object">long</span> a, <span class="code-object">long</span> b, <span class="code-object">long</span> jLen, <span class="code-object">long</span> bLen)
+    {
+        <span class="code-comment">//Prepare the backtracking.
+</span>        luckyNums = <span class="code-keyword">new</span> <span class="code-object">long</span>[1&lt;&lt;11];
+        <span class="code-keyword">this</span>.a = a;
+        <span class="code-keyword">this</span>.b = b;
+        t = 0;
+        backtrack(0);
+        <span class="code-comment">// Sort so that we can use binary search
+</span>        Arrays.sort(luckyNums, 0, t);
+
+        <span class="code-comment">// Find the best result <span class="code-keyword">for</span> John.
+</span>        <span class="code-object">int</span> bestJohn = 0;
+        <span class="code-comment">//a may be a relevant position:
+</span>        bestJohn = getBrus( a, a+jLen - 1, bLen);
+
+        <span class="code-comment">// Try at every position (luckyNums[k] - bLen + 1) inside the range:
+</span>        <span class="code-keyword">for</span> (<span class="code-object">int</span> k=0; k&lt;t; k++) {
+            <span class="code-object">long</span> i = luckyNums[k] - bLen + 1;
+            <span class="code-keyword">if</span> ( (i &gt; a) &amp;&amp; (i+jLen-1 &lt;= b) ) {
+               bestJohn = <span class="code-object">Math</span>.max( bestJohn, getBrus(i, i+jLen - 1, bLen) );
+            }
+        }
+
+        <span class="code-keyword">return</span> bestJohn;
+    }
+}</pre>
+</div></div>
+
+<p></p>
+
+<p><u>Alternative solutions and additional comments.</u></p>
+
+<p>&lt;PLACE YOUR COMMENTS HERE&gt;</p>
+
+<font size="+2"> 
+<b><a href="http://apps.topcoder.com/stat?c=problem_statement&amp;pm=11465&amp;rd=14439" name="11465">TheLuckyBasesDivOne</a></b> 
+</font> 
+<a href="http://apps.topcoder.com/tc?module=ProblemRatingQuestions&amp;pid=11465"><img src="SRM%20510%20-%20TopCoder%20Wiki_files/rate_it.gif" alt="rate it" border="0" hspace="10"></a> 
+<a href="http://forums.topcoder.com/?module=ThreadList&amp;forumID=545178" class="statText"><img src="SRM%20510%20-%20TopCoder%20Wiki_files/btn_discuss_it.gif" alt="discuss it" border="0"></a>
+<br> 
+Used as: Division One - Level Three: <blockquote><table cellspacing="2"> 
+  <tbody><tr> 
+    <td class="bodyText" style="background: #eee;"> 
+      <b>Value</b> 
+    </td> 
+    <td class="bodyText" style="background: #eee;"> 
+      1000 
+    </td> 
+  </tr> 
+  <tr> 
+    <td class="bodyText" style="background: #eee;"> 
+      <b>Submission Rate</b> 
+    </td> 
+    <td class="bodyText" style="background: #eee;"> 
+      7 / 576 (1.22%) 
+    </td> 
+  </tr> 
+  <tr> 
+    <td class="bodyText" style="background: #eee;"> 
+      <b>Success Rate</b> 
+    </td> 
+    <td class="bodyText" style="background: #eee;"> 
+      0 / 7 (0.00%) 
+    </td> 
+  </tr> 
+  <tr> 
+    <td class="bodyText" style="background: #eee;"> 
+      <b>High Score</b> 
+    </td> 
+    <td class="bodyText" style="background: #eee;"> 
+      <b>null</b> for null points (NONE) 
+    </td> 
+  </tr> 
+  <tr> 
+    <td class="bodyText" style="background: #eee;"> 
+      <b>Average Score</b> 
+    </td> 
+    <td class="bodyText" style="background: #eee;"> 
+      No correct submissions 
+    </td> 
+  </tr> 
+</tbody></table></blockquote> 
+<p>
+As a prerequisite to read this explanation, try solving the easier version, TheLuckyBasesDivTwo. Make sure
+you understand both of the approaches mentioned in its explanation because this larger problem can be
+seen as a combination of both.<br>
+<br>
+Let us begin with the simplest case. When the base <b>x</b> is greater than <b>n</b>, the number will
+have the same numerical representation, a single digit equal to <b>n</b>. This time, <b>n</b> does not
+have to be only 4 or 7 to cause infinitely many lucky bases. If <b>n</b> is any lucky number, the result
+will be -1.<br>
+<br>
+Continue with the simple approach that tries every base up to a higher bound and for each of the
+tried bases, finds if the base would be lucky. That approach does not change too much, but the
+lucky digits may not only be 4 or 7, but also 44, 47, 74,.... 74747474, etc. We can still extract each digit
+and for each of them check if it is a lucky number. Then if all the digits are lucky numbers, the base
+is also lucky. The main issue here is that the old bound of SquareRoot(<b>n</b>) for the largest base
+to check is not low enough. This time, <b>n</b> <b>&lt;</b>= 10^16. The square root is 10^8 and after factoring
+we get the additional O(log(<b>n</b>)*log(<b>n</b>)) factor that will be needed to extract digits and for each, to get if it is
+lucky. This approach will not run in time.<br>
+<br>
+There is still hope. Remember that higher bases lead to smaller amounts of digits. So, if we 
+processed 3-digit numbers separately as we processed 2-digit numbers separately in the easier
+version, then there will be a new upper bound for the simple approach. We want to know the maximum
+base <b>x</b> that will have four digits. Such a base will yield the following polynomial:<br>
+</p><pre>    Max x: <b>D3</b> * <b>x</b><sup>3</sup> + <b>D2</b> * <b>x</b><sup>2</sup> + <b>D1</b> * <b>x</b><sup>1</sup> + <b>D0</b> = <b>n</b>
+    Where: (<b>D3</b> &gt;= 1 , <b>D2</b>,<b>D1</b>,<b>D0</b> <b>&gt;</b>= 0 ).
+</pre><p>The maximum value of <b>x</b> is then cubic_root(<b>n</b>) or <b>n</b><sup>1/3</sup>. The cubic root of <b>n</b> is
+at most 215443. So, if we try bases up to that number we will have all bases that yield more than
+three digits covered.<br>
+<br>
+<b>2 digits</b><br>
+The main difference is that this time, the only combinations are not just (4)(4), (4)(7), (7)(4) and (7)(7). For each
+pair of lucky numbers there may be a possible numeric representation of <b>n</b> in a lucky base. So, for
+example we may need to try (44)(7), (447447)(774), etc. The number of lucky numbers between 1 and 10^16 is: (2<sup>16</sup>+2<sup>15</sup>+...+2<sup>2</sup>
+ = 131070) (Has this happened
+many times in this editorial?). So, if we do the naive estimation for 
+the number of pairs: 131070*131070, it may appear that there are too 
+many of them to try.<br>
+<br>
+There are in fact, much fewer relevant pairs than 131070*131070. Let us call the pair (<b>a</b>, <b>b</b>). The polynomial will
+have to be:<br>
+</p><pre>    <b>a</b> * <b>x</b> + <b>b</b> = <b>n</b>
+</pre><p>Note that <b>x</b> must be greater than <b>a</b> and <b>b</b>. So that when we pick a value of <b>a</b>, then <b>x</b> is at least
+<b>a</b>+1. Which takes us to:<br>
+</p><pre>    <b>a</b> * (<b>a</b> + 1) &lt;= <b>n</b>
+</pre><p>That is one condition. The following comes when we add the <b>b</b> term. Note that <b>x</b> will be
+at least <b>a</b>+1 and at least <b>b</b>+1. Let us call the minimum base <b>u</b>=max(<b>a</b>+1, <b>b</b>+1). Then we have: <br>
+</p><pre>    <b>a</b> * <b>u</b> + <b>b</b> &lt;= <b>n</b>
+</pre><p>
+The number of pairs that follow these rules is actually much lower than it seems. 1047556 for <b>n</b> = 10^16. This number
+may be estimated through calculations and is in fact bounded as O(<b>K</b> * log(<b>K</b>)) where <b>K</b> is the
+number of lucky numbers smaller than <b>N</b>. That proof will be left as an exercise. But it is not necessary. During
+the match, it was possible to count the valid pairs manually with a program. Since the number
+of pairs is so low, we can use the solution that we also used in the easier version. That verifies
+if a given pair of digits is a possible representation of <b>n</b>.
+<br><br>
+<b>3 digits</b><br>
+This is probably the hardest part. Three-digit numbers are triples (<b>a</b>, <b>b</b>, <b>c</b>) such that:<br>
+</p><pre>    <b>a</b> * <b>x</b><sup>2</sup> + <b>b</b> * <b>x</b> + <b>c</b> = <b>n</b>
+</pre><p>
+It may appear that there are many of such triples, but in reality, we 
+can use the same thing we did in the case of two digits. First of all,
+<b>x</b> must be at least <b>a</b>+1. So, we can assume that <b>a</b>*<b>a</b>*<b>a</b> should not exceed <b>n</b>. When picking <b>b</b>, we
+have that the base is at least <b>u</b> = max(<b>a</b>+1,<b>b</b>+1), so (<b>a</b>*<b>u</b>*<b>u</b> + <b>b</b>*<b>u</b>) cannot exceed <b>n</b>. Finally, when
+picking <b>c</b> we have a new <b>u</b> = max(<b>a</b>+1, <b>b</b>+1, <b>c</b>+1) and (<b>a</b>*<b>u</b>*<b>u</b> + <b>b</b>*<b>u</b> + <b>c</b>) cannot exceed <b>n</b> either. Surprisingly,
+the total number of valid triples is smaller than the number of valid pairs. For <b>n</b> = 10^16 the
+number of triples is: 1006504. So, if for each of those triples we could verify if a base exists, we could count
+the bases that yield three digits and complete the problem.<br>
+<br>
+We have the polynomial:<br>
+</p><pre>    <b>a</b> * <b>x</b><sup>2</sup> + <b>b</b> * <b>x</b> + <b>c</b> = <b>n</b>
+</pre><p>
+And we want to get a solution. It may be tempting to solve it as a quadratic equation:<br>
+</p><pre>    <b>a</b> * <b>x</b><sup>2</sup> + <b>b</b> * <b>x</b> + (<b>c</b>-<b>n</b>) = 0
+</pre><p>
+That is not possible through the normal means though. Because if we use the <a href="http://en.wikipedia.org/wiki/Quadratic_equation">quadratic
+equation formula</a> there is a moment at which : 4*<b>a</b>*(<b>c</b> - <b>n</b>) will overflow. Switching to doubles
+is also not a good option because we need to get integer, precise results. Arbitrary precision is probably
+going to be too slow (remember we are doing this for all 1006504 pairs and as a subtask of a problem
+that contains other run-time heavy subtasks). Then we could try binary search, like in the alternate
+approach for the easier version. Find the maximum <b>x</b> such that:<br>
+</p><pre>    max x: <b>a</b> * <b>x</b><sup>2</sup> + <b>b</b> * <b>x</b> + <b>c</b> &lt;= <b>n</b>
+</pre><p>And then check if the polynomial is equal to <b>n</b>. If we pay attention to low level and we also make sure to
+bound the binary search correctly (i.e.: we do not need values higher than the square root of <b>n</b>, because if 
+<b>x</b> was larger than sqrt(<b>n</b>), the number would have 2 digits, not 3), then it is possible to pass system tests
+using binary search. But since the editorial better not use very tight solutions, but solutions that you can
+implement with plenty of space for overhead, then we will need something better.<br>
+<br>
+A work around comes from the fact that we picked values for <b>a</b> and <b>b</b> in two cycles and are trying
+values of <b>c</b> in increasing order. When picking the maximum value of <b>x</b>, <b>a</b> and <b>b</b> actually do most
+of the job because they are multiplied with the highest powers of <b>x</b>. Let us call the maximum
+<b>x</b> found for a triple (<b>a</b>, <b>b</b>, <b>c</b>) the "<i>root</i>" of a triple. Let us also define P(<b>x</b>) = <b>a</b>*<b>x</b>*<b>x</b>+<b>b</b>*<b>x</b>+<b>c</b>.  
+Between two triples (<b>a</b>, <b>b</b>, <b>c1</b>) and (<b>a</b>, <b>b</b>, <b>c2</b>) such that <b>c1</b> and <b>c2</b> are consecutive (<b>c2</b> &gt; <b>c1</b>), there should be many similarities.
+In fact, the root of (<b>a</b>, <b>b</b>, <b>c1</b>) will always be greater than or equal to the root of (<b>a</b>, <b>b</b>, <b>c2</b>). Let us call
+<b>x</b> the root of (<b>a</b>, <b>b</b>, <b>c1</b>) and <b>y</b> the root of (<b>a</b>, <b>b</b>, <b>c2</b>):<br>
+</p><pre>    max x: <b>a</b> * <b>x</b><sup>2</sup> + <b>b</b> * <b>x</b> + <b>c1</b> &lt;= <b>n</b>
+    max y: <b>a</b> * <b>y</b><sup>2</sup> + <b>b</b> * <b>y</b> + <b>c2</b> &lt;= <b>n</b>
+</pre><p>We have that <b>c2</b> is greater than <b>c1</b>, so it exceeds <b>c1</b> by a positive number <b>p</b>:<br> 
+</p><pre>    max x: <b>a</b> * <b>x</b><sup>2</sup> + <b>b</b> * <b>x</b> + <b>c1</b>     &lt;= <b>n</b>
+    max y: <b>a</b> * <b>y</b><sup>2</sup> + <b>b</b> * <b>y</b> + <b>c1</b> + <b>p</b> &lt;= <b>n</b>
+    max y: <b>a</b> * <b>y</b><sup>2</sup> + <b>b</b> * <b>y</b> + <b>c1</b>      &lt;= <b>n</b> - <b>p</b>
+    ---;
+    max x: Q(<b>x</b>) &lt;= <b>n</b>
+    max y: Q(<b>y</b>) &lt;= <b>n</b> - <b>p</b>    
+</pre><p>Note that the same formula is used both for the maximization of <b>x</b> and that of <b>y</b>. The difference
+is that <b>y</b> is more constrained. So, the maximum of <b>y</b> cannot exceed the maximum of <b>x</b>. This translates
+into the root of (<b>a</b>, <b>b</b>, <b>c2</b>) not being able to be larger than the root of (<b>a</b>, <b>b</b>, <b>c1</b>). When solving
+(<b>a</b>, <b>b</b>, <b>c2</b>), the root of (<b>a</b>, <b>b</b>, <b>c1</b>) will already be known. Let us call this root <b>last</b>. If
+(<b>a</b> * <b>last</b> * <b>last</b> + <b>b</b> * <b>last</b> + <b>c2</b> &lt; <b>n</b> ) then we can assume also that, if <b>y</b> is the root
+of the new pair then (<b>a</b> * <b>y</b> * <b>y</b> + <b>b</b> * <b>y</b> + <b>c2</b>)
+will be smaller than <b>n</b>, because of transitivity. By doing this check, we can avoid
+doing the binary search for many triples. In fact, it appears that when following this approach, you
+will only need to run binary search for two triples per each pair (<b>a</b>, <b>b</b>). This really lowers the execution time.<br>
+<br>
+Once each triple can be verified, we can count the total number of lucky bases in which
+the representation of <b>n</b> has three digits.<br>
+<br>
+<b>Summary</b><br>
+<b>*</b> Split the problem in three parts: Number of lucky bases that yield 4 or more digits for <b>n</b>. Number of lucky
+bases with 2 digits and number of lucky bases with 3 digits.<br>
+<b>*</b> The 4 or more digits case can be done with simple bruteforce through the bases up to cubic_root(<b>n</b>).<br>
+<b>*</b> The 2 and 3 digits cases can be done by trying each possible combination of
+lucky digits. The number of pairs of digits and triples of digits that are relevant when
+doing these checks is actually around only one million. The three-digits case will need a binary
+search with optimizations to run in time.
+<br><br>
+<b>Code</b><br>
+The following code requires 0.16 seconds in its worst case.
+
+
+</p><div class="code panel" style="border-width: 1px;"><div class="codeContent panelContent">
+<pre class="code-java"><span class="code-keyword">public</span> class TheLuckyBasesDivOne
+{
+    <span class="code-keyword">final</span> <span class="code-object">long</span> MAX = 10000000000000000l;
+    
+    <span class="code-comment">// Calculates the necessary lucky numbers
+</span>    <span class="code-comment">// through backtracking.
+</span>    <span class="code-comment">//
+</span>    <span class="code-object">long</span>[] luckyNums;
+    <span class="code-object">int</span> t;
+    void rec(<span class="code-object">long</span> x) {
+        <span class="code-keyword">if</span> ( x &lt;= MAX ) {
+            <span class="code-keyword">if</span> (x &gt;= 1) {
+                luckyNums[t++]=x;
+            }
+            rec(x*10+4);
+            rec(x*10+7);
+        }
+    }
+    
+    <span class="code-object">boolean</span> isLucky(<span class="code-object">long</span> x) {
+        <span class="code-keyword">return</span> Arrays.binarySearch(luckyNums, x) &gt;= 0;
+    }
+    
+    <span class="code-object">long</span> count4DorMore(<span class="code-object">long</span> n)
+    {
+    <span class="code-comment">// counts all the bases x such that the base
+</span>    <span class="code-comment">// is lucky and n in that base has at least 4 digits
+</span>    <span class="code-comment">//
+</span>    <span class="code-comment">// (b*b*b will always be &lt;= n)
+</span>    <span class="code-comment">//
+</span>        <span class="code-object">long</span> cnt = 0;
+        <span class="code-keyword">for</span> (<span class="code-object">long</span> b=2; b&lt;=n; b++) {
+            <span class="code-object">int</span> cdigits = 0;
+            <span class="code-object">long</span> x = n;
+            <span class="code-object">boolean</span> luck = <span class="code-keyword">true</span>;
+            <span class="code-keyword">while</span> ( x &gt; 0 ) {
+                luck = luck &amp;&amp; isLucky(x%b);
+                x /= b;
+                cdigits ++;
+            }
+            <span class="code-keyword">if</span> (cdigits &lt;= 3) {
+                <span class="code-keyword">break</span>;
+            }
+            <span class="code-keyword">if</span> ( luck ) {
+                cnt ++;
+            }
+        }
+        <span class="code-keyword">return</span> cnt;
+    }
+    <span class="code-object">boolean</span> canDoPair(<span class="code-object">long</span> n, <span class="code-object">long</span> a, <span class="code-object">long</span> b)
+    {
+        <span class="code-comment">// Does a x exist such that:
+</span>        <span class="code-comment">// (x : a*x + b = n)
+</span>        <span class="code-comment">// x &gt; a, x &gt; b ?
+</span>        <span class="code-object">long</span> ax = n - b;
+        <span class="code-keyword">if</span> ( ax % a == 0) {
+            <span class="code-object">long</span> x = ax / a;
+            <span class="code-keyword">return</span> (x &gt; a &amp;&amp; x &gt; b);
+        }
+        <span class="code-keyword">return</span> <span class="code-keyword">false</span>;
+    }
+    
+    <span class="code-object">long</span> count2D(<span class="code-object">long</span> n) {
+    <span class="code-comment">// counts all the bases x such that the base
+</span>    <span class="code-comment">// is lucky and n is a two digit number in that base
+</span>    <span class="code-comment">//
+</span>        <span class="code-object">long</span> r = 0;
+        <span class="code-keyword">for</span>(<span class="code-object">long</span> a : luckyNums) {
+            <span class="code-comment">// Make sure (a*(a+1) &lt;= n):
+</span>            <span class="code-comment">// The reason we check a &gt; n/(a+1) instead of
+</span>            <span class="code-comment">// a*(a+1) &gt; n is to avoid overflow.
+</span>            <span class="code-comment">//
+</span>            <span class="code-keyword">if</span> (a &gt; n / (a+1) ) <span class="code-keyword">break</span>;
+            <span class="code-keyword">for</span>(<span class="code-object">long</span> b : luckyNums) {
+                <span class="code-object">long</span> u = <span class="code-object">Math</span>.max(a,b) + 1;
+                <span class="code-comment">// Make sure (a*u + $b &lt;= n):
+</span>                <span class="code-keyword">if</span> ( a &gt; n / u ) <span class="code-keyword">break</span>;
+                <span class="code-keyword">if</span> ( a*u &gt; n - b ) <span class="code-keyword">break</span>;
+                
+                r += (canDoPair(n, a, b) ? 1 : 0);
+            }
+        }
+        <span class="code-keyword">return</span> r;
+    }
+    
+    <span class="code-comment">//
+</span>    <span class="code-object">long</span> rootOfTriple(<span class="code-object">long</span> a, <span class="code-object">long</span> b, <span class="code-object">long</span> c, <span class="code-object">long</span> n) {
+    <span class="code-comment">// Finds the root of a triple.
+</span>    <span class="code-comment">// That is, the maximum x such that:
+</span>    <span class="code-comment">//   a*x*x + b*x + c &lt;= n
+</span>    <span class="code-comment">//
+</span>    <span class="code-comment">// (simple binary search).
+</span>    <span class="code-comment">//
+</span>        <span class="code-object">long</span> lo = 0;
+        <span class="code-object">long</span> hi = (<span class="code-object">long</span>)<span class="code-object">Math</span>.sqrt(n)+1;
+        <span class="code-keyword">while</span> ( lo + 1 &lt; hi ) {
+            <span class="code-object">long</span> ha = hi - (hi - lo) / 2;
+            <span class="code-object">boolean</span> good = <span class="code-keyword">false</span>;
+            <span class="code-keyword">if</span> ( a&lt;=n/ha &amp;&amp; a*ha&lt;=n/ha ) {
+                <span class="code-keyword">if</span> ( b&lt;=n/ha  &amp;&amp; a*ha*ha &lt;= n - b*ha) {
+                    <span class="code-keyword">if</span> ( a*ha*ha + b*ha &lt;= n - c ) {
+                        good = <span class="code-keyword">true</span>;
+                    }
+                }
+            }
+            <span class="code-keyword">if</span> (good) {
+                lo = ha;
+            } <span class="code-keyword">else</span> {
+                hi = ha;
+            }
+        }
+        <span class="code-keyword">return</span> lo;
+    }
+
+    <span class="code-object">long</span> count3D(<span class="code-object">long</span> n) {
+        <span class="code-object">int</span> TT = 0;
+        <span class="code-object">int</span> r = 0;
+        <span class="code-keyword">for</span>(<span class="code-object">long</span> a : luckyNums) {
+          <span class="code-keyword">if</span> (a &gt; n/a) <span class="code-keyword">break</span>;
+          <span class="code-keyword">if</span> (a*a &gt; n/a) <span class="code-keyword">break</span>;
+          <span class="code-comment">// Always crop. Make sure a*a*a &lt;= n.
+</span>
+          <span class="code-keyword">for</span>(<span class="code-object">long</span> b : luckyNums) {
+            <span class="code-object">long</span> u = <span class="code-object">Math</span>.max(a,b) + 1;
+            <span class="code-keyword">if</span> (a &gt; n/u ) <span class="code-keyword">break</span>;
+            <span class="code-keyword">if</span> (a*u &gt; n/u ) <span class="code-keyword">break</span>;
+            <span class="code-keyword">if</span> (b*u &gt; n ) <span class="code-keyword">break</span>;
+            <span class="code-keyword">if</span> (a*u*u + b*u &gt; n) <span class="code-keyword">break</span>;
+            <span class="code-comment">// (Make sure a*u*u + b*u &lt;= n)
+</span>            <span class="code-comment">// ( where u = max(a,b)+1 )
+</span>                        
+            <span class="code-object">long</span> last = -1;
+            <span class="code-keyword">for</span>(<span class="code-object">long</span> c : luckyNums) {
+                <span class="code-object">long</span> uu = <span class="code-object">Math</span>.max(u, c+1);
+                <span class="code-keyword">if</span> (a &gt; n/uu ) <span class="code-keyword">break</span>;
+                <span class="code-keyword">if</span> (a*uu &gt; n/uu ) <span class="code-keyword">break</span>;
+                <span class="code-keyword">if</span> (b*uu &gt; n ) <span class="code-keyword">break</span>;
+                <span class="code-keyword">if</span> (a*uu*uu + b*uu &gt; n) <span class="code-keyword">break</span>;
+                <span class="code-keyword">if</span> (a*uu*uu + b*uu + c &gt; n) <span class="code-keyword">break</span>;
+                <span class="code-comment">// (Make sure a*u*u + b*u &lt;= n)
+</span>                <span class="code-comment">// ( where uu = max(a,b,c)+1 )
+</span>                
+                TT ++;
+                <span class="code-comment">// If the the last value still is &lt; n, skip.
+</span>                <span class="code-keyword">if</span> ( (last != -1) &amp;&amp; (a*last*last + b*last + c &lt; n) ) {
+                    <span class="code-keyword">continue</span>;
+                }
+                <span class="code-comment">// Else <span class="code-keyword">do</span> binary search again.
+</span>                <span class="code-comment">// All of <span class="code-keyword">this</span> because the <span class="code-keyword">new</span> <span class="code-quote">"root"</span> is guaranteed to
+</span>                <span class="code-comment">// be &lt;= the old <span class="code-quote">"root"</span>. Because the <span class="code-keyword">new</span> c is larger
+</span>                <span class="code-comment">// than the previous c.
+</span>                <span class="code-comment">//
+</span>                <span class="code-comment">// (The root is just the maximum x such that 
+</span>                <span class="code-comment">//   a*x*x + b*x + c &lt;= n)
+</span>                <span class="code-comment">// 
+</span>                <span class="code-object">long</span> x = rootOfTriple(a,b,c, n);
+                <span class="code-keyword">if</span> ( a*x*x + b*x + c == n) {
+                    r++;
+                }
+                last = x;
+            }
+          }
+        }
+        <span class="code-object">System</span>.out.println(<span class="code-quote">"TT = "</span>+TT);
+        <span class="code-keyword">return</span> r;
+    }
+
+    <span class="code-keyword">public</span> <span class="code-object">long</span> find(<span class="code-object">long</span> n)
+    {
+        t = 0;
+        luckyNums = <span class="code-keyword">new</span> <span class="code-object">long</span>[1&lt;&lt;17];
+        rec(0);
+        Arrays.sort(luckyNums, 0, t);
+        
+        <span class="code-keyword">if</span> (isLucky(n)) {
+            <span class="code-comment">// Any base &gt; n will be lucky.
+</span>            <span class="code-keyword">return</span> -1;
+        }
+        <span class="code-object">long</span> res = 0;
+        res += count4DorMore(n);
+        res += count2D(n);
+        res += count3D(n);
+        
+        <span class="code-keyword">return</span> res;        
+    }
+}</pre>
+</div></div>
+
+<p></p>
+
+<p><u>Alternative solutions and additional comments.</u></p>
+
+<p>&lt;PLACE YOUR COMMENTS HERE&gt;</p>
+
+<p>
+
+<img style="width:55px;heigth:61px;border:1px solid #CCCCCC;" src="SRM%20510%20-%20TopCoder%20Wiki_files/vexorian_big.html" alt="Author"> 
+
+<br> 
+
+By&nbsp;<a href="http://apps.topcoder.com/tc?module=MemberProfile&amp;cr=22652965" class="coderTextYellow">vexorian</a><br> 
+
+<em>TopCoder Member</em> 
+
+</p>
+                            </div>
+
+                            <!--
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/">
+<rdf:Description
+    rdf:about="http://apps.topcoder.com/wiki/display/tc/SRM+510"
+    dc:identifier="http://apps.topcoder.com/wiki/display/tc/SRM+510"
+    dc:title="SRM 510"
+    trackback:ping="http://apps.topcoder.com/wiki/rpc/trackback/61508716"/>
+</rdf:RDF>
+-->
+
+                                
+                                <!--
+    Root decorator: all decisions about how a page is to be decorated via the
+                    inline decoration begins here.
+-->
+
+
+
+<!--
+    Switch based upon the context. However, for now, just delegate to a decorator
+    identified directly by the context.
+-->
+
+
+    
+    
+
+<div class="wiki-content" style="margin-right:10px;">
+    <p style="clear: both"><!-- comments should always display underneath the content. we should have a 'clear:both' here just in case there are floats or aligned images in the content -->
+
+    
+    
+    
+    
+                                    </p></div>
+
+
+
+                                                            </td>
+
+
+                                                    </tr>
+        </tbody></table>
+
+        
+        </td>
+    </tr>
+</tbody></table>
+
+    
+
+        </td>
+    </tr>
+</tbody>
+</table>
+
+
+<!-- delay the loading of large javascript files to the end so that they don't interfere with the loading of page content -->
+<span style="display: none">
+    <script type="text/javascript" language="JavaScript">var domainName = 'http://apps.topcoder.com/wiki'; var entityId = '61508716'; var spaceKey = 'tc'</script>
+    <script type="text/javascript" language="JavaScript" src="SRM%20510%20-%20TopCoder%20Wiki_files/labels-javascript"></script>
+    <script>new Ajax.Autocompleter('labelName', 'labelsAutocompleteList', '61508716', { tokens: new Array(',', ' '), dwrFunction: GenerateAutocompleteLabelsListForEntity.autocompleteLabels});</script>
+</span>
+
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+    <tr>
+        <td class="footer" width="100%">
+            <a href="http://www.topcoder.com/" class="footerLinks">Home</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+            <a href="http://www.topcoder.com/tc?module=Static&amp;d1=about&amp;d2=index" class="footerLinks">About TopCoder</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+            <a href="http://www.topcoder.com/tc?module=Static&amp;d1=pressroom&amp;d2=index" class="footerLinks">Press Room</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+            <a href="http://www.topcoder.com/tc?module=Static&amp;d1=about&amp;d2=contactus" class="footerLinks">Contact Us</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+            <a href="http://www.topcoder.com/tc?module=Static&amp;d1=about&amp;d2=privacy" class="footerLinks">Privacy</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+            <a href="http://www.topcoder.com/tc?module=Static&amp;d1=about&amp;d2=terms" class="footerLinks">Terms</a>
+            <br>
+            <a href="http://www.topcoder.com/tc" class="footerLinks">Developer Center</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+            <a href="http://www.topcoder.com/corp/?module=Static&amp;d1=corp&amp;d2=index" class="footerLinks">Corporate Services</a>
+        </td>
+    </tr>
+    <tr><td class="copyright" width="100%">Copyright TopCoder, Inc. 2001-<script type="text/javascript">d=new Date();document.write(d.getFullYear());</script>2013</td></tr>
+</tbody>
+</table>
+
+
+
+</body></html>

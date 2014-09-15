@@ -1,0 +1,20 @@
+#include<iostream>
+#include<algorithm>
+#include<vector>
+using namespace std;
+class TheJackpotDivTwo
+{
+    public:
+        vector <int> find(vector <int> money, int jackpot)
+        {
+                while (jackpot > 0)
+                {
+                    sort(money.begin(),money.end());
+                    money[0]++;
+                    jackpot--;
+                }
+                sort(money.begin(),money.end());
+                return money;
+        }   
+            
+};

@@ -1,0 +1,12 @@
+#include<iostream>
+using namespace std;
+class ToastXRaspberry
+{
+    public:
+        int apply(int upper_limit,int layer_count)
+        {
+            int ans;
+            ans = ((upper_limit+layer_count)-1)/upper_limit;
+            return ans;
+        }
+};

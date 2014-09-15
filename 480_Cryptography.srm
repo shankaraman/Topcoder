@@ -1,0 +1,30 @@
+#include<iostream>
+#include<vector>
+#include<algorithm>
+using namespace std;
+class Cryptography
+{
+    public:
+        long long encrypt(vector <int> numbers)
+        {
+            long long prod=1;
+            vector <long long> maximum;
+            int temp;
+            for(int i=0;i<numbers.size();i++)
+            {
+                prod = 1;
+                temp = numbers[i]+1;
+                for(int j=0;j<numbers.size();j++)
+                {
+                    if (numbers[i] == numbers[j])
+                    {
+                        continue;
+                    }
+                    prod*=numbers[j];
+                }
+                maximum.push_back(temp*prod);
+            }
+            sort(maximum.begin(),maximum.end());
+            return maximum[numbers.size()-1];
+        }
+};

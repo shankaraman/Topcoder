@@ -1,0 +1,78 @@
+#include<iostream>
+#include<vector>
+#include<algorithm>
+using namespace std;
+class MarbleDecoration
+{
+	public:
+		int l,s,count,temp;
+		vector <int> box;	
+		int maxLength(int R, int G, int B)
+		{
+			if ( R == 0 && G == 0 && B > 0)
+			{
+			return 1;
+			}
+			if ( R == 0 && G > 0 && B == 0)
+			{
+				return 1;
+			}
+			if ( R > 0 && G == 0 && B == 0)
+			{
+				return 1;
+			}
+//			if (R > 1)
+	//		{
+				if ( R == G && G == B && B == R)
+				{
+					return (R*2);
+				}
+		//	}
+			if ((R == 0 && G == 0)||(R==0 && B == 0)||(G == 0 && B ==0)||(R==0 && B == 0 && G==0))
+			{
+				if (R == 0 && G == 0)
+				{
+					return (B/2);
+				}
+				else if (R == 0 && B == 0)
+				{
+				 return (G/2);
+				}
+				else if ( G == 0 && B == 0)
+				{
+					return (R/2);
+				}
+				else
+				{
+					return 0;
+				}
+			}
+			else
+			{
+				box.push_back(R);
+				box.push_back(G);
+				box.push_back(B);
+				sort(box.begin(),box.end());
+				if (box[1] == box[2])
+				{
+					return (box[1]*2);
+				}
+				else
+				{
+					count=0;
+					l = box[2];
+					s = box[1];
+					temp = s;
+					while (s>0)
+					{
+						l--;
+						count++;
+						temp--;
+						count++;
+						s--;
+					}
+					return (count+1);
+				}
+			}
+		}
+	};

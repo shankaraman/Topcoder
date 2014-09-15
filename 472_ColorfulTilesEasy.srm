@@ -1,0 +1,25 @@
+#include<iostream>
+#include<string>
+using namespace std;
+class ColorfulTilesEasy
+{
+    public:
+        int theMin(string room)
+        {
+            char dup[20];
+            int count=0;
+            for(int i=0;i<room.size();i++)
+            {
+                dup[i] = room[i];
+            }
+            for(int i=0;i<room.size();i++)
+            {
+                if (dup[i] == dup[i+1] && i != room.size()-1)
+                {
+                    dup[i+1] = 'x';
+                    count++;
+                }
+            }
+            return count;
+        }
+};

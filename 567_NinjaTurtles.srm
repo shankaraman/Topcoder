@@ -1,0 +1,23 @@
+#include<iostream>
+using namespace std;
+class NinjaTurtles
+{
+    public:
+        int countOpponents(int P,int K)
+        {
+            int no = 1;
+            while (((3*(no/K)) + no/3) < P )
+            {
+                no++;
+            }
+            if ( (3*(no/K) + (no/3)) == P)
+            {
+                return no;
+            }
+            else
+            {
+                return -1;
+            }
+            
+        }
+};

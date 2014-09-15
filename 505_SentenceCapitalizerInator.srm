@@ -1,0 +1,55 @@
+#include<iostream>
+#include<string>
+#include<vector>
+using namespace std;
+class SentenceCapitalizerInator
+{
+    public:
+    string fixCaps(string paragraph)
+    {
+    string final;
+    int cal,rep;
+    char caps;
+    vector<string> sentence;
+    for(int i=0;i<paragraph.size();i++)
+    { 
+        int len = paragraph.size()-1;
+        if(i == len && paragraph[len]=='.')
+        {
+            break;
+        }
+        if (i == 0)
+        {
+           cal = ((int)paragraph[i]-97);
+            rep = 65+cal;
+            caps = ((char)rep);
+            final = caps;
+            sentence.push_back(final);
+        }
+        else
+        {
+            string iam;
+            iam = paragraph[i];
+            sentence.push_back(iam);        
+        }
+    }
+    for(int i=0;i<sentence.size();i++)
+    {
+    if (sentence[i] == "." and sentence[i+1] == " ")
+    {
+        char ch = sentence[i+2][0];
+        cal = ((int)ch)-97;
+        rep = 65+cal;
+        caps = ((char)rep);
+        final = caps;
+        sentence[i+2] = final;
+    }
+    }
+    string last;
+    for (int i=0;i<sentence.size();i++)
+    {
+        last+=sentence[i];
+    }
+    return last+".";
+}
+};
